@@ -94,3 +94,14 @@ body {
 .modal-contenido img {
   width: 100%;
 }
+
+.modal-contenido .btn {
+  background: #1766DC;
+  font-size: 16px;
+  width: 100px;
+  color: #f2f2f2;
+  padding: 10px;
+  border-radius: 15px;
+  border-color: #1766DC;
+  border-width: 1px;
+}
