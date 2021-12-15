@@ -8,7 +8,9 @@
   <title>Falcon Masters - Modal Uno</title>
 </head>
 <body>
-<h1>Modal Uno</h1>
+<h1>
+  <button id="show">Modal</button>
+</h1>
 <div class="mod-overlay">
   <div class="mo-container">
     <div class="mcr-head">
@@ -71,5 +73,17 @@
     </div>
   </div>
 </div>
+<script type="module">
+const $modal = document.querySelector(".mod-overlay")
+const $btnx = $modal.querySelector(".mcr-button-x")
+$btnx.addEventListener("click",function(e){
+  $modal.classList.add("mod-hide")
+})
+
+const $btnshow = document.getElementById("show")
+$btnshow.addEventListener("click", function(e){
+  $modal.classList.remove("mod-hide")
+})
+</script>
 </body>
 </html>

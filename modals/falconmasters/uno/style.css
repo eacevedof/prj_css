@@ -32,6 +32,10 @@ body {
   justify-content: center;
 }
 
+.mod-hide {
+  display: none;
+}
+
 .mo-container {
   width: 95vw; /*ancho del modal*/
 	min-height: 95vh; /*alto del modal*/
