@@ -113,12 +113,6 @@ body {
   border-color: var(--main-blue);
   border-width: 1px;
 }
- 
-/* Works on Firefox */
-.scroll-content {
-  scrollbar-width: thin;
-  scrollbar-color: var(--main-blue-2) var(--main-white);
-}
 
 ::-webkit-scrollbar {
   width: 6px;
