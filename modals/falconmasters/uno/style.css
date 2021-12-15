@@ -33,8 +33,8 @@ body {
 }
 
 .mo-container {
-  width: 90vh;
-	min-height: 6.25rem;
+  width: 95vw; /*ancho del modal*/
+	min-height: 95vh; /*alto del modal*/
 	background: #fff;
 	position: relative;
 	border-radius: 0.32rem;
@@ -83,7 +83,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 75vh;
+  height: 83vh;
   overflow-y: auto;  
   padding: 10px;
   border:1px solid var(--main-white)
@@ -110,6 +110,7 @@ body {
   width: 6.25rem;
   color: #f2f2f2;
   padding: 0.625rem;
+  cursor: pointer;
   border-radius: 1.25rem;
   border-color: var(--main-blue);
   border-width: 1px;
