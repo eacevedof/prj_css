@@ -33,7 +33,7 @@ body {
 }
 
 .mo-container {
-  width: 31.25rem;
+  width: 90vh;
 	min-height: 6.25rem;
 	background: #fff;
 	position: relative;
@@ -46,7 +46,6 @@ body {
   display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 1.25rem;
 	padding-bottom: 1.25rem;
 	border-bottom: 1px solid #E8E8E8;
 }
@@ -86,6 +85,8 @@ body {
   align-items: center;
   height: 75vh;
   overflow-y: auto;  
+  padding: 10px;
+  border:1px solid var(--main-white)
 }
 
 .mcr-content h1 {
@@ -115,11 +116,11 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  width: 5px;
+  width: 4px;
   background: var(--main-white);
 }
 
