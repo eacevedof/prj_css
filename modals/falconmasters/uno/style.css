@@ -19,7 +19,7 @@ body {
   --main-white:#f2f2f2;
 }
 
-.modal-overlay {
+.mod-overlay {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -32,7 +32,7 @@ body {
   justify-content: center;
 }
 
-.mo-modal-contenedor {
+.mo-mod-container {
   width: 31.25rem;
 	min-height: 6.25rem;
 	background: #fff;
@@ -42,7 +42,7 @@ body {
   padding: 1.25rem;
 }
 
-.mc-modal-encabezado {
+.mc-mod-head {
   display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -51,13 +51,13 @@ body {
 	border-bottom: 1px solid #E8E8E8;
 }
 
-.mc-modal-encabezado h3 {
+.mc-mod-head h3 {
   font-weight: 500;
   font-size: 1rem;
   color:var(--main-blue);
 }
 
-.mc-modal-btn-cerrar {
+.mc-mod-button-x {
   position: absolute;
 	top: 0.93rem;
 	right: 1.25rem;
@@ -71,16 +71,16 @@ body {
 	color: var(--main-blue);
 }
 
-.mc-modal-btn-cerrar:hover {
+.mc-mod-button-x:hover {
   background: #f2f2f2;
 }
 
-.mc-modal-btn-cerrar svg{
+.mc-mod-button-x svg{
   width: 100%;
   height: 100%;
 }
 
-.mc-modal-contenido {
+.mc-mod-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,22 +88,22 @@ body {
   overflow-y: auto;  
 }
 
-.mc-modal-contenido h1 {
+.mc-mod-content h1 {
   font-size: 2.625rem;
   font-weight: 700;
   margin-bottom: 0.625rem;
 }
 
-.mc-modal-contenido p {
+.mc-mod-content p {
   font-size: 1.125em;
   margin-bottom: 1.25rem;
 }
 
-.mc-modal-contenido img {
+.mc-mod-content img {
   width: 100%;
 }
 
-.mc-modal-contenido .btn {
+.mc-mod-content .btn {
   background: var(--main-blue);
   font-size: 0.94rem;
   width: 6.25rem;
