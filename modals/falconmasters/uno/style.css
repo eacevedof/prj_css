@@ -42,7 +42,7 @@ body {
   padding: 1.25rem;
 }
 
-.mc-head {
+.mcr-head {
   display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -51,13 +51,13 @@ body {
 	border-bottom: 1px solid #E8E8E8;
 }
 
-.mc-head h3 {
+.mcr-head h3 {
   font-weight: 500;
   font-size: 1rem;
   color:var(--main-blue);
 }
 
-.mc-button-x {
+.mcr-button-x {
   position: absolute;
 	top: 0.93rem;
 	right: 1.25rem;
@@ -71,16 +71,16 @@ body {
 	color: var(--main-blue);
 }
 
-.mc-button-x:hover {
+.mcr-button-x:hover {
   background: #f2f2f2;
 }
 
-.mc-button-x svg{
+.mcr-button-x svg{
   width: 100%;
   height: 100%;
 }
 
-.mc-content {
+.mcr-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,22 +88,22 @@ body {
   overflow-y: auto;  
 }
 
-.mc-content h1 {
+.mcr-content h1 {
   font-size: 2.625rem;
   font-weight: 700;
   margin-bottom: 0.625rem;
 }
 
-.mc-content p {
+.mcr-content p {
   font-size: 1.125em;
   margin-bottom: 1.25rem;
 }
 
-.mc-content img {
+.mcr-content img {
   width: 100%;
 }
 
-.mc-content .btn {
+.mcr-content .btn {
   background: var(--main-blue);
   font-size: 0.94rem;
   width: 6.25rem;
