@@ -106,21 +106,25 @@ body {
 
 .mcr-content img {
   width: 100%;
-  border: 1px solid #303030; 
-  padding:5px; 
-  margin-bottom:20px;
+  border: 0.050rem solid rgba(48, 48, 48, 0.52);
+  padding: 0.313rem; 
+  margin-bottom: 1.25rem;
 }
 
-.mcr-content .btn-blue {
-  background: var(--main-blue);
+.mcr-content .btn {
   font-size: 0.94rem;
-  width: 6.25rem;
-  color: #f2f2f2;
   padding: 0.625rem;
   cursor: pointer;
   border-radius: 1.25rem;
-  border-color: var(--main-blue);
   border-width: 1px;
+}
+
+.btn-blue {
+  font-size: 0.94rem;
+  width: 6.25rem;
+  border-color: var(--main-blue-2);
+  background: var(--main-blue);
+  color: #f2f2f2;
 }
 
 ::-webkit-scrollbar {
