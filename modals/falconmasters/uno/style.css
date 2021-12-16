@@ -39,6 +39,7 @@ body {
 .mo-container {
   width: 95vw; /*ancho del modal*/
 	min-height: 95vh; /*alto del modal*/
+  min-width: 350px;
 	background: #fff;
 	position: relative;
 	border-radius: 0.32rem;
@@ -94,7 +95,7 @@ body {
 }
 
 .mcr-content h1 {
-  font-size: 2.625rem;
+  font-size: 2.625em;
   font-weight: 700;
   margin-bottom: 0.625rem;
 }
@@ -106,7 +107,7 @@ body {
 
 .mcr-content img {
   width: 100%;
-  border: 0.050rem solid rgba(48, 48, 48, 0.52);
+  border: 0.050rem solid #7EA6C9;
   padding: 0.313rem; 
   margin-bottom: 1.25rem;
 }
@@ -141,3 +142,41 @@ body {
   border-radius: 5px;
 
 }
+
+@media (max-width:1399.98px){
+  /*to-do*/
+  .mo-container {
+    border:3px solid deepskyblue;
+  }  
+}
+
+@media (max-width:991.98px){
+  body {
+    font-size: 15px;
+  }
+  .mo-container {
+    border:3px solid goldenrod;
+  }
+}
+
+@media (max-width:767.98px){
+  body {
+    font-size: 14px;
+  }
+  .mo-container {
+    border:3px solid indianred;
+  }
+}
+
+@media (max-width:575.98px){
+  body {
+    font-size: 13px;
+  }  
+  .mo-container {
+    border:3px solid violet;
+  }  
+}
+
+
+
+
