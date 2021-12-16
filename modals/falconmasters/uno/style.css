@@ -108,7 +108,7 @@ body {
   width: 100%;
 }
 
-.mcr-content .btn {
+.mcr-content .btn-blue {
   background: var(--main-blue);
   font-size: 0.94rem;
   width: 6.25rem;
