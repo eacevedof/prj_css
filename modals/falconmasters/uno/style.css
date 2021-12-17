@@ -17,6 +17,14 @@ body {
   --main-blue:#1766DC;
   --main-blue-2:#2366C9;
   --main-white:#f2f2f2;
+  --width-1: 575.98px;
+  --width-2: 767.98px;
+  --width-3: 991.98px;
+  --width-4: 1399.98px;
+
+  --height-1: 50vh;
+  --height-2: 75vh;
+  
 }
 
 .mod-overlay {
@@ -46,6 +54,31 @@ body {
 	box-shadow: rgba(100,100,111, 0.2) 0px 7px 29px 0px;
   padding: 1.25rem;
 }
+
+.mo-container.mcr-w1 {
+  width: var(--width-1);
+}
+
+.mo-container.mcr-w2 {
+  width: var(--width-2);
+}
+
+.mo-container.mcr-w3 {
+  width: var(--width-3);
+}
+
+.mo-container.mcr-w4 {
+  width: var(--width-4);
+}
+
+.mo-container.mcr-h1 {
+  height: var(--height-1);
+}
+
+.mo-container.mcr-h2 {
+  height: var(--height-2);
+}
+
 
 .mcr-head {
   display: flex;
