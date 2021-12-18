@@ -218,7 +218,7 @@ body {
 @media (max-width:1399.98px){
   /*to-do*/
   .mo-container {
-    border:3px solid deepskyblue;
+    border:0.188rem solid deepskyblue;
   }  
 }
 
@@ -227,7 +227,7 @@ body {
     font-size: 0.938rem;
   }
   .mo-container {
-    border:3px solid goldenrod;
+    border:0.188rem solid goldenrod;
   }
 }
 
@@ -236,7 +236,7 @@ body {
     font-size: 14px;
   }
   .mo-container {
-    border:3px solid indianred;
+    border:0.188rem solid indianred;
   }
 }
 
@@ -245,10 +245,8 @@ body {
     font-size: 13px;
   }  
   .mo-container {
-    border:3px solid violet;
+    border:0.188rem solid violet;
   }  
 }
-
-
 
 
