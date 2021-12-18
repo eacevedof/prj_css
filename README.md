@@ -8,3 +8,4 @@ Sandbox CSS
 
 ### tools
 - https://tinypng.com/
+- https://www.toptal.com/developers/cssminifier/

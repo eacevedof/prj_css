@@ -137,7 +137,6 @@ body {
   font-weight: 600;
 }
 
-
 .mcr-content h3, h4, h5, h6 {
   width: 100%;
   margin-bottom: 0.938rem !important;
@@ -192,6 +191,14 @@ body {
   width: 100%;
   margin-top: 0;
   margin-bottom: 0.938rem;
+}
+
+.mcr-content .mg0 {
+  margin: 0;
+}
+
+.mcr-content .mgt {
+  margin-top: 0.938rem;
 }
 
 .mcr-content img {
