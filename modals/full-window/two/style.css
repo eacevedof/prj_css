@@ -80,14 +80,14 @@ body {
   width: calc(100vw - 6.25rem);
   height: calc(100vh - 7.813rem);
   min-width: 21.875rem;
-  overflow-y: hidden;
+  overflow-y: auto;
   overflow-x: hidden;
   border:1px solid var(--main-white);
   padding: 0.625rem;
 }
 
-.mcr-content.mc-scroll-y {
-  overflow-y: scroll;
+.mcr-content.mc-no-scroll {
+  overflow-y: hidden;
 }
 
 .mcr-content.mc-wd-4 {
