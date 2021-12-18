@@ -18,18 +18,6 @@ body {
   --main-blue:#1766DC;
   --main-blue-2:#2366C9;
   --main-white:#f2f2f2;
-
-  --width-0: 1000px; /*menos ancho*/
-  --width-1: 750px;
-  --width-2: 500px;
-  --width-3: 250px;
-  --width-4: 72px; /*menos de esto se esconde fuera del view*/
-
-  --height-0: 10vh; /*menos alto*/
-  --height-1: 25vh;
-  --height-2: 50vh;
-  --height-3: 75vh;
-  --height-4: 87vh; /*mas de 87 se esconde*/
 }
 
 .mod-overlay {
@@ -141,44 +129,43 @@ body {
 --height-4: 453px; /*menos de esto se esconde fuera del view*
 */
 .mcr-content.mc-wd-4 {
-  width: calc(100vw - var(--width-4)); /*-250px*/
+  width: 97vw;
 }
 
 .mcr-content.mc-wd-3 {
-  width: calc(100vw - var(--width-3)); /*-500px*/
+  width: 90vw;
 }
 
 .mcr-content.mc-wd-2 {
-  width: calc(100vw - var(--width-2)); /*-750px*/
+  width: 50vw;
 }
 
 .mcr-content.mc-wd-1 {
-  width: calc(100vw - var(--width-1)); /*-1000px*/
+  width: 25vw;
 }
 
 .mcr-content.mc-wd-0 {
-  width: calc(100vw - var(--width-0)); /*-1000px*/
+  width: 10vw;
 }
 
-
 .mcr-content.mc-hg-4 {
-  height: var(--height-4)
+  height: 87vh; /*mas de esto se esonde en viewport*/
 }
 
 .mcr-content.mc-hg-3 {
-  height: var(--height-3);
+  height: 75vh;
 }
 
 .mcr-content.mc-hg-2 {
-  height: var(--height-2);
+  height: 50vh;
 }
 
 .mcr-content.mc-hg-1 {
-  height: var(--height-1);
+  height: 25vh;
 }
 
 .mcr-content.mc-hg-0 {
-  height: var(--height-0);
+  height: 10vh;
 }
 
 .mcr-content h1 {
