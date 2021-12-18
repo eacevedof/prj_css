@@ -112,12 +112,35 @@ body {
 }
 
 .mcr-content h2 {
-  margin-bottom: 0.938rem;
+  font-size: 2.625rem;
+  font-weight: 700;
+  margin-bottom: 0.938rem !important;
 }
+
+.mcr-content h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.mcr-content h4 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.mcr-content h5 {
+  font-size: 1.50rem;
+  font-weight: 600;
+}
+
+.mcr-content h6 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
 
 .mcr-content h3, h4, h5, h6 {
   width: 100%;
-  margin-bottom: 0.938rem;
+  margin-bottom: 0.938rem !important;
 }
 
 .mcr-content.mc-scroll-y {
@@ -162,12 +185,6 @@ body {
 
 .mcr-content.mc-hg-0 {
   height: 15vh;
-}
-
-.mcr-content h2 {
-  font-size: 2.625em;
-  font-weight: 700;
-  margin-bottom: 0.938rem;
 }
 
 .mcr-content p {
@@ -234,7 +251,7 @@ body {
 
 @media (max-width:991.98px){
   body {
-    font-size: 0.938rem;
+    font-size: 15px;
   }
   .mo-container {
     border:0.188rem solid goldenrod;
