@@ -69,8 +69,8 @@ body {
 
 .mcr-button-x {
   position: absolute;
-	top: 0.93rem;
-	right: 0.938rem;
+	top: 0.6rem;
+	right: 0.40rem;
 	width: 1.87rem;
 	height: 1.87rem;
 	border: none;
@@ -205,12 +205,13 @@ body {
 
 }
 
+  /*monitor laptop*/
 @media (max-width:1458.8px){
   .mcr-content.mc-wd-4 {
-    width: 95.75vw; /*mas de esto se esonde en viewport, en res 1934.39w x 944.06.h ok*/
+    width: 95.75vw; 
   }
   .mcr-content.mc-hg-4 {
-    height: 88vh; /*mas de esto se esonde en viewport, en res 1934.39w x 944.06.h ok*/
+    height: 88vh;
   }
 }
 
