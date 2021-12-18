@@ -126,31 +126,31 @@ body {
 
 /*modificadores de box*/
 .mcr-content.mc-wd-4 {
-  width: calc(100vw - var(--width-1));
+  width: calc(100vw - var(--width-4));
 }
 
 .mcr-content.mc-wd-3 {
-  width: calc(100vw - var(--width-2));
-}
-
-.mcr-content.mc-wd-2 {
   width: calc(100vw - var(--width-3));
 }
 
 .mcr-content.mc-wd-2 {
-  width: calc(100vw - var(--width-4));
+  width: calc(100vw - var(--width-2));
 }
 
-.mcr-content.mc-hg-1 {
-  height: calc(100vw - var(--height-1));
+.mcr-content.mc-wd-1 {
+  width: calc(100vw - var(--width-1));
+}
+
+.mcr-content.mc-hg-3 {
+  height: calc(100vw - var(--height-3));
 }
 
 .mcr-content.mc-hg-2 {
   height: calc(100vw - var(--height-2));
 }
 
-.mcr-content.mc-hg-3 {
-  height: calc(100vw - var(--height-3));
+.mcr-content.mc-hg-1 {
+  height: calc(100vw - var(--height-1));
 }
 
 .mcr-content h1 {
