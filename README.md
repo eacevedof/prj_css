@@ -9,3 +9,4 @@ Sandbox CSS
 ### tools
 - https://tinypng.com/
 - https://www.toptal.com/developers/cssminifier/
+- https://icons.getbootstrap.com/icons/x/
