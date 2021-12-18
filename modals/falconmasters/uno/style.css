@@ -24,9 +24,9 @@ body {
   --width-3: 750px;
   --width-4: 1000px;
 
-  --height-1: 25vh;
-  --height-2: 50vh;
-  
+  --height-1: 600px;
+  --height-2: 700px;
+  --height-3: 800px;
 }
 
 .mod-overlay {
@@ -109,10 +109,10 @@ body {
   si defino una latura, la caja container se ajusta a esta y crea un scroll si es necesario.
   Por lo tanto para ajustar el alto, se hace aqui
   */
+  width: calc(100vw - 6.25rem);
   height: calc(100vh - 7.813rem);
-  min-width: 350px;
-  width: calc(100vw - 100px);
-  overflow-y: auto;
+  min-width: 21.875rem;
+  overflow-y: hidden;
   overflow-x: hidden;
   border:1px solid var(--main-white);
   padding: 10px;
@@ -120,29 +120,37 @@ body {
   padding-right: 0.938rem;
 }
 
+.mcr-content.mc-scroll-y {
+  overflow-y: scroll;
+}
+
 /*modificadores de box*/
-.mcr-content.mc-w1 {
+.mcr-content.mc-wd-4 {
   width: calc(100vw - var(--width-1));
 }
 
-.mcr-content.mc-w2 {
+.mcr-content.mc-wd-3 {
   width: calc(100vw - var(--width-2));
 }
 
-.mcr-content.mc-w3 {
+.mcr-content.mc-wd-2 {
   width: calc(100vw - var(--width-3));
 }
 
-.mcr-content.mc-w4 {
+.mcr-content.mc-wd-2 {
   width: calc(100vw - var(--width-4));
 }
 
-.mcr-content.hg-1 {
-  height: var(--height-1);
+.mcr-content.mc-hg-1 {
+  height: calc(100vw - var(--height-1));
 }
 
-.mcr-content.hg-2 {
-  height: var(--height-2);
+.mcr-content.mc-hg-2 {
+  height: calc(100vw - var(--height-2));
+}
+
+.mcr-content.mc-hg-3 {
+  height: calc(100vw - var(--height-3));
 }
 
 .mcr-content h1 {
