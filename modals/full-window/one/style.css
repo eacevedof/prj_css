@@ -61,7 +61,7 @@ body {
 	border-bottom: 2px solid #E8E8E8;
 }
 
-.mcr-head h3 {
+.mcr-head h1 {
   font-weight: 500;
   font-size: 1rem;
   color:var(--main-blue);
@@ -111,6 +111,15 @@ body {
   padding-right: 0.938rem;
 }
 
+.mcr-content h2 {
+  margin-bottom: 0.938rem;
+}
+
+.mcr-content h3, h4, h5, h6 {
+  width: 100%;
+  margin-bottom: 0.938rem;
+}
+
 .mcr-content.mc-scroll-y {
   overflow-y: scroll;
 }
@@ -155,7 +164,7 @@ body {
   height: 15vh;
 }
 
-.mcr-content h1 {
+.mcr-content h2 {
   font-size: 2.625em;
   font-weight: 700;
   margin-bottom: 0.938rem;
@@ -163,6 +172,7 @@ body {
 
 .mcr-content p {
   font-size: 1.125em;
+  width: 100%;
   margin-top: 0;
   margin-bottom: 0.938rem;
 }
