@@ -19,10 +19,10 @@ body {
   --main-blue-2:#2366C9;
   --main-white:#f2f2f2;
 
-  --width-1: 100px;
-  --width-2: 767.98px;
-  --width-3: 991.98px;
-  --width-4: 1399.98px;
+  --width-1: 250px; /*1399.98px*/
+  --width-2: 500px;
+  --width-3: 750px;
+  --width-4: 1000px;
 
   --height-1: 25vh;
   --height-2: 50vh;
@@ -126,15 +126,15 @@ body {
 }
 
 .mcr-content.mc-w2 {
-  width: var(--width-2);
+  width: calc(100vw - var(--width-2));
 }
 
 .mcr-content.mc-w3 {
-  width: var(--width-3);
+  width: calc(100vw - var(--width-3));
 }
 
 .mcr-content.mc-w4 {
-  width: var(--width-4);
+  width: calc(100vw - var(--width-4));
 }
 
 .mcr-content.hg-1 {
