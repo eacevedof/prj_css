@@ -55,7 +55,7 @@ body {
 	position: relative;
 	border-radius: 0.32rem;
 	box-shadow: rgba(100,100,111, 0.2) 0px 7px 29px 0px;
-  padding: 1.25rem;
+  padding: 0.938rem;
 }
 
 .mo-container * {
@@ -84,7 +84,7 @@ body {
   display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-bottom: 1.25rem;
+	padding-bottom: 0.938rem;
 	border-bottom: 2px solid #E8E8E8;
 }
 
@@ -97,7 +97,7 @@ body {
 .mcr-button-x {
   position: absolute;
 	top: 0.93rem;
-	right: 1.25rem;
+	right: 0.938rem;
 	width: 1.87rem;
 	height: 1.87rem;
 	border: none;
@@ -129,13 +129,13 @@ body {
   */
   height: 83vh;
   min-width: 350px;
-  /*width: calc(100vw-100px);*/
+  width: calc(100vw - 100px);
   overflow-y: auto;
   overflow-x: hidden;
   border:1px solid var(--main-white);
   padding: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0.938rem;
+  padding-right: 0.938rem;
 }
 
 .mcr-content.h-1 {
@@ -155,21 +155,21 @@ body {
 .mcr-content p {
   font-size: 1.125em;
   margin-top: 0;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.938rem;
 }
 
 .mcr-content img {
-  width: 100%;
+  width: calc(100% - 0.938rem);
   border: 0.050rem solid #7EA6C9;
   padding: 0.313rem; 
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.938rem;
 }
 
 .mcr-content .btn {
   font-size: 0.94rem;
   padding: 0.625rem;
   cursor: pointer;
-  border-radius: 1.25rem;
+  border-radius: 0.938rem;
   border-width: 1px;
 }
 
@@ -205,7 +205,7 @@ body {
 
 @media (max-width:991.98px){
   body {
-    font-size: 15px;
+    font-size: 0.938rem;
   }
   .mo-container {
     border:3px solid goldenrod;
