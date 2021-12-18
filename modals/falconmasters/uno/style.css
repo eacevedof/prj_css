@@ -18,7 +18,8 @@ body {
   --main-blue:#1766DC;
   --main-blue-2:#2366C9;
   --main-white:#f2f2f2;
-  --width-1: 575.98px;
+
+  --width-1: 100px;
   --width-2: 767.98px;
   --width-3: 991.98px;
   --width-4: 1399.98px;
@@ -46,9 +47,7 @@ body {
   display: none;
 }
 
-.mo-container {
- 
-  
+.mo-container { 
   margin:0;
   padding: 0;
 	background: #fff;
@@ -62,23 +61,6 @@ body {
   margin:0;
   padding:0;
 }
-
-.mo-container.mcr-w1 {
-  width: var(--width-1);
-}
-
-.mo-container.mcr-w2 {
-  width: var(--width-2);
-}
-
-.mo-container.mcr-w3 {
-  width: var(--width-3);
-}
-
-.mo-container.mcr-w4 {
-  width: var(--width-4);
-}
-
 
 .mcr-head {
   display: flex;
@@ -127,7 +109,7 @@ body {
   si defino una latura, la caja container se ajusta a esta y crea un scroll si es necesario.
   Por lo tanto para ajustar el alto, se hace aqui
   */
-  height: 83vh;
+  height: calc(100vh - 7.813rem);
   min-width: 350px;
   width: calc(100vw - 100px);
   overflow-y: auto;
@@ -138,18 +120,35 @@ body {
   padding-right: 0.938rem;
 }
 
-.mcr-content.h-1 {
+/*modificadores de box*/
+.mcr-content.mc-w1 {
+  width: calc(100vw - var(--width-1));
+}
+
+.mcr-content.mc-w2 {
+  width: var(--width-2);
+}
+
+.mcr-content.mc-w3 {
+  width: var(--width-3);
+}
+
+.mcr-content.mc-w4 {
+  width: var(--width-4);
+}
+
+.mcr-content.hg-1 {
   height: var(--height-1);
 }
 
-.mcr-content.h-2 {
+.mcr-content.hg-2 {
   height: var(--height-2);
 }
 
 .mcr-content h1 {
   font-size: 2.625em;
   font-weight: 700;
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.938rem;
 }
 
 .mcr-content p {
@@ -182,17 +181,17 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 0.438rem;
 }
 
 ::-webkit-scrollbar-track {
-  width: 4px;
+  width: 0.25rem;
   background: var(--main-white);
 }
 
 ::-webkit-scrollbar-thumb {
   background-color:  var(--main-blue);
-  border-radius: 5px;
+  border-radius: 0.313rem;
 
 }
 
