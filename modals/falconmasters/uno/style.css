@@ -120,7 +120,7 @@ body {
 }
 
 .mcr-content.mc-wd-3 {
-  width: 90vw;
+  width: 75vw;
 }
 
 .mcr-content.mc-wd-2 {
@@ -132,7 +132,7 @@ body {
 }
 
 .mcr-content.mc-wd-0 {
-  width: 10vw;
+  width: 15vw;
 }
 
 .mcr-content.mc-hg-4 {
@@ -152,7 +152,7 @@ body {
 }
 
 .mcr-content.mc-hg-0 {
-  height: 10vh;
+  height: 15vh;
 }
 
 .mcr-content h1 {
