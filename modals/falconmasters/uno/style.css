@@ -127,7 +127,19 @@ body {
   overflow-y: scroll;
 }
 
-/*modificadores de content*/
+/*modificadores de content*
+--width-0: 1000px; /*menos ancho*
+--width-1: 750px;
+--width-2: 500px;
+--width-3: 250px;
+--width-4: 72px; /*menos de esto se esconde fuera del view*
+
+--height-0: 1060px; /*menos alto*
+--height-1: 1000px;
+--height-2: 750px;
+--height-3: 500px;
+--height-4: 453px; /*menos de esto se esconde fuera del view*
+*/
 .mcr-content.mc-wd-4 {
   width: calc(100vw - var(--width-4)); /*-250px*/
 }
