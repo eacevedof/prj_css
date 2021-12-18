@@ -115,21 +115,8 @@ body {
   overflow-y: scroll;
 }
 
-/*modificadores de content*
---width-0: 1000px; /*menos ancho*
---width-1: 750px;
---width-2: 500px;
---width-3: 250px;
---width-4: 72px; /*menos de esto se esconde fuera del view*
-
---height-0: 1060px; /*menos alto*
---height-1: 1000px;
---height-2: 750px;
---height-3: 500px;
---height-4: 453px; /*menos de esto se esconde fuera del view*
-*/
 .mcr-content.mc-wd-4 {
-  width: 97vw;
+  width: 96.75vw; /*mas de esto se esonde en viewport, en res 1934.39w x 944.06.h ok*/
 }
 
 .mcr-content.mc-wd-3 {
@@ -149,7 +136,7 @@ body {
 }
 
 .mcr-content.mc-hg-4 {
-  height: 87vh; /*mas de esto se esonde en viewport*/
+  height: 90.75vh; /*mas de esto se esonde en viewport, en res 1934.39w x 944.06.h ok*/
 }
 
 .mcr-content.mc-hg-3 {
@@ -216,6 +203,15 @@ body {
   background-color:  var(--main-blue);
   border-radius: 0.313rem;
 
+}
+
+@media (max-width:1458.8px){
+  .mcr-content.mc-wd-4 {
+    width: 95.75vw; /*mas de esto se esonde en viewport, en res 1934.39w x 944.06.h ok*/
+  }
+  .mcr-content.mc-hg-4 {
+    height: 88vh; /*mas de esto se esonde en viewport, en res 1934.39w x 944.06.h ok*/
+  }
 }
 
 @media (max-width:1399.98px){
