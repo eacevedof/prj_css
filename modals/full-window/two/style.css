@@ -90,6 +90,46 @@ body {
   overflow-y: scroll;
 }
 
+.mcr-content.mc-wd-4 {
+  width: 98vw; /*mas de esto se esonde en viewport, en res 1934.39w x 944.06.h ok*/
+}
+
+.mcr-content.mc-wd-3 {
+  width: 75vw;
+}
+
+.mcr-content.mc-wd-2 {
+  width: 50vw;
+}
+
+.mcr-content.mc-wd-1 {
+  width: 25vw;
+}
+
+.mcr-content.mc-wd-0 {
+  width: 15vw;
+}
+
+.mcr-content.mc-hg-4 {
+  height: 95vh; /*mas de esto se esonde en viewport, en res 1934.39w x 944.06.h ok*/
+}
+
+.mcr-content.mc-hg-3 {
+  height: 75vh;
+}
+
+.mcr-content.mc-hg-2 {
+  height: 50vh;
+}
+
+.mcr-content.mc-hg-1 {
+  height: 25vh;
+}
+
+.mcr-content.mc-hg-0 {
+  height: 15vh;
+}
+
 ::-webkit-scrollbar {
   width: 0.438rem;
 }
@@ -105,13 +145,13 @@ body {
 
 }
 
-  /*monitor laptop*/
+/*monitor laptop*/
 @media (max-width:1458.8px){
   .mcr-content.mc-wd-4 {
-    width: 95.75vw; 
+    width: 96.4vw; 
   }
   .mcr-content.mc-hg-4 {
-    height: 88vh;
+    height: 93vh;
   }
 }
 
