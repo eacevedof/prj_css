@@ -16,31 +16,30 @@
       <div class="fm-field-group">
         <label for="email" class="fg-label">Email</label>
         <div id="field-email" class="fg-input">
-          <input type="email" id="email" class="form-error">
-          <div approle="field-error" class="">
+          <input type="email" id="email" class="ui-input ui-input-error">
+          <div approle="field-error" class="ui-input fg-error">
             <ul><li>Empty field is not allowed</li><li>Invalid email format</li></ul>
           </div>
         </div>
       </div>
-      <div>
-        <label for="password">clave</label>
-        <div id="field-password">
-          <input type="password" id="password" class="form-error">
-          <div approle="field-error" class="">
-            <ul><li>Empty field is not allowed</li></ul>
-          </div>
+
+      <div class="fm-field-group">
+        <label for="password" class="fg-label">clave</label>
+        <div id="field-password" class="fg-input">
+          <input type="password" id="password" class="ui-input">
         </div>
       </div>
+
       <div>
         <label for="password2">Password confirm</label>
         <div id="field-password2">
-          <input type="password" id="password2">
+          <input type="password" id="password2" class="ui-input">
         </div>
       </div>
       <div>
         <label for="fullname">Full name</label>
         <div id="field-fullname">
-          <input type="text" id="fullname" class="form-error">
+          <input type="text" id="fullname" class="ui-input ui-input-error">
           <div approle="field-error" class="">
             <ul><li>Empty field is not allowed</li></ul>
           </div>      
@@ -49,13 +48,13 @@
       <div>
         <label for="address">Address</label>
         <div id="field-address">
-          <input type="text" id="address">
+          <input type="text" id="address" class="ui-input">
         </div>
       </div>
       <div>
         <label for="birthdate">Birthdate</label>
         <div id="field-birthdate">
-          <input type="date" id="birthdate" class="form-error">
+          <input type="date" id="birthdate" class="ui-input ui-input-error">
           <div approle="field-error" class="">
             <ul><li>Empty field is not allowed</li></ul>
           </div>
@@ -64,7 +63,7 @@
       <div>
         <label for="phone">Phone</label>
         <div id="field-phone">
-          <input type="text" id="phone" class="form-error">
+          <input type="text" id="phone" class="ui-input ui-input-error">
           <div approle="field-error" class="">
             <ul><li>Empty field is not allowed</li></ul>
           </div>
@@ -74,7 +73,7 @@
       <div>
         <label for="id_profile">Profile</label>
         <div id="field-id_profile">
-          <select id="id_profile" class="form-error">
+          <select id="id_profile" class="ui-input ui-input-error">
             <!----><option value="">Select an option</option><!----><!----><option value="4">business manager</option><!----><!----><option value="3">business owner</option><!---->
           </select>
           <div approle="field-error" class="">
@@ -86,7 +85,7 @@
       <div>
         <label for="id_country">Country</label>
         <div id="field-id_country">
-          <select id="id_country" class="form-error">
+          <select id="id_country" class="ui-input ui-input-error">
             <!----><option value="">Select an option</option><!----><!----><option value="9">Andorra</option><!----><!----><option value="18">Aruba</option><!----><!----><option value="19">Australia</option><!----><!----><option value="20">Austria</option><!----><!----><option value="23">Bahamas</option><!----><!----><option value="26">Barbados</option><!----><!----><option value="22">Belgium</option><!----><!----><option value="27">Belize</option><!----><!----><option value="32">Bolivia</option><!----><!----><option value="35">Brazil</option><!----><!----><option value="37">Bulgaria</option><!----><!----><option value="43">Canada</option><!----><!----><option value="45">Chile</option><!----><!----><option value="46">China</option><!----><!----><option value="49">Colombia</option><!----><!----><option value="58">Cuba</option><!----><!----><option value="59">Curaçao</option><!----><!----><option value="192">Czech Republic</option><!----><!----><option value="60">Denmark</option><!----><!----><option value="193">Dominican Republic</option><!----><!----><option value="62">Ecuador</option><!----><!----><option value="63">Egypt</option><!----><!----><option value="64">El Salvador</option><!----><!----><option value="74">Finland</option><!----><!----><option value="76">France</option><!----><!----><option value="8">Germany</option><!----><!----><option value="81">Gibraltar</option><!----><!----><option value="83">Greece</option><!----><!----><option value="82">Grenada</option><!----><!----><option value="87">Guatemala</option><!----><!----><option value="94">Haiti</option><!----><!----><option value="95">Honduras</option><!----><!----><option value="98">India</option><!----><!----><option value="100">Iran</option><!----><!----><option value="101">Iraq</option><!----><!----><option value="127">Italy</option><!----><!----><option value="128">Jamaica</option><!----><!----><option value="136">Kuwait</option><!----><!----><option value="140">Latvia</option><!----><!----><option value="137">Lebanon</option><!----><!----><option value="141">Liberia</option><!----><!----><option value="142">Libya</option><!----><!----><option value="149">Macedonia</option><!----><!----><option value="154">Malta</option><!----><!----><option value="146">Mexico</option><!----><!----><option value="147">Monaco</option><!----><!----><option value="163">Montenegro</option><!----><!----><option value="155">Morocco</option><!----><!----><option value="177">Netherlands</option><!----><!----><option value="169">Nicaragua</option><!----><!----><option value="178">Pakistan</option><!----><!----><option value="180">Palestine</option><!----><!----><option value="181">Panama</option><!----><!----><option value="183">Paraguay</option><!----><!----><option value="184">Peru</option><!----><!----><option value="186">Poland</option><!----><!----><option value="187">Portugal</option><!----><!----><option value="188">Puerto Rico</option><!----><!----><option value="189">Qatar</option><!----><!----><option value="197">Romania</option><!----><!----><option value="198">Russia</option><!----><!----><option value="211">Senegal</option><!----><!----><option value="212">Serbia</option><!----><!----><option value="67">Slovakia</option><!----><!----><option value="68">Slovenia</option><!----><!----><option value="220">South Africa</option><!----><!----><option value="54">South Korea</option><!----><!----><option value="69">Spain</option><!----><!----><option value="224">Suriname</option><!----><!----><option value="222">Sweden</option><!----><!----><option value="223">Switzerland</option><!----><!----><option value="229">Taiwan</option><!----><!----><option value="237">Trinidad and Tobago</option><!----><!----><option value="242">Ukraine</option><!----><!----><option value="190">United Kingdom</option><!----><!----><option value="244">Uruguay</option><!----><!----><option value="247">Venezuela</option><!----><!----><option value="250">Yemen</option><!---->
           </select>
           <div approle="field-error" class="">
@@ -98,7 +97,7 @@
       <div>
         <label for="id_language">Language</label>
         <div id="field-id_language">
-          <select id="id_language" class="form-error">
+          <select id="id_language" class="ui-input ui-input-error">
             <!----><option value="">Select an option</option><!----><!----><option value="1">English</option><!----><!----><option value="2">Spanish</option><!----><!----><option value="3">Dutch</option><!----><!----><option value="4">Papiaments</option><!---->
           </select>
           <div approle="field-error" class="">
