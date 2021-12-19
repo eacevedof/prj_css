@@ -15,14 +15,6 @@ body {
   border: 1px solid var(--main-white);
 }
 
-form .fm-field-group {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0,max-content));
-  grid-template-areas:
-    "fg-label fg-input"
-    "         fg-error"
-  ;
-}
 
 form .ui-input {
   width: 100%;
@@ -45,24 +37,28 @@ form .ui-input-error {
   background-color: salmon;
 }
 
-
-.fm-field-group.fg-row {
-
+form .fm-field-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0,max-content));
+  grid-template-areas:
+    "fg-label fg-input"
+    "         fg-error"
+  ;
 }
 
 .fg-label {
   grid-area: "fg-label";
-  border: 1px solid orange;
+  //border: 1px solid orange;
 }
 
 .fg-input {
   grid-area: "fg-input";
-  border: 1px solid greenyellow;
+  //border: 1px solid greenyellow;
 }
 
 .fg-error {
   grid-area: "fg-error";
-  border: 1px solid purple;
+  //border: 1px solid purple;
 }
 
 
