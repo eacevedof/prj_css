@@ -37,30 +37,28 @@ form .ui-input-error {
   background-color: salmon;
 }
 
+form .fm-flex {
+  display: flex;
+  flex-direction: column;
+}
+
 form .fm-field-group {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0,max-content));
-  grid-template-areas:
-    "fg-label fg-input"
-    "         fg-error"
-  ;
+
+
 }
 
 .fg-label {
-  grid-area: "fg-label";
-  //border: 1px solid orange;
+  
+  
 }
 
 .fg-input {
-  grid-area: "fg-input";
-  //border: 1px solid greenyellow;
+  
 }
 
 .fg-error {
-  grid-area: "fg-error";
-  //border: 1px solid purple;
+  
 }
-
 
 
 @media (max-width:1399.98px){

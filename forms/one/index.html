@@ -12,10 +12,9 @@
 <h1>Forms - One</h1>
 <main>
   <div class="form-wrapper">
-    <form>
+    <form class="frm-grid">
 
       <div class="fm-field-group">
-
         <label for="email" class="fg-label">Email</label>
         
         <div id="fg-email" class="fg-input">
@@ -24,6 +23,7 @@
             <ul><li>Empty field is not allowed</li><li>Invalid email format</li></ul>
           </div>
         </div>
+        
       </div>
 
       <div class="fm-field-group">
@@ -33,9 +33,9 @@
         </div>
       </div>
 
-      <div>
-        <label for="password2">Password confirm</label>
-        <div id="field-password2">
+      <div class="fm-field-group">
+        <label for="password2" class="fg-label">Password confirm</label>
+        <div id="field-password2" class="fg-input">
           <input type="password" id="password2" class="ui-input">
         </div>
       </div>
