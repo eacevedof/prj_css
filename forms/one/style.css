@@ -25,9 +25,26 @@ form .fm-field-group {
   flex-direction: row;
 }
 
-.fg-row label {
-
+.fg-label {
+  justify-content: space-around;
+  margin: 1%;
+  background: red;
+  border: 1px solid blue;
+  box-sizing: border-box;
+  height: 160px;
+  width: 48%;
 }
+
+.fg-input {
+  justify-content: space-around;
+  margin: 1%;
+  background: red;
+  border: 1px solid blue;
+  box-sizing: border-box;
+  height: 160px;
+  width: 48%;
+}
+
 
 
 @media (max-width:1399.98px){
