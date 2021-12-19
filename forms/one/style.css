@@ -10,6 +10,12 @@ body {
   --main-white:#f2f2f2;
 }
 
+.formwrapper {
+  padding: 0.25rem;
+  border: 1px solid var(--main-white);
+}
+
+
 @media (max-width:1399.98px){
   /*to-do*/
 }
