@@ -46,7 +46,7 @@ form.fm-flex {
 
 form .fm-field-grid {
   display: grid;
-  grid-template-columns: minmax(10px, max-content);
+  grid-template-columns: minmax(150px, max-content);
   grid-template-areas: 
     "arealabel areainput";
   //border: 1px dashed purple;
