@@ -40,12 +40,12 @@ form .ui-input-error {
 form .fm-flex {
   display: flex;
   flex-direction: column;
-  
 }
 
 form .fm-field-grid {
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: auto;
   grid-gap: 20px;
   grid-template-areas: 
     "arealabel areainput";
@@ -59,8 +59,6 @@ form .fm-field-grid {
 
 .fm-field-grid .fg-input {
   grid-area: areainput;
-  display: flex;
-  flex-direction: column;
   border: 2px solid greenyellow;
 }
 
