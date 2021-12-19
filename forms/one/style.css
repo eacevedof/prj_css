@@ -17,7 +17,7 @@ body {
 
 
 form .ui-input {
-  width: 99%;
+  width: 100%;
   font-size: 1rem;
   padding: .375rem .75rem;
   font-weight: 400;
@@ -41,12 +41,13 @@ form.fm-flex {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  //border: 1px solid orange;
+  border: 1px solid orange;
 }
 
 form .fm-field-grid {
+  width: 100%;
   display: grid;
-  grid-template-columns: minmax(150px, max-content);
+  grid-template-columns: minmax(150px, max-content) minmax(60%, max-content);
   grid-template-areas: 
     "arealabel areainput";
   //border: 1px dashed purple;
@@ -62,7 +63,7 @@ form .fm-field-grid {
 
 .fm-field-grid .fg-input {
   grid-area: areainput;
-  width: 98%;
+  width: auto;
 }
 
 .fm-field-grid .fg-error{
