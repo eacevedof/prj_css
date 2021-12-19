@@ -16,7 +16,17 @@ body {
 }
 
 form .fm-field-group {
+  display: flex;
+  flex-wrap: wrap;
   border: 1px solid red;
+}
+
+.fm-field-group.fg-row {
+  flex-direction: row;
+}
+
+.fg-row label {
+
 }
 
 
