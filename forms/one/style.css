@@ -43,21 +43,22 @@ form .fm-flex {
 }
 
 form .fm-field-group {
-
-
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
+  grid-template-areas: "fg-label fg-input";
 }
 
-.fg-label {
-  
-  
+.fm-field-group .fg-label {
+  grid-area: fg-label;
 }
 
-.fg-input {
-  
+.fm-field-group .fg-input {
+  grid-area: fg-input;
 }
 
-.fg-error {
-  
+.fm-field-group .fg-error {
+
 }
 
 
