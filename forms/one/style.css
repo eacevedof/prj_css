@@ -40,24 +40,31 @@ form .ui-input-error {
 form .fm-flex {
   display: flex;
   flex-direction: column;
+  
 }
 
-form .fm-field-group {
-  grid-template-columns: 2fr 2fr;
+form .fm-field-grid {
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   grid-gap: 20px;
-  grid-template-areas: "fg-label fg-input";
+  grid-template-areas: 
+    "arealabel areainput";
+  border: 1px dashed purple;
 }
 
-.fm-field-group .fg-label {
-  grid-area: fg-label;
+.fm-field-grid .fg-label {
+  grid-area: arealabel;
+  border: 3px solid red;
 }
 
-.fm-field-group .fg-input {
-  grid-area: fg-input;
+.fm-field-grid .fg-input {
+  grid-area: areainput;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid greenyellow;
 }
 
-.fm-field-group .fg-error {
+.fm-field-grid .fg-error {
 
 }
 
