@@ -23,26 +23,23 @@ form .fm-field-group {
 
 .fm-field-group.fg-row {
   flex-direction: row;
+  align-items: flex-start;
 }
 
 .fg-label {
   justify-content: space-around;
-  margin: 1%;
-  background: red;
-  border: 1px solid blue;
+  border: 1px solid greenyellow;
   box-sizing: border-box;
-  height: 160px;
-  width: 48%;
+  height: 25px;
+  width: auto;
 }
 
 .fg-input {
   justify-content: space-around;
-  margin: 1%;
-  background: red;
-  border: 1px solid blue;
+  border: 1px solid orchid;
   box-sizing: border-box;
-  height: 160px;
-  width: 48%;
+  height: 25px;
+  width: auto;
 }
 
 
