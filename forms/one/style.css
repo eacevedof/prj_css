@@ -44,9 +44,8 @@ form .fm-flex {
 
 form .fm-field-grid {
   display: grid;
-  grid-template-columns: 200px 200px;
+  grid-auto-columns: fit-content(250px);
   grid-template-rows: auto;
-  grid-gap: 20px;
   grid-template-areas: 
     "arealabel areainput";
   border: 1px dashed purple;
@@ -54,12 +53,10 @@ form .fm-field-grid {
 
 .fm-field-grid .fg-label {
   grid-area: arealabel;
-  border: 3px solid red;
 }
 
 .fm-field-grid .fg-input {
   grid-area: areainput;
-  border: 2px solid greenyellow;
 }
 
 .fm-field-grid .fg-error {
