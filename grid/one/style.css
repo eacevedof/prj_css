@@ -32,12 +32,14 @@ body {
     clamp(min, ideal, max) esta, para font-size va muy bien
 
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+
+    ...restore a 15rem, agregamos featured un atticle que ocupara 2 columnas.
+    Sucede que cuando este ocupa más espacio y no hay cajas por debajo para completar se ve un espacio vacio (como si faltaran tarjetas)
+    si no es relevante el orden visual, se puede configurar para que el navegador "reordene" la grilla sin dejar espacios 
+    con grid-auto-flow: dense
     */
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-}
-
-.featured {
-    
+    grid-auto-flow: dense;
 }
 
 .card {
@@ -47,4 +49,8 @@ body {
     border-radius: 0.3rem;
     box-shadow: 0 0.2rem 0.3rem rgb(0, 0, 0, 0.4);
     color: #333;
+}
+
+.featured {
+    grid-column: span 2;
 }
