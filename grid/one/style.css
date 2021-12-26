@@ -15,7 +15,9 @@ body {
     grid-auto-rows: 22rem;
     /*
     repeat auto-fill deja huecos en la fila si no hay suficiente cajas
-    auto-fit fueza el ancho de las cajas para que ocupe toda la fila
+    auto-fit fueza el ancho de las cajas para que ocupe toda la fila 
+    siempre y cuando solo haya una fila
+    
     repeat(auto-fill, minmax(15rem, 1fr));
     */
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
