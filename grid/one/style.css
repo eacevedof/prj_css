@@ -24,8 +24,14 @@ body {
     para minmax(15rem, 1fr) devolvera algo entre 15rem y una vez el máximo espacio disponible (que es 1fr)
 
     min(100%, 25rem) devolverá el menor entre los rem del 100% y 25rem
+    sin este min(..) lo que sucedia es que si el ancho del vp (viewport) era menor a 25rem la caja se ocultaba en modo horizontal
+    con el cambio ahora si el vp es menor, la función devuelve el 100% del mismo.
+    Ese resultado lo recupera minmax
+
+    hay otras funciones max(..), 
+    clamp(min, ideal, max) esta, para font-size va muy bien
     */
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
 }
 
 .featured {
