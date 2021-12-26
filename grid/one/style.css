@@ -13,7 +13,12 @@ body {
     display: grid;
     gap: 1rem;
     grid-auto-rows: 22rem;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    /*
+    repeat auto-fill deja huecos en la fila si no hay suficiente cajas
+    auto-fit fueza el ancho de las cajas para que ocupe toda la fila
+    repeat(auto-fill, minmax(15rem, 1fr));
+    */
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
 .featured {
