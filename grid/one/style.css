@@ -30,12 +30,14 @@ body {
 
     hay otras funciones max(..), 
     clamp(min, ideal, max) esta, para font-size va muy bien
-    */
+
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+    */
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
 .featured {
-
+    grid-column: span 2;
 }
 
 .card {
