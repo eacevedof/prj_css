@@ -29,4 +29,12 @@ body {
     con esta propiedad indirectamente aplicamos la altura de las fila
     */
     grid-template-rows: 150px 150px 150px 150px;
+    /*
+    espacio entre columnas
+    */
+    grid-column-gap: 1rem;
+    /*
+    espacio entre filas
+    */
+    grid-row-gap: .5rem;
 }
