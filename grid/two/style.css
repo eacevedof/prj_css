@@ -17,3 +17,9 @@ body {
     padding: 1.5rem;
     border-radius: 1rem;
 }
+.grid {
+    /*
+    con display: grid, los hijos ya son celdas
+    */
+    display: grid;
+}
