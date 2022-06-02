@@ -1,17 +1,19 @@
 body {
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.0;
+    font: 3rem sans-serif;
+    background-color: rgba(0,0,0,.2); /*fondo gris*/
+    color: white;
 }
 
-.wrapper {
-    border: 1px solid red;
-    display: grid;
-
-    /*
-    auto ocupa el espacio disponible. Indicamos 3 columnas una con cancho fijo y las otras
-    auto ajustables a lo que quede
-    */
-    grid-template-columns: auto auto 200px;
-    grid-template-columns: auto auto 1fr;
+.grid-item:nth-child(2n) {
+    background-color: #1A8385;
+}
+.grid-item:nth-child(2n+1) {
+    background-color: #37A8E0;
+}
+.grid{
+    padding: 1rem;
+}
+.grid-item{
+    padding: 1.5rem;
+    border-radius: 1rem;
 }
