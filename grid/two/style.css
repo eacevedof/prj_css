@@ -49,9 +49,11 @@ body {
     se divide el total / suma(fr)
     */
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-columns: 20% 1fr;
+    grid-template-columns: 20% 1fr 1fr;
     /*
     para que esto se cumpla hay que definir un alto del grid
     */
     grid-template-rows: 10rem 1fr 1fr 1fr;
+
+    grid-gap: 1rem;
 }
