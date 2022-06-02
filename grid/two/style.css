@@ -3,3 +3,15 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.0;
 }
+
+.wrapper {
+    border: 1px solid red;
+    display: grid;
+
+    /*
+    auto ocupa el espacio disponible. Indicamos 3 columnas una con cancho fijo y las otras
+    auto ajustables a lo que quede
+    */
+    grid-template-columns: auto auto 200px;
+    grid-template-columns: auto auto 1fr;
+}
