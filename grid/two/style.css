@@ -16,11 +16,19 @@ body {
 .grid-item{
     padding: 1.5rem;
     border-radius: 1rem;
+    display: inline;
 }
 /************************************************/
 .grid {
     /*
     con display: grid, los hijos ya son celdas
     */
-    display: grid;
+    //display: grid;
+    /*
+    por defecto grid tiene justifyitems=strech, que muestra los elementos como bloque ocupando
+    todo le ancho
+    */
+    //justify-items: stretch;
+
+    //justify-items: start;
 }
