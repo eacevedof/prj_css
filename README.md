@@ -10,6 +10,9 @@ Sandbox CSS
 - https://tinypng.com/
 - https://www.toptal.com/developers/cssminifier/
 - https://icons.getbootstrap.com/icons/x/
+- compilador automatico de sass para vscode
+  - live server
+  - live sass compiler
 
 ### templates
 - https://spruko.com/demo/valex/Valex/HTML-LTR/Horizontal-Light/index.html
