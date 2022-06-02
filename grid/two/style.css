@@ -13,4 +13,12 @@ body {
 .grid{
     padding: 1rem;
 }
+.grid-item{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: inline;
+}
 /************************************************/
+.grid {
+    display: grid;
+}
