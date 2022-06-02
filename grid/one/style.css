@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color:#fff;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.0;
+}
+
+.gallery {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    /*
+    repeat auto-fill deja huecos en la fila si no hay suficiente cajas
+    auto-fit fueza el ancho de las cajas para que ocupe toda la fila 
+    siempre y cuando solo haya una fila
+
+    repeat(auto-fill, minmax(15rem, 1fr));
+
+    minmax( min, max): devuelve un valor entre min y max
+    para minmax(15rem, 1fr) devolvera algo entre 15rem y una vez el máximo espacio disponible (que es 1fr)
+
+    min(100%, 25rem) devolverá el menor entre los rem del 100% y 25rem
+    sin este min(..) lo que sucedia es que si el ancho del vp (viewport) era menor a 25rem la caja se ocultaba en modo horizontal
+    con el cambio ahora si el vp es menor, la función devuelve el 100% del mismo.
+    Ese resultado lo recupera minmax
+
+    hay otras funciones max(..), 
+    clamp(min, ideal, max) esta, para font-size va muy bien
+
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+
+    ...restore a 15rem, agregamos featured un atticle que ocupara 2 columnas.
+    Sucede que cuando este ocupa más espacio y no hay cajas por debajo para completar se ve un espacio vacio (como si faltaran tarjetas)
+    si no es relevante el orden visual, se puede configurar para que el navegador "reordene" la grilla sin dejar espacios 
+    con grid-auto-flow: dense
+    */
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-auto-flow: dense;
+}
+
+.card {
+    overflow: hidden;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.2rem 0.3rem rgb(0, 0, 0, 0.4);
+    color: #333;
+}
+
+.featured {
+    grid-column: span 2;
+}
