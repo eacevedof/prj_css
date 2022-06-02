@@ -24,19 +24,28 @@ body {
     /*
     con esto se han definido 3 columnas de 200px cada una
     */
-    grid-template-columns: 200px 200px 200px;
+    //grid-template-columns: 200px 200px 200px;
     /*
     con esta propiedad indirectamente aplicamos la altura de las fila
     */
-    grid-template-rows: 150px 150px 150px 150px;
+    //grid-template-rows: 150px 150px 150px 150px;
     /*
     espacio entre columnas
     */
-    grid-column-gap: 1rem;
+    //grid-column-gap: 1rem;
     /*
     espacio entre filas
     */
-    grid-row-gap: .5rem;
+    //grid-row-gap: .5rem;
 }
 
 /*fr: fraction unit. Es el espacio disponible*/
+.grid {
+    grid-column-gap: 1rem;
+    grid-row-gap: .5rem;
+    /*
+    le indicamos 3 columnas que ocupen el 100% dividido proporcionalmente
+    se divide el total / suma(fr)
+    */
+    grid-template-columns: 1fr 2fr 1fr;
+}
