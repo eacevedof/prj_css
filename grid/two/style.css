@@ -21,4 +21,8 @@ body {
 /************************************************/
 .grid {
     display: grid;
+    /*
+    con esto se han definido 3 columnas de 200px cada una
+    */
+    grid-template-columns: 200px 200px 200px;
 }
