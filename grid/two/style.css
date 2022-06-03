@@ -24,4 +24,5 @@ body {
     esto dibuja 5 cols. Repeat es un bucle
     */
     grid-template-columns: 200px repeat(2, 1fr) repeat(2, 10rem);
+    grid-gap: .5rem;
 }
