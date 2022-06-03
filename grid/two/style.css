@@ -33,6 +33,6 @@ body {
     /*
     primera col para un menu lateral por ejemplo
     */
-    grid-template-columns: minmax(150px, 20%) repeat(2, 1fr);
+    grid-template-columns: minmax(150px, 20%) repeat(2, minmax(200px, 1fr));
 
 }
