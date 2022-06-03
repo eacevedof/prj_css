@@ -13,6 +13,12 @@ Sandbox CSS
 <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
 ```
 
+### vscode
+```
+div.grid-item.item${$}*12
+crea 12 divs del estilo: <div class="grid-item item1"></div>
+```
+
 ### tools
 - https://tinypng.com/
 - https://www.toptal.com/developers/cssminifier/
