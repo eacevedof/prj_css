@@ -28,5 +28,11 @@ body {
     /*
     minmax(i_min,i_max) indicamos q la primera col se movera en ese rango y del espacio restante la sig columna ocupara todo
     */
-    grid-template-columns: minmax(150px, 20%) 1fr;
+    //grid-template-columns: minmax(150px, 20%) 1fr;
+    //grid-template-columns: repeat(2, 100px 1fr 50px);
+    /*
+    primera col para un menu lateral por ejemplo
+    */
+    grid-template-columns: minmax(150px, 20%) repeat(2, 1fr);
+
 }
