@@ -58,7 +58,7 @@ body {
     grid-gap: 1rem;
 
     /*
-    si hay mas filas que las definidas (4) anteriormente que ocupen una altura de 1fr
+    si hay más filas que las definidas (4) anteriormente que ocupen una altura de 1fr
     */
     grid-auto-rows: 1fr;
 }
