@@ -132,5 +132,38 @@ grid-column: 2/span 3;
 grid-row: 1/3;
 background-color: rgba(0,255,0,.2);
 }
+
+/*
+sistema de 12 columnas
+*/
+.grid {
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: repeat(12, 1fr);
+}
+/*
+escoge los elementos localizados entre la
+pos 13 y 18 incluidos
+...
+*/
+.grid-item:nth-child(n+13):nth-child(-n+18) {
+    grid-column: span 2;
+}
+
+.grid-item:nth-child(n+19):nth-child(-n+22) {
+    grid-column: span 3;
+}
+
+.grid-item:nth-child(n+23):nth-child(-n+25) {
+    grid-column: span 4;
+}
+
+.grid-item:nth-child(n+26):nth-child(-n+27) {
+    grid-column: span 6;
+}
+
+.grid-item:nth-child(28) {
+    grid-column: span 12;
+}
 ```
 
