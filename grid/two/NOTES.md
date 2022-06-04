@@ -193,4 +193,33 @@ y seria lo mismo
     grid-column: span 3;
 }
 ```
+- lineas nombradas. 
+- la ventaja de nombrar lineas es que actuan como variables y evitan que tengas que recolocar todo en la mediaquery.
+si se hiciera con numeros habria que volver a indicar el inicio y fin
+```css 
+.grid{
+  display: grid;
+  grid-gap: .5rem;
+  /*
+  al mismo tiempo que marcamos los limites v y h se puede asignarles una etiqueta entre
+  []
+  */
+  grid-template-columns: [start] minmax(200px, 20%) [main] 1fr [end];
+  grid-template-rows:
+      [header]
+          minmax(4rem, auto)
+      [main]
+          300px
+      [footer]
+          minmax(4rem, auto)
+      [end];
+}
 
+.header {
+  //grid-column: span 3;
+  grid-column: start/end;
+}
+.footer {
+  grid-column: start/end;
+}
+```

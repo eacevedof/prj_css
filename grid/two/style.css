@@ -38,3 +38,22 @@ body{
 .footer {
     grid-column: start/end;
 }
+
+@media screen and (max-width: 500px){
+    .grid {
+        /*
+        se pasa de 3 cols a 1
+        */
+        grid-template-columns: [start] 1fr [end];
+        grid-template-rows:
+        [header]
+            minmax(4rem, auto)
+        [sidebar]
+            minmax(4rem, auto)
+        [main]
+            300px
+        [footer]
+            minmax(4rem, auto)
+        [end];
+    }
+}
