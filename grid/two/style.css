@@ -22,13 +22,21 @@ body{
     grid-gap: .5rem;
 
     /*
+    autofill indica el autocalculo que caben. Yo le doy el min y el max y el autofill
+    ya se encarga de calcular las que se pueden incluir
+    solo se puede usar autofill/fit 1 vez en un solo repeat
+
     repite por todo el ancho con columnas de 15rem mientras quepan sino haz un salto de linea
     todavia no es responsive pq deja un hueco en el salto de linea
     */
-    grid-template-columns: repeat(auto-fill, 15rem);
+    //grid-template-columns: repeat(auto-fill, 15rem);
 
     /*
     esto si es responsive, el ancho q tengo entre 10rem = x columnas
     */
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    //grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+
+    grid-template-columns: repeat(auto-fill, 20% minmax(10rem, 1fr));
+
+    grid-template-columns: repeat(2, minmax(8rem, 1fr)) repeat(auto-fill, minmax(15rem, 2fr)));
 }
