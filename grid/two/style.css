@@ -23,6 +23,9 @@ body{
 }
 /*
 escoge los elementos desde la pos 13 hasta la 18
+para n=0 => 13 - 18
+para n=1 => 14 - 19
+...
 */
 .grid-item:nth-child(n+13):nth-child(-n+18) {
     grid-column: span 2;
