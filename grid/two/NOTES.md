@@ -109,5 +109,28 @@ en caso que le pase más columnas de las q existan se fuerza la creacion de cols
 */
 grid-row: 3/7;
 }
+
+/*
+superposicion de areas
+*/
+.grid {
+display: grid;
+grid-gap: .5rem;
+grid-template-columns: repeat(3, 1fr);
+grid-auto-columns: 1fr;
+grid-auto-rows: 5rem;
+}
+
+.grid-item.item1 {
+grid-column: 2/span 3;
+grid-row: 1/3;
+background-color: rgba(255,0,0,.5);
+}
+
+.grid-item.item6 {
+grid-column: 2/span 3;
+grid-row: 1/3;
+background-color: rgba(0,255,0,.2);
+}
 ```
 
