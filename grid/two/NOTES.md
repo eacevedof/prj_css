@@ -71,7 +71,18 @@ grid-column-end: 3;
 coord y (lin hor 2 hasta lin hot 3)
 */
 grid-row-start: 2;
-grid-row-end: 3;    
+grid-row-end: 3;
+
+/*
+en este caso le digo mantente en la h-lin 1 pero expandete a la v-lin 2
+*/
+//grid-column: span 2;
+/*
+empieza en v:2 y expandete 2
+empieza en h:3 y expandete 3
+*/
+grid-column: 2 /span 2;
+grid-row: 3/span 3;
 }
 ```
 
