@@ -21,7 +21,8 @@ body{
     display: grid;
     grid-gap: .5rem;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-columns: 300px;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 5rem;
 }
 
 .item1 {
@@ -29,4 +30,11 @@ body{
     en caso que le pase más columnas de las q existan se fuerza la creacion de cols
     */
     grid-column: 2/span 3;
+}
+
+.item6 {
+    /*
+    en caso que le pase más columnas de las q existan se fuerza la creacion de cols
+    */
+    grid-row: 3/7;
 }
