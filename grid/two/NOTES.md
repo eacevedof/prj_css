@@ -256,4 +256,17 @@ externo flotante
 - [variacion de numero de tracks](https://codepen.io/diana_aceves/pen/dVWZYB/f69c230b24d46cfa9070955b295cc1fa?editors=0100)
   - permite agregar elementos al html sin tener que tocar practicamente el css
 - [lineas nombradas con nombres repetidos](https://codepen.io/diana_aceves/pen/dVWmmP/4fb014e84bf66703d40aed25f38228e7?editors=0100)
-  - permite agregar gaps virtuales y moverse sobre ellos 
+  - permite agregar gaps virtuales y moverse sobre ellos
+  ```css
+  .grid {
+    display: grid;
+    grid-template-columns: [col] 10rem [gap] 1rem [col] 10rem [gap] 3rem [col] 1fr;
+  }
+  .item1 {
+    /*
+    le indico que comienze a dibujarse en la linea 3 que 
+    coincide con el nombre col en segunda posicion
+    */
+    grid-column: col 2;
+  }
+  ```
