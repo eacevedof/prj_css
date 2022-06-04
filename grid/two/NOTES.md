@@ -171,11 +171,6 @@ pos 13 y 18 incluidos
 - [codepen app 2 - layout real](https://codepen.io/diana_aceves/pen/QqMRmX/275d5969a7ac458d4b7cf27d516962db)
 - [codepen - lineas nombradas](https://codepen.io/diana_aceves/pen/YrVxBa/932cd1f470414a8470f75ed1f7f2da97)
   - es como un layout tipico con su header, sidebar ,main y footer
-- [codepen - lineas nombradas multiples](https://codepen.io/diana_aceves/pen/VMbMpG/909b8f875ee1a123748330de23eacfa9?editors=0100)
-  
-- [codepen 3]()
-- [codepen 3]()
-- [codepen 3]()
 ```css
 
 .grid {
@@ -224,3 +219,39 @@ si se hiciera con numeros habria que volver a indicar el inicio y fin
   grid-column: start/end;
 }
 ```
+- lineas nombradas multiples
+- [codepen - lineas nombradas multiples](https://codepen.io/diana_aceves/pen/VMbMpG/909b8f875ee1a123748330de23eacfa9?editors=0100)
+```css
+.grid {
+  display: grid;
+  grid-gap: .4rem;
+  min-height: 100vh;
+  grid-template-columns:
+      [first nav-start] minmax(200px, 20%)
+      [nav-end main-start] 1fr
+      [main-end sidebar-start] minmax(200px, 20%)
+      [sidebar-end last];
+
+  grid-template-rows:
+      [first header-start] minmax(4rem, auto)
+      /*
+      para que no haga scroll y se mantenga visible el footer como el header habria que
+      incluir una altura fija en main y ponerle un overflow auto
+      */
+      [header-end main-start] 60vh
+      [main-end footer-start] minmax(4rem, auto)
+      [footer-end last];
+}
+
+/*
+si deseo un header sticky ya no seria parte del grid, sino un elemento
+externo flotante
+*/
+.header {
+  grid-column: first / sidebar-start;
+}
+```
+- lineas nombradas con variacion de numero de tracks
+- [codepen 3]()
+- [codepen 3]()
+- [codepen 3]()

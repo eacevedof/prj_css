@@ -25,6 +25,10 @@ body{
 
     grid-template-rows:
         [first header-start] minmax(4rem, auto)
+        /*
+        para que no haga scroll y se mantenga visible el footer como el header habria que
+        incluir una altura fija en main y ponerle un overflow auto
+        */
         [header-end main-start] 60vh
         [main-end footer-start] minmax(4rem, auto)
         [footer-end last];
