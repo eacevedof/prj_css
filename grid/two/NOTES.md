@@ -168,6 +168,9 @@ pos 13 y 18 incluidos
 }
 ```
 ### leccion 3
+- [codepen 1](https://codepen.io/diana_aceves/pen/zEzrNO/0824c73df8174e3745b2cf65ababf56a)
+- [codepen 2]()
+- [codepen 3]()
 ```css
 
 
