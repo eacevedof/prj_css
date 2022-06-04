@@ -38,7 +38,7 @@ body{
     position: relative;
 }
 .bold::after{
-    content: '';
+    content: "";
     display: block;
     height: 1px;
     width: 1rem;
@@ -49,3 +49,38 @@ body{
     margin-left: -0.5rem;
 }
 /************************************************/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 95px);
+    grid-template-rows: repeat(6, 95px);
+}
+
+.item1 {
+    grid-column: span 3;
+}
+
+.item2 {
+    grid-column: 5;
+}
+
+.item3 {
+    grid-column: 2/5;
+}
+.item4 {
+    grid-column: 3/6;
+}
+.item5 {
+    grid-column: 3;
+}
+.item6 {
+    grid-column: 4/span 3;
+}
+.item7 {
+    grid-column: 1/4;
+}
+.item8 {
+    grid-column: 2/5;
+}
+.item9 {
+    grid-column: 6;
+}
