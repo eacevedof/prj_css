@@ -13,3 +13,43 @@ body{
     background-color: #E92763;
 }
 /*****************************/
+.grid {
+    display: grid;
+    grid-gap: .4rem;
+    min-height: 100vh;
+    grid-template-columns:
+        [first nav-start] minmax(200px, 20%)
+        [nav-end main-start] 1fr
+        [main-end sidebar-start] minmax(200px, 20%)
+        [sidebar-end last];
+
+    grid-template-rows:
+        [first header-start] minmax(4rem, auto)
+        [header-end main-start] 60vh
+        [main-end footer-start] minmax(4rem, auto)
+        [footer-end last];
+}
+
+/*
+si deseo un header sticky ya no seria parte del grid, sino un elemento
+externo flotante
+*/
+.header {
+    grid-column: first / sidebar-start;
+}
+.nav {
+    grid-column: nav-start/nav-end;
+}
+
+.sidebar {
+    grid-column: sidebar-start / sidebar-end;
+    grid-row: first / footer-start;
+}
+
+.footer {
+    grid-column: first/last;
+}
+
+.main {
+    overflow: auto;
+}
