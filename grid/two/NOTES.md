@@ -84,5 +84,30 @@ empieza en h:3 y expandete 3
 grid-column: 2 /span 2;
 grid-row: 3/span 3;
 }
+
+.item1 {
+/*
+en caso que le pase más columnas de las q existan se fuerza la creacion de cols
+*/
+grid-column: 2/span 3;
+grid-row: 1/3;
+
+/*
+grid-column y grid-row configuran una area. Esta area se puede configurar
+
+el equivalente row-start/col-start/row-end/col-end
+*/
+grid-area: 1/2/3/span 3;
+}
+
+/*
+si las coord de las areas se solapan entonces se superponen
+*/
+.item6 {
+/*
+en caso que le pase más columnas de las q existan se fuerza la creacion de cols
+*/
+grid-row: 3/7;
+}
 ```
 
