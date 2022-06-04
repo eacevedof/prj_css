@@ -25,6 +25,7 @@ body{
 .red{
     background-color: #FBD5D4;
 }
+/*FLEX*/
 .grid-item{
     display: flex;
     justify-content: center;

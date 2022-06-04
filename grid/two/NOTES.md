@@ -173,7 +173,25 @@ pos 13 y 18 incluidos
 - [codepen 3]()
 ```css
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 95px);
+    grid-template-rows: repeat(6, 95px);
+}
+/*
+podria colocar el item con una pseudo class nt-child
+y seria lo mismo
+.grid-item.nt-child(1) {
 
-  
+}
+*/
+.item1 {
+    grid-column: span 3;
+}
+
+.item2 {
+    grid-column: 5;
+}
+
 ```
 
