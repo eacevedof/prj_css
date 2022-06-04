@@ -252,6 +252,6 @@ externo flotante
 }
 ```
 - lineas nombradas con variacion de numero de tracks
-- [codepen 3]()
+- [variacion de numero de tracks](https://codepen.io/diana_aceves/pen/dVWZYB/f69c230b24d46cfa9070955b295cc1fa?editors=0100)
 - [codepen 3]()
 - [codepen 3]()
