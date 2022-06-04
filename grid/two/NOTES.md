@@ -1,4 +1,5 @@
-### leccion 2
+### [leccion 2](https://vimeo.com/717033709)
+
 ```css
 .grid {
 display: grid;
@@ -166,4 +167,5 @@ pos 13 y 18 incluidos
     grid-column: span 12;
 }
 ```
+### leccion 3
 
