@@ -42,6 +42,21 @@ con esto forzamos que en el espacio en la fila quepa el pack entero 150 + 300
 
 //grid-template-columns: repeat(auto-fill, 150px minmax(100px, 1fr));
 
+/*
+3 columnas 1fr
+*/
+grid-template-columns: repeat(3, 1fr);
+
+/*
+dos filas de 5rem - infinito
+*/
+grid-template-rows: repeat(2, minmax(5rem, auto));
+
+/*
+nuevas filas 5rem - infinito (56:22), no se ha conseguido hacer crecer automaticamente hasta el infinito
+la fila. Lo contará en el sig viedeo
+*/
+grid-auto-rows: minmax(5rem, 1fr);
 }
 ```
 
