@@ -254,4 +254,6 @@ externo flotante
 ```
 - lineas nombradas con variacion de numero de tracks
 - [variacion de numero de tracks](https://codepen.io/diana_aceves/pen/dVWZYB/f69c230b24d46cfa9070955b295cc1fa?editors=0100)
+  - permite agregar elementos al html sin tener que tocar practicamente el css
 - [lineas nombradas con nombres repetidos](https://codepen.io/diana_aceves/pen/dVWmmP/4fb014e84bf66703d40aed25f38228e7?editors=0100)
+  - permite agregar gaps virtuales y moverse sobre ellos 
