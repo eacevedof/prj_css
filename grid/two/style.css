@@ -24,6 +24,9 @@ body{
 }
 
 .item1 {
+    /*
+    el item1 ocupará el area de v:2 a 4, h:3 a 5
+    */
     grid-column: 2/4;
     grid-row: 3/5;
 }
