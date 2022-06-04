@@ -188,10 +188,5 @@ y seria lo mismo
 .item1 {
     grid-column: span 3;
 }
-
-.item2 {
-    grid-column: 5;
-}
-
 ```
 
