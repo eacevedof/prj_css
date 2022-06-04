@@ -41,6 +41,9 @@ body{
     grid-area: 1/2/3/span 3;
 }
 
+/*
+si las coord de las areas se solapan entonces se superponen
+*/
 .item6 {
     /*
     en caso que le pase más columnas de las q existan se fuerza la creacion de cols
