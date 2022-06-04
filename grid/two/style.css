@@ -20,7 +20,19 @@ body{
 .grid {
     display: grid;
     grid-gap: .5rem;
-
+    height: 200vh;
+    /*
+    3 columnas 1fr
+    */
     grid-template-columns: repeat(3, 1fr);
+
+    /*
+    dos filas de 5rem - infinito
+    */
     grid-template-rows: repeat(2, minmax(5rem, auto));
+
+    /*
+    nuevas filas 5rem - infinito
+    */
+    grid-auto-rows: minmax(5rem, auto);
 }
