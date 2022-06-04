@@ -46,11 +46,17 @@ body{
     */
     //grid-template-columns: repeat(2, minmax(8rem, 1fr)) repeat(auto-fill, minmax(15rem, 2fr));
 
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    //grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 
     /*
     auto-fit estira los elementos para que no queden huecos si sobra espacio.
     auto-fill estira los elementos crea esos si faltan celdas
     */
+
+
+    /*
+    con esto forzamos que en el espacio en la fila quepa el pack 150 + 300
+    */
+    grid-template-columns: repeat(auto-fill, 150px 300px);
 
 }
