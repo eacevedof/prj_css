@@ -58,5 +58,20 @@ la fila. Lo contará en el sig viedeo
 */
 grid-auto-rows: minmax(5rem, 1fr);
 }
+
+.item1 {
+/*
+las coords empiezan por 1 tanto para x como para y
+coord eje x (lin vert 1 hata lin vert 3)
+*/
+grid-column-start: 2;
+grid-column-end: 3;
+
+/*
+coord y (lin hor 2 hasta lin hot 3)
+*/
+grid-row-start: 2;
+grid-row-end: 3;    
+}
 ```
 
