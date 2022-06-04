@@ -216,6 +216,7 @@ si se hiciera con numeros habria que volver a indicar el inicio y fin
   grid-column: start/end;
 }
 .footer {
+  /*la última linea tambien se puede instanciar con -1*/
   grid-column: start/end;
 }
 ```

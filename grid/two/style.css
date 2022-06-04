@@ -13,3 +13,29 @@ body{
     background-color: #E92763;
 }
 /*****************************/
+/*TENGO LO DE ANTES*/
+.grid{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: [start] minmax(200px, 20%) [main] 1fr [end];
+    grid-template-rows: [header] auto [main] 600px  [footer] auto [end];
+}
+.header{
+    grid-column: start / end;
+}
+.footer{
+    grid-column: start / end;
+}
+
+/*EL DISEÑADOR ME PIDE OTRO SIDEBAR AL OTRO LADO
+-> LO AÑADO AL HTML
+-> LO AÑADO AL grid-template-columns
+NO HE TENIDO QUE CAMBIAR .HEADER NI .FOOTER*/
+.grid{
+    grid-template-columns:
+		[start] minmax(200px, 20%)
+		[main] 1fr
+		[sidebar2] minmax(200px, 20%) [end];
+}
+/* NO LOS HE TOCADO!!!
+-> SI HUBIERAN ESTADO CON NÚMEROS DE LÍNEA, TENDRÍA QUE REHACERLO PORQUE QUEDA DESCOLOCADO, YA NO HAY EL MISMO NÚMERO DE LÍNEAS*/
