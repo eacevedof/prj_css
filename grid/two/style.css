@@ -1,7 +1,8 @@
 body{
-    font: 3rem sans-serif;
+    font: 1.5rem sans-serif;
     background-color: rgba(0,0,0,.2);
     color: white;
+    padding: 1rem;
 }
 .grid-item{
     padding: .5rem;
@@ -19,4 +20,10 @@ body{
     display: grid;
     grid-gap: .5rem;
     grid-template-columns: repeat(12, 1fr);
+}
+/*
+escoge los elementos desde la pos 13 hasta la 18
+*/
+.grid-item:nth-child(n+13):nth-child(-n+18) {
+    grid-column: span 2;
 }
