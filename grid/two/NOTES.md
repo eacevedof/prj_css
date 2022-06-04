@@ -142,7 +142,7 @@ sistema de 12 columnas
     grid-template-columns: repeat(12, 1fr);
 }
 /*
-escoge los elementos localizados entre la
+escoge los elementos (con el selector .grid-item) localizados entre la
 pos 13 y 18 incluidos
 ...
 */
