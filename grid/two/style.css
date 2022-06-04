@@ -23,6 +23,12 @@ body{
 
     /*
     repite por todo el ancho con columnas de 15rem mientras quepan sino haz un salto de linea
+    todavia no es responsive pq deja un hueco en el salto de linea
     */
     grid-template-columns: repeat(auto-fill, 15rem);
+
+    /*
+    esto si es responsive, el ancho q tengo entre 10rem = x columnas
+    */
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
 }
