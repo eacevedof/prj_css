@@ -24,9 +24,25 @@ body{
 /*
 escoge los elementos desde la pos 13 hasta la 18
 para n=0 => 13 - 18
-para n=1 => 14 - 19
+para n=1 => 14 - 17
 ...
 */
 .grid-item:nth-child(n+13):nth-child(-n+18) {
     grid-column: span 2;
+}
+
+.grid-item:nth-child(n+19):nth-child(-n+22) {
+    grid-column: span 3;
+}
+
+.grid-item:nth-child(n+23):nth-child(-n+25) {
+    grid-column: span 4;
+}
+
+.grid-item:nth-child(n+26):nth-child(-n+27) {
+    grid-column: span 6;
+}
+
+.grid-item:nth-child(28) {
+    grid-column: span 12;
 }
