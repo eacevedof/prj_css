@@ -32,7 +32,8 @@ body{
     grid-template-rows: repeat(2, minmax(5rem, auto));
 
     /*
-    nuevas filas 5rem - infinito (56:22)
+    nuevas filas 5rem - infinito (56:22), no se ha conseguido hacer crecer automaticamente hasta el infinito
+    la fila
     */
-    grid-auto-rows: minmax(5rem, auto);
+    grid-auto-rows: minmax(5rem, 1fr);
 }
