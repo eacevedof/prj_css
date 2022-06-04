@@ -169,7 +169,10 @@ pos 13 y 18 incluidos
 ```
 ### leccion 3
 - [codepen app 2 - layout real](https://codepen.io/diana_aceves/pen/QqMRmX/275d5969a7ac458d4b7cf27d516962db)
-- [codepen 2]()
+- [codepen - lineas nombradas](https://codepen.io/diana_aceves/pen/YrVxBa/932cd1f470414a8470f75ed1f7f2da97)
+- [codepen 3]()
+- [codepen 3]()
+- [codepen 3]()
 - [codepen 3]()
 ```css
 
