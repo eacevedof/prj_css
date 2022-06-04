@@ -38,6 +38,8 @@ body{
 
     //grid-template-columns: repeat(auto-fill, 20% minmax(10rem, 1fr));
 
+    //esto no tiraria: repeat(auto-fill, 20% 1fr) ya que el fr debe estar en un minmax
+
     /*
     columnas: 8rem-x, 8rem-x, 15rem-x * n hasta que ocupe el resto de espacio
     */
