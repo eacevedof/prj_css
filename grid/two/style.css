@@ -33,7 +33,7 @@ body{
 
     /*
     nuevas filas 5rem - infinito (56:22), no se ha conseguido hacer crecer automaticamente hasta el infinito
-    la fila
+    la fila. Lo contará en el sig viedeo
     */
     grid-auto-rows: minmax(5rem, 1fr);
 }
