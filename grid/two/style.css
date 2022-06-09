@@ -31,3 +31,8 @@ body{
     color: white;
 }
 /*****************************/
+.grid {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: repeat(2, 4rem) 1fr repeat(2, 4rem);
+}
