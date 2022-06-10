@@ -21,12 +21,12 @@ body{
 /*****************************/
 /*
 alineacion en el eje Y:
-    align-self
-    align- items
+    alignY-self
+    alignY-items
 
 alineacion en X:
-    justify-self
-    justify-items
+    justifyX-self
+    justifyX-items
 */
 .grid {
     display: grid;
@@ -61,6 +61,7 @@ alineacion en X:
 }
 
 .item1 {
+    border:1px solid purple;
     justify-self: start;
     align-self: center;
 }
