@@ -287,3 +287,21 @@ a partir de 850
 }
 ```
 - [Magic Lines - Areas - Lineas nombradas](https://codepen.io/diana_aceves/pen/RLZEBK/9bd610d26216beeb915de90af032f604?editors=0100)
+```css
+/*
+uso nombres de lineas auto-generadas area-start y area-end
+permite la superposición
+Tambien se puede superponer en media celda, esto con
+sidebar main
+sidebar main
+esto me crea dos celdas
+y en overlap, uso el span
+grid-row: header-start/3
+
+*/
+.overlap-item {
+    background-color: rgba(0,255,0,.5);
+    grid-row: header-end/footer-start;
+    grid-column: sidebar-start/sidebar-end;
+}
+```
