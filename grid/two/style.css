@@ -23,5 +23,30 @@ body{
     min-height: 90vh;
     grid-gap: 1rem;
     grid-template-columns: repeat(3, 10rem);
-    grid-template-rows: repeat(2, 9rem);
+    grid-template-rows: repeat(3, 9rem);
+
+    grid-template-areas:
+        "a b b"
+        "a c c"
+        "d d d"
+    ;
+}
+
+.item1 {
+    grid-area: a;
+}
+.item2 {
+    grid-area: b;
+}
+.item3 {
+    grid-area: c;
+}
+.item4 {
+    grid-area: d;
+}
+
+.grid {
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-around;
 }
