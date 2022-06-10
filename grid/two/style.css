@@ -18,3 +18,10 @@ body{
     border: 2px solid white;
 }
 /*****************************/
+.grid {
+    display: grid;
+    min-height: 90vh;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 10rem);
+    grid-template-rows: repeat(2, 9rem);
+}
