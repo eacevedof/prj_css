@@ -24,3 +24,7 @@ body{
         [main-end] 5rem
     ;
 }
+.item9 {
+    background-color: salmon;
+    grid-area: main;
+}
