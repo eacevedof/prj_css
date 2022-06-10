@@ -46,9 +46,25 @@ body{
 }
 
 .grid {
+    /*
+    valor por defecto
+    */
+    justify-content: start;
     justify-content: end;
     justify-content: center;
     justify-content: space-around;
     justify-content: space-between;
+    /*
+    todavia no a nivel de prod (comprobarlo)
+    */
     justify-content: space-evenly;
+
+    align-content: end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-between;
+    /*
+    todavia no a nivel de prod (comprobarlo)
+    */
+    align-content: space-evenly;
 }
