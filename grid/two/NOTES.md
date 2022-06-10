@@ -331,5 +331,15 @@ y despues con estas puedo instanciar el area xxx
 ```
 
 - [Alineacion items](https://codepen.io/diana_aceves/pen/oGGwGP/47990d975d15d2ec00648c0ea5e08912)
+- Un diseño irregular relaizado solo con posicionamientos x e y tanto de align como justify
 ```css
+/*
+alineacion en el eje Y:
+    alignY-self
+    alignY-items
+
+alineacion en X:
+    justifyX-self
+    justifyX-items
+*/
 ```
