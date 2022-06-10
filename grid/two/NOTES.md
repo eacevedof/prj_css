@@ -270,8 +270,8 @@ externo flotante
     grid-column: col 2;
   }
   ```
-  - [areas nombradas](https://codepen.io/diana_aceves/pen/PJKGNp/c4e842619b3e9445a1aa6d4c7da14a8c)
-  - [Holy Grail Layout](https://codepen.io/diana_aceves/pen/d16c61719a681ceeb9d58ecf65271396?editors=0110)
+- [areas nombradas](https://codepen.io/diana_aceves/pen/PJKGNp/c4e842619b3e9445a1aa6d4c7da14a8c)
+- [Holy Grail Layout](https://codepen.io/diana_aceves/pen/d16c61719a681ceeb9d58ecf65271396?editors=0110)
 ```css
 /*
 a partir de 650px
@@ -285,4 +285,5 @@ a partir de 850
 @media screen and (min-width: 850px) {
   //cambia config de filas,cols y areas
 }
-```  
+```
+- [Magic Lines - Areas - Lineas nombradas](https://codepen.io/diana_aceves/pen/RLZEBK/9bd610d26216beeb915de90af032f604?editors=0100)

@@ -1,86 +1,39 @@
 body{
+    background-color: rgba(0,0,0,.1);
     font: 1.1rem sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+.grid{
+    padding: 1rem;
 }
 .grid-item{
     padding: 1.5rem;
-}
-.title{
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: .1em;
-}
-.nav{
-    background-color: #1B89E2;
-    color: white;
-}
-.header{
-    background-color:#EC9B1B;
-}
-.footer{
-    background-color: #333;
-    color: #DDD;
-}
-.main .title{
-    margin-bottom: 1rem;
-}
-.main{
-    background-color: #F7CB78;
-}
-.sidebar{
-    background-color: #4A9ECF;
-    color: white;
+    border-radius: .5rem;
+    background-color: #E92763;
 }
 /*****************************/
 .grid {
     display: grid;
     min-height: 100vh;
-    grid-template-rows: repeat(2, 4rem) 1fr repeat(2, 4rem);
-}
-
-/*
-a partir de 650px
-*/
-@media screen and (min-width: 650px) {
-    .grid {
-        border:1px solid red;
-        grid-template-rows: 4rem 1fr repeat(2, 4rem);
-        grid-template-columns: minmax(200px, 15%) 1fr;
-        grid-template-areas:
+    grid-gap: .5rem;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 4rem 1fr 4rem;
+    grid-template-areas:
         "header header"
-        "nav main"
-        "sidebar sidebar"
+        "sidebar main"
         "footer footer"
-            ;
-    }
-    .header {
-        grid-area: header;
-    }
-    .nav {
-        grid-area: nav;
-    }
-    .main {
-        grid-area: main;
-    }
-    .sidebar {
-        grid-area: sidebar;
-    }
-    .footer {
-        grid-area: footer;
-    }
-}
-
-/*
-a partir de 850
-*/
-@media screen and (min-width: 850px) {
-    .grid {
-        border:1px solid greenyellow;
-        grid-template-rows: 4rem 1fr 4rem;
-        grid-template-columns: minmax(200px, 15%) 1fr minmax(200px, 15%);
-        grid-template-areas:
-        "header header header"
-        "nav main sidebar"
-        "footer footer footer"
     ;
-    }
+}
+.header {
+    grid-area: header;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.main {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
 }
