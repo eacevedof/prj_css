@@ -48,14 +48,37 @@ alineacion en X:
 }
 
 .grid {
-    /*por defecto stretch a lo ancho de todo x columna*/
-    justify-items: stretch;
     justify-items: start;
     justify-items: end; /*en el x end*/
     justify-items: center; /*en x centro de la columna*/
+    /*por defecto stretch a lo ancho de todo x columna*/
+    justify-items: stretch;
 
-    align-items: stretch;
     align-items: start;
     align-items: end; /*en el y end*/
     align-items: center; /*en y centro de la fila*/
+    align-items: stretch;
+}
+
+.item1 {
+    justify-self: start;
+    align-self: center;
+}
+
+.item2 {
+    justify-self: center;
+    align-self: end;
+}
+
+.item3 {
+    justify-self: end;
+    align-self: end;
+}
+.item5 {
+    justify-self: start;
+    align-self: center;
+}
+.item6 {
+    justify-self: end;
+    align-self: center;
 }
