@@ -34,3 +34,28 @@ alineacion en X:
     grid-template-columns: repeat(4, minmax(5rem, 1fr));
     grid-template-rows: repeat(4, minmax(10rem, auto));
 }
+.item1,
+.item2 {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.item3 {
+    grid-row: 3/span 2;
+}
+.item4 {
+    grid-column: span 2;
+    grid-row: 3/span 2;
+}
+
+.grid {
+    /*por defecto stretch a lo ancho de todo x columna*/
+    justify-items: stretch;
+    justify-items: start;
+    justify-items: end; /*en el x end*/
+    justify-items: center; /*en x centro de la columna*/
+
+    align-items: stretch;
+    align-items: start;
+    align-items: end; /*en el y end*/
+    align-items: center; /*en y centro de la fila*/
+}
