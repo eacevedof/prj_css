@@ -9,47 +9,6 @@ body{
 }
 .grid-item{
     padding: 1.5rem;
-    border-radius: .5rem;
     background-color: #E92763;
 }
 /*****************************/
-.grid {
-    display: grid;
-    min-height: 100vh;
-    grid-gap: .5rem;
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: 4rem 1fr 4rem;
-    grid-template-areas:
-        "header header"
-        "sidebar main"
-        "footer footer"
-    ;
-}
-.header {
-    grid-area: header;
-}
-.sidebar {
-    grid-area: sidebar;
-}
-.main {
-    grid-area: main;
-}
-.footer {
-    grid-area: footer;
-}
-/*
-uso nombres de lineas auto-generadas area-start y area-end
-permite la superposición
-Tambien se puede superponer en media celda, esto con
-sidebar main
-sidebar main
-esto me crea dos celdas
-y en overlap, uso el span
-grid-row: header-start/3
-
-*/
-.overlap-item {
-    background-color: rgba(0,255,0,.5);
-    grid-row: header-end/footer-start;
-    grid-column: sidebar-start/sidebar-end;
-}

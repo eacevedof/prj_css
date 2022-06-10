@@ -305,3 +305,4 @@ grid-row: header-start/3
     grid-column: sidebar-start/sidebar-end;
 }
 ```
+- [magic lines - lineas nombradas - areas](https://codepen.io/diana_aceves/pen/pWrmXg/d5686824a6b5af5a5f9592519cfe1076?editors=0100)
