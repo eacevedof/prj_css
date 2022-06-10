@@ -343,7 +343,30 @@ alineacion en X:
     justifyX-items
 */
 ```
-- [Alineacion tracks de3ntro del contenedor](https://codepen.io/diana_aceves/pen/BwwdGw/2c0cec9343124a9fc3eef11b1d5e9026)
+- [Alineacion tracks dentro del contenedor](https://codepen.io/diana_aceves/pen/BwwdGw/2c0cec9343124a9fc3eef11b1d5e9026)
+- Esto crea espacios de manera uniforme
 ```css
+.grid {
+  /*
+  valor por defecto
+  */
+  justify-content: start;
+  justify-content: end;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+  /*
+  todavia no a nivel de prod (comprobarlo)
+  */
+  justify-content: space-evenly;
 
+  align-content: end;
+  align-content: center;
+  align-content: space-around;
+  align-content: space-between;
+  /*
+  todavia no a nivel de prod (comprobarlo)
+  */
+  align-content: space-evenly;
+}
 ```
