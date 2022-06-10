@@ -37,3 +37,12 @@ body{
 .footer {
     grid-area: footer;
 }
+/*
+uso nombres de lineas auto-generadas area-start y area-end
+permite la superposición
+*/
+.overlap-item {
+    background-color: rgba(0,255,0,.5);
+    grid-row: header-end/footer-start;
+    grid-column: sidebar-start/sidebar-end;
+}
