@@ -12,3 +12,15 @@ body{
     background-color: #E92763;
 }
 /*****************************/
+.grid {
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: repeat(2, 5rem)
+        [main-start] repeat(2, 5rem)
+        [main-end] repeat(2, 5rem)
+    ;
+    grid-template-rows: 5rem
+        [main-start] repeat(2, 5rem)
+        [main-end] 5rem
+    ;
+}
