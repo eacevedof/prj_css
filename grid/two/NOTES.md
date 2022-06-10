@@ -343,3 +343,7 @@ alineacion en X:
     justifyX-items
 */
 ```
+- [Alineacion tracks de3ntro del contenedor](https://codepen.io/diana_aceves/pen/BwwdGw/2c0cec9343124a9fc3eef11b1d5e9026)
+```css
+
+```
