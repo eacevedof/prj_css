@@ -37,8 +37,12 @@ body{
     grid-template-rows: repeat(2, 4rem) 1fr repeat(2, 4rem);
 }
 
+/*
+a partir de 650px
+*/
 @media screen and (min-width: 650px) {
     .grid {
+        border:1px solid red;
         grid-template-rows: 4rem 1fr repeat(2, 4rem);
         grid-template-columns: minmax(200px, 15%) 1fr;
         grid-template-areas:
@@ -65,8 +69,13 @@ body{
     }
 }
 
+/*
+a partir de 850
+*/
 @media screen and (min-width: 850px) {
     .grid {
+        min-height: 100vh;
+        border:1px solid greenyellow;
         grid-template-rows: 4rem 1fr repeat(2, 4rem);
         grid-template-columns: minmax(200px, 15%) 1fr minmax(200px, 15%);
         grid-template-areas:
