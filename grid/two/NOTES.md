@@ -306,3 +306,26 @@ grid-row: header-start/3
 }
 ```
 - [magic lines - lineas nombradas - areas](https://codepen.io/diana_aceves/pen/pWrmXg/d5686824a6b5af5a5f9592519cfe1076?editors=0100)
+```css
+/*
+así como se pueden definir areas y estas auto-generan lineas start/end
+se puede hacer a la invers, defino lineas xxx-start, xxx-end
+y despues con estas puedo instanciar el area xxx
+*/
+.grid {
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: repeat(2, 5rem)
+        [main-start] repeat(2, 5rem)
+        [main-end] repeat(2, 5rem)
+    ;
+    grid-template-rows: 5rem
+        [main-start] repeat(2, 5rem)
+        [main-end] 5rem
+    ;
+}
+.item9 {
+    background-color: salmon;
+    grid-area: main;
+}
+```
