@@ -1,30 +1,21 @@
 body{
-    background-color: rgba(0,0,0,.1);
-    font: 1.1rem sans-serif;
-    text-transform: uppercase;
+    font: 2rem sans-serif;
+    background-color: rgba(0,0,0,.2);
     color: white;
+}
+.grid-item{
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.grid-item:nth-child(2n){
+    background-color: #1A83B5;
+}
+.grid-item:nth-child(2n+1){
+    background-color: #37A8E0;
 }
 .grid{
     padding: 1rem;
-}
-.grid-item{
-    padding: 1.5rem;
-    background-color: #E92763;
+    margin: 1rem;
+    border: 2px solid white;
 }
 /*****************************/
-.grid {
-    display: grid;
-    grid-gap: .5rem;
-    grid-template-columns: repeat(2, 5rem)
-        [main-start] repeat(2, 5rem)
-        [main-end] repeat(2, 5rem)
-    ;
-    grid-template-rows: 5rem
-        [main-start] repeat(2, 5rem)
-        [main-end] 5rem
-    ;
-}
-.item9 {
-    background-color: salmon;
-    grid-area: main;
-}

@@ -329,3 +329,6 @@ y despues con estas puedo instanciar el area xxx
     grid-area: main;
 }
 ```
+- [Alineacion items](https://codepen.io/diana_aceves/pen/oGGwGP/47990d975d15d2ec00648c0ea5e08912)
+```css
+```
