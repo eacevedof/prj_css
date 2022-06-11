@@ -415,4 +415,7 @@ alineacion en X:
 }
 ```
 - [EJ.10.3 - ADIVINANDO QUÉ PASA](https://codepen.io/diana_aceves/pen/pWWpgd/c9c87f925d16d975632b21182811dd95)
+```css
+
+```
 - [INTRODUCCIÓN AUTO-PLACEMENT + GRID-ROW/COLUMN](https://codepen.io/diana_aceves/pen/xXXpzv/c0e2dcd0a72cf358331ec432f30b2da1?editors=0100)

@@ -1,49 +1,16 @@
 body{
-    font: 1.5rem sans-serif;
-    background-color: rgba(0,0,0,.1);
+    font-family: sans-serif;
+    font-size: 1.5rem;
     color: white;
 }
 .grid-item{
-    padding: 1.5rem;
-}
-.grid-item:nth-child(2n){
-    background-color: #42a5f5;
-}
-.grid-item:nth-child(2n+1){
-    background-color: #ff80ab;
-}
-.grid{
     padding: 1rem;
 }
-/*****************************/
-.grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: .3rem;
-    grid-auto-rows: 5rem;
-    grid-auto-flow: dense;
+.grid-item:nth-child(2n){
+    background-color: #1A83B5;
 }
-.item2 {
-    grid-column: span 3;
-    grid-row: span 2;
+.grid-item:nth-child(2n+1){
+    background-color: #37A8E0;
 }
+/***********************/
 
-.item5 {
-    /*
-    como las columnas son fijas deja un hueco en su espacio
-    y se mueve a la nueva fila y a partir de ahi coge 2 filas.
-    Si por algún motivo el numero de span supera las columnas configuradas entonces si crea una nueva
-    columna
-    */
-    grid-column: span 2;
-    grid-row: span 2;
-}
-.item5 {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-.item7 {
-    grid-column: span 3;
-    grid-row: span 2;
-}
