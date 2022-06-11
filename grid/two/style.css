@@ -21,6 +21,9 @@ body{
     display: grid;
     /*
     define la dirección en la que el grid va a crecer si necesita colocar items por auto-placement
+    si pongo auto-flow column la idea es que yo controle el numeor de filas
     */
+    justify-content: start;
     grid-auto-flow: column;
+    grid-template-rows: repeat(3, 8rem);
 }
