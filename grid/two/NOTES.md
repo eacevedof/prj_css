@@ -406,6 +406,9 @@ alineacion en X:
   video 19:53 puede que sea un bug de la especificacion. Al incluir este estilo, el item5 pierde
   su rowspan 2
   como no se puede expandir en esa fila hace un salto
+  
+  En 26:46 se corrige, no era un bug, es que no se habia especificado una altura para las filas (grid-auto-rows: 5rem;).
+  Esto implicaba que si se generaban filas para los span row estas tuvieran un alto minimo.
   */
   grid-column: span 3;
   grid-row: span 3;
