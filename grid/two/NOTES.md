@@ -462,4 +462,19 @@ alineacion en X:
   */
   grid-row: span 2;
 }
+
+//otro ejemplo
+.b {
+//grid-row: span 2;
+
+  /*
+  con esta linea, forzamos que b se mueva a la col 1 y ocupe 3 teniendo
+  mayor prioridad en el layout que A y haciendo que A se desplace hacia abajo
+  */
+  grid-row: 1/3;
+}
+
+.a {
+  grid-column: 1/3;
+}
 ```
