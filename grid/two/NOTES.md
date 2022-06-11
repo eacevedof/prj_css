@@ -478,3 +478,4 @@ alineacion en X:
   grid-column: 1/3;
 }
 ```
+[EJ.APLICACIÓN. 4 - TWO FULL COLUMNS](https://codepen.io/diana_aceves/pen/ZXaLGQ/4a474ea4cdc75fbfac33d340c950c2f7)
