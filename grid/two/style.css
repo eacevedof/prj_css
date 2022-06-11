@@ -28,10 +28,15 @@ body{
     grid-column: span 2;
 }
 .item8 {
-    /*como la coord superior ya esta ocudapa por 7 entonces se coloca justo debajo*/
+    /*como no puede buscar esta coord hacia atras la sig posicion libre es justo debajo del item7*/
     grid-column: 2 / span 2;
 }
 .item11 {
-    //grid-row: 4;
-    //grid-column: 1 /span 2;
+    /*
+    como le forzamos la fila y la colum se posiciona, 8 que tambien estaba ahi, como ya no puede ocupera la col 2
+    se mueve a la siguiente fila, el nueve no puede buscar espacios antes... solo despues del 8 luego el flujo restante
+    se mantiene
+    */
+    grid-row: 4;
+    grid-column: 1 /span 2;
 }
