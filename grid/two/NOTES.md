@@ -400,6 +400,16 @@ alineacion en X:
     grid-column: span 2;
     grid-row: span 2;
 }
+
+.item7 {
+  /*
+  video 19:53 puede que sea un bug de la especificacion. Al incluir este estilo, el item5 pierde
+  su rowspan 2
+  como no se puede expandir en esa fila hace un salto
+  */
+  grid-column: span 3;
+  grid-row: span 3;
+}
 ```
 - [EJ.10.3 - ADIVINANDO QUÉ PASA](https://codepen.io/diana_aceves/pen/pWWpgd/c9c87f925d16d975632b21182811dd95)
 - [INTRODUCCIÓN AUTO-PLACEMENT + GRID-ROW/COLUMN](https://codepen.io/diana_aceves/pen/xXXpzv/c0e2dcd0a72cf358331ec432f30b2da1?editors=0100)
