@@ -389,6 +389,17 @@ alineacion en X:
 
 ### [leccion 5](https://vimeo.com/xxx)
 - [EJ.10.2 - GRID-AUTO-FLOW: DENSE](https://codepen.io/diana_aceves/pen/JrrOea/38e47edb5e3fd08cb5f753e6e8df89f2)
-
+```css
+.item5 {
+    /*
+    como las columnas son fijas deja un hueco en su espacio
+    y se mueve a la nueva fila y a partir de ahi coge 2 filas.
+    Si por algún motivo el numero de span supera las columnas configuradas entonces si crea una nueva
+    columna
+    */
+    grid-column: span 2;
+    grid-row: span 2;
+}
+```
 - [EJ.10.3 - ADIVINANDO QUÉ PASA](https://codepen.io/diana_aceves/pen/pWWpgd/c9c87f925d16d975632b21182811dd95)
 - [INTRODUCCIÓN AUTO-PLACEMENT + GRID-ROW/COLUMN](https://codepen.io/diana_aceves/pen/xXXpzv/c0e2dcd0a72cf358331ec432f30b2da1?editors=0100)
