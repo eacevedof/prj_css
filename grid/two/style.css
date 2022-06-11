@@ -29,7 +29,9 @@ body{
 .item5 {
     /*
     como las columnas son fijas deja un hueco en su espacio
-    y se mueve a la nueva fila y a partir de ahi coge 2 filas
+    y se mueve a la nueva fila y a partir de ahi coge 2 filas.
+    Si por algún motivo el numero de span supera las columnas configuradas entonces si crea una nueva
+    columna
     */
     grid-column: span 2;
     grid-row: span 2;
