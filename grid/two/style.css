@@ -20,8 +20,8 @@ body{
     grid-gap: .2rem;
 }
 .item7 {
-    //grid-row: span 2;
-    //grid-column: span 2;
+    grid-row: span 2;
+    grid-column: span 2;
 }
 .item9 {
     //grid-row: span 2;
