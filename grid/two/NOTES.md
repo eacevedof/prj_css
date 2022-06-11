@@ -386,6 +386,9 @@ alineacion en X:
     grid-template-rows: repeat(3, 8rem);
 }
 ```
+
+### [leccion 5](https://vimeo.com/xxx)
 - [EJ.10.2 - GRID-AUTO-FLOW: DENSE](https://codepen.io/diana_aceves/pen/JrrOea/38e47edb5e3fd08cb5f753e6e8df89f2)
+
 - [EJ.10.3 - ADIVINANDO QUÉ PASA](https://codepen.io/diana_aceves/pen/pWWpgd/c9c87f925d16d975632b21182811dd95)
 - [INTRODUCCIÓN AUTO-PLACEMENT + GRID-ROW/COLUMN](https://codepen.io/diana_aceves/pen/xXXpzv/c0e2dcd0a72cf358331ec432f30b2da1?editors=0100)
