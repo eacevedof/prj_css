@@ -1,10 +1,10 @@
 body{
-    font-family: sans-serif;
-    font-size: 1.5rem;
+    font: bold 3rem/6rem sans-serif;
     color: white;
 }
 .grid-item{
-    padding: 1rem;
+    padding: 0 1.5rem;
+    border-radius: 1rem;
 }
 .grid-item:nth-child(2n){
     background-color: #1A83B5;
@@ -12,32 +12,5 @@ body{
 .grid-item:nth-child(2n+1){
     background-color: #37A8E0;
 }
-/***********************/
-.grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-auto-rows: 5rem;
-    grid-gap: .2rem;
-    grid-auto-flow: dense;
-}
-.item7 {
-    grid-row: span 2;
-    grid-column: span 2;
-}
-.item9 {
-    grid-row: span 2;
-    grid-column: span 2;
-}
-.item8 {
-    /*como no puede buscar esta coord hacia atras la sig posicion libre es justo debajo del item7*/
-    grid-column: 2 / span 2;
-}
-.item11 {
-    /*
-    como le forzamos la fila y la colum se posiciona, 8 que tambien estaba ahi, como ya no puede ocupera la col 2
-    se mueve a la siguiente fila, el nueve no puede buscar espacios antes... solo despues del 8 luego el flujo restante
-    se mantiene
-    */
-    grid-row: 4;
-    grid-column: 1 /span 2;
-}
+
+/*****************************/
