@@ -28,7 +28,8 @@ body{
     grid-column: span 2;
 }
 .item8 {
-    //grid-column: 2 / span 2;
+    /*como la coord superior ya esta ocudapa por 7 entonces se coloca justo debajo*/
+    grid-column: 2 / span 2;
 }
 .item11 {
     //grid-row: 4;
