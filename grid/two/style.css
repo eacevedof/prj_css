@@ -21,7 +21,7 @@ body{
     grid-template-columns: repeat(5, 1fr);
     grid-gap: .3rem;
     grid-auto-rows: 5rem;
-    grid-auto-flow: dense;
+    //grid-auto-flow: dense;
 }
 .item2 {
     grid-column: span 3;
@@ -38,8 +38,12 @@ body{
     grid-column: span 2;
     grid-row: span 2;
 }
+.item5 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
 
-.item10 {
+.item7 {
     grid-column: span 3;
     grid-row: span 2;
 }
