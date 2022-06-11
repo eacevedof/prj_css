@@ -372,6 +372,20 @@ alineacion en X:
 }
 ```
 - [EJ.10.1 - GRID-AUTO-FLOW: COLUMN](https://codepen.io/diana_aceves/pen/WZZXGb/7df12168a2abbaf64f629459176c1f23?editors=0100)
+```css
+.grid {
+    display: grid;
+    /*
+    define la dirección en la que el grid va a crecer si necesita colocar items por auto-placement
+    si pongo auto-flow column la idea es que yo controle el número de filas.
+    En el ejemplo son 3 filas de 8 rem.
+    A partir de este momento todos los items extra que agreguemos en el html iran creando columnas nuevas,
+    es decir nuestro leyout crecera horizontalmnte
+    */
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, 8rem);
+}
+```
 - [EJ.10.2 - GRID-AUTO-FLOW: DENSE](https://codepen.io/diana_aceves/pen/JrrOea/38e47edb5e3fd08cb5f753e6e8df89f2)
 - [EJ.10.3 - ADIVINANDO QUÉ PASA](https://codepen.io/diana_aceves/pen/pWWpgd/c9c87f925d16d975632b21182811dd95)
 - [INTRODUCCIÓN AUTO-PLACEMENT + GRID-ROW/COLUMN](https://codepen.io/diana_aceves/pen/xXXpzv/c0e2dcd0a72cf358331ec432f30b2da1?editors=0100)
