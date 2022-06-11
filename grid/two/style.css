@@ -19,6 +19,8 @@ body{
 /*****************************/
 .grid {
     display: grid;
-    justify-content: ;
+    /*
+    define la dirección en la que el grid va a crecer si necesita colocar items por auto-placement
+    */
     grid-auto-flow: column;
 }
