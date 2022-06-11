@@ -416,6 +416,18 @@ alineacion en X:
 ```
 - [EJ.10.3 - ADIVINANDO QUÉ PASA](https://codepen.io/diana_aceves/pen/pWWpgd/c9c87f925d16d975632b21182811dd95)
 ```css
-
+.item8 {
+    /*como no puede buscar esta coord hacia atras la sig posicion libre es justo debajo del item7*/
+    grid-column: 2 / span 2;
+}
+.item11 {
+    /*
+    como le forzamos la fila y la colum se posiciona, 8 que tambien estaba ahi, como ya no puede ocupera la col 2
+    se mueve a la siguiente fila, el nueve no puede buscar espacios antes... solo despues del 8 luego el flujo restante
+    se mantiene
+    */
+    grid-row: 4;
+    grid-column: 1 /span 2;
+}
 ```
 - [INTRODUCCIÓN AUTO-PLACEMENT + GRID-ROW/COLUMN](https://codepen.io/diana_aceves/pen/xXXpzv/c0e2dcd0a72cf358331ec432f30b2da1?editors=0100)
