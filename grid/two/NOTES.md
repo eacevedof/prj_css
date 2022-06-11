@@ -431,3 +431,20 @@ alineacion en X:
 }
 ```
 - [INTRODUCCIÓN AUTO-PLACEMENT + GRID-ROW/COLUMN](https://codepen.io/diana_aceves/pen/xXXpzv/c0e2dcd0a72cf358331ec432f30b2da1?editors=0100)
+```css
+.b {
+    grid-row-start: span 2;
+    grid-row-end: span 2;
+    grid-row: span 2;
+    grid-row: auto / span 2;
+    grid-row: span 2 / auto;
+    /*
+    esta forma es la más intuitiva pero no hace lo que debe, crea el span
+    pero mueve b a l primera columna.
+    Esto ocurre porque el eje principal no es auto. Es una cuestion del algoritmo de auto-placement
+    */
+    grid-row: 1/3;
+    //grid-column: 2;
+
+}
+```
