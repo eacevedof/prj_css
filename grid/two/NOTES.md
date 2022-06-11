@@ -447,4 +447,19 @@ alineacion en X:
     //grid-column: 2;
 
 }
+
+.a {
+  /*
+  el eje principal es row y no se ha tocado
+  */
+  grid-column: span 2;
+}
+
+.b {
+  /*
+  por mas que cambie el span no cambio su posicione en el eje principal.
+  Esta sigue siendo auto, por lo tanto no cambia su posición
+  */
+  grid-row: span 2;
+}
 ```
