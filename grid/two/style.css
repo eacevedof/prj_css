@@ -16,3 +16,12 @@ body{
     padding: 1rem;
 }
 /*****************************/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: .3rem;
+}
+.item2 {
+    //grid-column: span 3;
+    //grid-row: span 2;
+}
