@@ -25,3 +25,12 @@ body{
     grid-column: span 3;
     grid-row: span 2;
 }
+
+.item5 {
+    /*
+    como las columnas son fijas deja un hueco en su espacio
+    y se mueve a la nueva fila y a partir de ahi coge 2 filas
+    */
+    grid-column: span 2;
+    grid-row: span 2;
+}
