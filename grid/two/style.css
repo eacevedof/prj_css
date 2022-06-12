@@ -13,26 +13,25 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    &--left{
-        background-color: #4DAB6B;
-        color: white;
-    }
-    &--right{
-        background-color: white;
-    }
 }
-.article{
-    &__main{
-         width: 60%;
-         max-width: 350px;
-     }
-    &__title{
-         font-family: serif;
-         font-size: 2em;
-         margin-bottom: 0.5em;
-         line-height: 1.1;
-     }
-    &__content{
-         line-height: 1.3;
-     }
+.item--left {
+    background-color: #4DAB6B;
+    color: white;
+}
+.item--right {
+    background-color: white;
+}
+
+.article__main {
+    width: 60%;
+    max-width: 350px;
+}
+.article__content {
+    font-family: serif;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    line-height: 1.1;
+}
+.article__title {
+    line-height: 1.3;
 }
