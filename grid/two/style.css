@@ -2,36 +2,37 @@ body{
     background: #333;
     color: #333;
 }
-.container{
+
+.container {
     display: grid;
-    padding: 1rem;
-    height: 100vh;
-    grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
+    min-height: 100vh;
+    padding: 1rem;
+    grid-gap: 1rem;
 }
-.item{
+
+.item {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
+
 .item--left {
-    background-color: #4DAB6B;
     color: white;
+    background-color: green;
 }
+
 .item--right {
     background-color: white;
 }
-
 .article__main {
     width: 60%;
     max-width: 350px;
 }
-.article__content {
-    font-family: serif;
-    font-size: 2em;
-    margin-bottom: 0.5em;
-    line-height: 1.1;
-}
 .article__title {
+    font-family: Serif;
+    font-size: 2em;
+}
+.article__content {
     line-height: 1.3;
 }
