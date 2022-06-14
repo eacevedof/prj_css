@@ -479,3 +479,38 @@ alineacion en X:
 }
 ```
 [EJ.APLICACIÓN. 4 - TWO FULL COLUMNS](https://codepen.io/diana_aceves/pen/ZXaLGQ/4a474ea4cdc75fbfac33d340c950c2f7)
+```css
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100vh;
+    padding: 1rem;
+    grid-gap: 1rem;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item--left {
+    color: white;
+    background-color: green;
+}
+
+.item--right {
+    background-color: white;
+}
+.article__main {
+    width: 60%;
+    max-width: 350px;
+}
+.article__title {
+    font-family: Serif;
+    font-size: 2em;
+}
+.article__content {
+    line-height: 1.3;
+}
+```
