@@ -514,3 +514,7 @@ alineacion en X:
     line-height: 1.3;
 }
 ```
+#### [Lección 6 última]()
+- [EJ.APLICACIÓN. 5 - studiosouth.co.nz](https://codepen.io/diana_aceves/pen/pWdwQE/e59f03935ea7b5649eaf9a7a8616fffc)
+```css
+```
