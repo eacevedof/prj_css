@@ -51,7 +51,8 @@ section.portfolio todo el grid
 }
 
 .portfolio figure img {
-    height: 100%;
+    /*3rem por figcaption*/
+    height: calc(100% - 3rem);
     width: 100%;
     /*
     hace que se ajuste por altura o anchura pero
