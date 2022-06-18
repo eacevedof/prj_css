@@ -50,3 +50,17 @@ figcaption {
     */
     align-items: center;
 }
+
+figure {
+    height: calc(100% - 3rem);
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    /*
+    hace que se ajuste por altura o anchura pero
+    manteniendo su proporcion
+    */
+    object-fit: cover;
+}
