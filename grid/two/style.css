@@ -84,6 +84,9 @@ section.portfolio todo el grid
     width: 100%;
     height: 80px;
     background-color: #2D2D2D;
+    /*
+    1rem es el padding que le he dado al enlace
+    */
     padding: 0 5% 0 calc(5% - 1rem);
 }
 .header--main nav, ul {
@@ -94,10 +97,14 @@ el ul es un grid
 */
 .header--main ul{
     display: grid;
-    grid-template-columns: repeat(4, minmax(180px, 1fr));
     align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    list-style-type: none;
 }
 
 .header--main a {
+    /*para que tenga una zona activa mayor*/
     padding: 1rem;
+    color: white;
+    text-decoration: inherit;
 }
