@@ -22,7 +22,13 @@
 }
 
 .portfolio {
+    padding: 10rem 5%;
     display: grid;
-    grid-template-columns: repeat(3, minmax(0.5fr, 1fr));
-    grid-auto-rows: minmax(5rem, 1fr);
+    grid-column-gap: 1rem;
+    /*
+    no me respetaba el ancho pq no ponía una medida en px sino
+    en 0.5fr
+    */
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+    grid-auto-rows: 190px;
 }
