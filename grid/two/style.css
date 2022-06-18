@@ -1,4 +1,4 @@
-.container {
+body {
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     background-color: #2D2D2D;
@@ -21,8 +21,7 @@ section.portfolio todo el grid
     grid-row-gap: 40px;
 }
 
-.portfolio__item {
-    border: 1px solid red;
+.portfolio .portfolio__item {
     /*
     se vera dentro del espacio del <article>
     */
@@ -44,6 +43,10 @@ section.portfolio todo el grid
 }
 
 .portfolio figure {
+    /*
+    falta esto para que no se vea el "padding" al rededor de la imagen
+    */
+    margin:0;
     height: calc(100% - 3rem);
 }
 
