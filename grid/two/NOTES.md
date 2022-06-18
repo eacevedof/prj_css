@@ -528,23 +528,25 @@ body {
 section.portfolio todo el grid
 */
 .portfolio {
-    padding: 10rem 5%;
-    display: grid;
-    /*
-    no me respetaba el ancho pq no ponía una medida en px sino
-    en 0.5fr
-    */
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 190px;
-    grid-column-gap: 1rem;
-    grid-row-gap: 40px;
+  padding: 10rem 5%;
+  display: grid;
+  /*
+  no me respetaba el ancho pq no ponía una medida en px sino
+  en 0.5fr
+
+  con el auto-fit emulamos el responsive
+  */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-auto-rows: 190px;
+  grid-column-gap: 1rem;
+  grid-row-gap: 40px;
 }
 
 .portfolio .portfolio__item {
-    /*
-    se vera dentro del espacio del <article>
-    */
-    overflow: hidden;
+  /*
+  se vera dentro del espacio del <article>
+  */
+  overflow: hidden;
 }
 /*article
     figcaption
