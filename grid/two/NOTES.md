@@ -518,10 +518,10 @@ alineacion en X:
 - [EJ.APLICACIÓN. 5 - studiosouth.co.nz](https://codepen.io/diana_aceves/pen/pWdwQE/e59f03935ea7b5649eaf9a7a8616fffc)
 ```css
 body {
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
-    background-color: #2D2D2D;
-    color: #ACB4B4;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #2D2D2D;
+  color: #ACB4B4;
 }
 
 /*
@@ -553,71 +553,78 @@ section.portfolio todo el grid
     figure
 */
 .portfolio figcaption {
-    /*titulo Project - Edition*/
-    height: 3rem;
-    display: flex;
-    /*
-    alinea verticalmente el texto en
-    la caja fcaption
-    */
-    align-items: center;
+  /*titulo Project - Edition*/
+  height: 3rem;
+  display: flex;
+  /*
+  alinea verticalmente el texto en
+  la caja fcaption
+  */
+  align-items: center;
 }
 
 .portfolio figure {
-    /*
-    falta esto para que no se vea el "padding" al rededor de la imagen
-    */
-    margin:0;
-    height: calc(100% - 3rem);
+  /*
+  falta esto para que no se vea el "padding" al rededor de la imagen
+  */
+  margin:0;
+  height: calc(100% - 3rem);
 }
 
 .portfolio figure img {
-    /*3rem por figcaption*/
-    height: calc(100% - 3rem);
-    width: 100%;
-    /*
-    hace que se ajuste por altura o anchura pero
-    manteniendo su proporcion
-    */
-    object-fit: cover;
+  /*3rem por figcaption*/
+  height: calc(100% - 3rem);
+  width: 100%;
+  /*
+  hace que se ajuste por altura o anchura pero
+  manteniendo su proporcion
+  */
+  object-fit: cover;
 }
 
 .item1, .item6, .item8 {
-    grid-column: span 2;
-    grid-row: span 2;
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .item3, .item10 {
-    grid-row: span 2;
+  grid-row: span 2;
 }
 .item4 {
-    grid-column: 1;
-    grid-row: span 2;
+  grid-column: 1;
+  grid-row: span 2;
 }
 .item7 {
-    grid-column: span 2;
-    grid-row: span 2;
+  grid-column: span 2;
+  grid-row: span 2;
 }
 .header--main {
-    position: fixed;
-    width: 100%;
-    height: 80px;
-    background-color: #2D2D2D;
-    padding: 0 5% 0 calc(5% - 1rem);
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: #2D2D2D;
+  /*
+  1rem es el padding que le he dado al enlace
+  */
+  padding: 0 5% 0 calc(5% - 1rem);
 }
 .header--main nav, ul {
-    height: 100%;
+  height: 100%;
 }
 /*
 el ul es un grid
 */
 .header--main ul{
-    display: grid;
-    grid-template-columns: repeat(4, minmax(180px, 1fr));
-    align-items: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  list-style-type: none;
 }
 
 .header--main a {
-    padding: 1rem;
+  /*para que tenga una zona activa mayor*/
+  padding: 1rem;
+  color: white;
+  text-decoration: inherit;
 }
 ```
