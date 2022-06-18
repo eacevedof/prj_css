@@ -3,14 +3,19 @@
     color: #ACB4B4;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
 }
 
 .nav--main ul {
+    margin:0;
+    padding: 0;
     display: flex;
     list-style-type: none;
+    justify-content: space-around;
+
 }
 .nav--main ul li a{
     text-decoration: inherit;
     color: inherit;
-    cursor: auto;
+
 }
