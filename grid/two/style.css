@@ -41,7 +41,12 @@
 }
 
 figcaption {
+    /*titulo Project - Edition*/
     height: 3rem;
     display: flex;
+    /*
+    alinea verticalmente el texto en
+    la caja fcaption
+    */
     align-items: center;
 }
