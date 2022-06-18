@@ -517,4 +517,104 @@ alineacion en X:
 #### [Lección 6 última]()
 - [EJ.APLICACIÓN. 5 - studiosouth.co.nz](https://codepen.io/diana_aceves/pen/pWdwQE/e59f03935ea7b5649eaf9a7a8616fffc)
 ```css
+body {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2D2D2D;
+    color: #ACB4B4;
+}
+
+/*
+section.portfolio todo el grid
+*/
+.portfolio {
+    padding: 10rem 5%;
+    display: grid;
+    /*
+    no me respetaba el ancho pq no ponía una medida en px sino
+    en 0.5fr
+    */
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 190px;
+    grid-column-gap: 1rem;
+    grid-row-gap: 40px;
+}
+
+.portfolio .portfolio__item {
+    /*
+    se vera dentro del espacio del <article>
+    */
+    overflow: hidden;
+}
+/*article
+    figcaption
+    figure
+*/
+.portfolio figcaption {
+    /*titulo Project - Edition*/
+    height: 3rem;
+    display: flex;
+    /*
+    alinea verticalmente el texto en
+    la caja fcaption
+    */
+    align-items: center;
+}
+
+.portfolio figure {
+    /*
+    falta esto para que no se vea el "padding" al rededor de la imagen
+    */
+    margin:0;
+    height: calc(100% - 3rem);
+}
+
+.portfolio figure img {
+    height: 100%;
+    width: 100%;
+    /*
+    hace que se ajuste por altura o anchura pero
+    manteniendo su proporcion
+    */
+    object-fit: cover;
+}
+
+.item1, .item6, .item8 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item3, .item10 {
+    grid-row: span 2;
+}
+.item4 {
+    grid-column: 1;
+    grid-row: span 2;
+}
+.item7 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.header--main {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #2D2D2D;
+    padding: 0 5% 0 calc(5% - 1rem);
+}
+.header--main nav, ul {
+    height: 100%;
+}
+/*
+el ul es un grid
+*/
+.header--main ul{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+    align-items: center;
+}
+
+.header--main a {
+    padding: 1rem;
+}
 ```
