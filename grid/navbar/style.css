@@ -68,19 +68,31 @@ nav label {
     .nav ul {
         display: grid;
         position: fixed;
-        top: 0;
+        top: 110px;
         height: 100vh;
-        background-color: deepskyblue;
+        background-color: white;
         width: 100%;
         left:-100%;
         font-size: 1rem;
+        transition: .5s all ease;
         text-align: center;
     }
 
+    .nav ul li a {
+        color: deepskyblue;
+    }
+
+    .nav ul li a:hover{
+        color: #ff3f99
+    }
+
     /*
-    ~ todos los elementos ul precediso por chk-hamburger:checked
+    ~ todos los elementos ul precedidos por chk-hamburger:checked
     */
     #chk-hamburguer:checked~ul{
         left: 0;
+    }
+    #chk-hamburguer:checked~.hamburger i:before {
+        content: "\f00d";
     }
 }
