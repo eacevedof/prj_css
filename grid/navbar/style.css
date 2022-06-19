@@ -92,6 +92,9 @@ nav label {
     #chk-hamburguer:checked~ul{
         left: 0;
     }
+    /*
+    cambia el contenido del icono hamburguer por una x si el check esta marcado
+    */
     #chk-hamburguer:checked~.hamburger i:before {
         content: "\f00d";
     }
