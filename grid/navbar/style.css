@@ -42,6 +42,7 @@ nav label {
     text-decoration: none;
     padding: 1.5rem;
     color: #fff;
+    transition: .5s all ease;
 }
 
 .nav ul li a:hover {
@@ -56,4 +57,30 @@ nav label {
 .hamburger {
     display: none;
     font-size: 1.8rem;
+}
+
+@media(max-width: 960px) {
+    .hamburger {
+        display: block;
+        z-index: 2;
+    }
+
+    .nav ul {
+        display: grid;
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        background-color: deepskyblue;
+        width: 100%;
+        left:-100%;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /*
+    ~ todos los elementos ul precediso por chk-hamburger:checked
+    */
+    #chk-hamburguer:checked~ul{
+        left: 0;
+    }
 }
