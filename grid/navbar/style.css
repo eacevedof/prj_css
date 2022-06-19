@@ -68,22 +68,27 @@ nav label {
     .nav ul {
         display: grid;
         position: fixed;
-        top: 110px;
+        top: 4rem;
         height: 100vh;
-        background-color: white;
+        background-color: black;
         width: 100%;
         left:-100%;
         font-size: 1rem;
         transition: .5s all ease;
         text-align: center;
+        /*
+        corrige que home se superponga con la cabecera
+        */
+        padding-top: 30px;
     }
 
     .nav ul li a {
-        color: deepskyblue;
+        color: white;
     }
 
     .nav ul li a:hover{
-        color: #ff3f99
+        color: deepskyblue;
+        background-color: black;
     }
 
     /*
