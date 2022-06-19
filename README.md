@@ -1,4 +1,5 @@
 # prj_css
+- `php -S localhost:8080 -t . `
 
 #### display
 - inline muestra los elementos uno al lado del otro siempre que se pueda
