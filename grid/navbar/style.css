@@ -49,3 +49,11 @@ nav label {
     background: #fff;
     cursor:pointer;
 }
+
+#chk-hamburguer {
+    display: none;
+}
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+}
