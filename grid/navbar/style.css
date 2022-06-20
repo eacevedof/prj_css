@@ -76,6 +76,7 @@ body {
         font-size: 1rem;
         transition: .5s all ease;
         text-align: center;
+        grid-auto-rows: 75px;
         /*
         corrige que home se superponga con la cabecera
         */
