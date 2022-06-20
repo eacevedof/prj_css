@@ -17,7 +17,6 @@ body {
     grid-template-columns: repeat(2, 6fr);
     width: 100%;
     height: 4rem;
-    margin:auto;
     align-items: center;
 }
 
@@ -26,6 +25,8 @@ body {
     color: #fff;
     text-align: center;
     font-weight: bold;
+    justify-self: start;
+    padding-left: 1rem;
 }
 
 .nav-grid ul {
@@ -57,6 +58,7 @@ body {
 .hamburger {
     display: none;
     font-size: 1.8rem;
+    padding-right: 1rem;
 }
 
 @media(max-width: 960px) {
