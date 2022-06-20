@@ -1,0 +1,109 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+* {
+    margin:0;
+    padding: 0;
+}
+.container {
+    overflow: hidden;
+}
+
+.nav-grid {
+    background: deepskyblue;
+    display: grid;
+    grid-template-columns: repeat(2, 6fr);
+    width: 100%;
+    height: 4rem;
+    align-items: center;
+}
+
+.nav-grid label {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    justify-self: start;
+    padding-left: 1rem;
+}
+
+.nav-grid ul {
+    display: flex;
+}
+
+.nav-grid ul li {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-grid ul li a {
+    text-decoration: none;
+    padding: 1.5rem;
+    color: #fff;
+    transition: .5s all ease;
+}
+
+.nav-grid ul li a:hover {
+    color: black;
+    background: #fff;
+    cursor:pointer;
+}
+
+#chk-hamburguer {
+    display: none;
+}
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    padding-right: 1rem;
+}
+
+@media(max-width: 960px) {
+    .hamburger {
+        display: block;
+        z-index: 2;
+    }
+
+    .nav-grid ul {
+        display: grid;
+        position: fixed;
+        top: 4rem;
+        height: 100vh;
+        background-color: black;
+        width: 100%;
+        left:-100%;
+        font-size: 1rem;
+        transition: .5s all ease;
+        text-align: center;
+        grid-auto-rows: 75px;
+        /*
+        corrige que home se superponga con la cabecera
+        */
+        padding-top: 30px;
+    }
+
+    .nav-grid ul li a {
+        color: white;
+    }
+
+    .nav-grid ul li a:hover{
+        color: deepskyblue;
+        background-color: black;
+    }
+
+    /*
+    ~ todos los elementos ul precedidos por chk-hamburger:checked
+    */
+    #chk-hamburguer:checked~ul{
+        left: 0;
+    }
+    /*
+    cambia el contenido del icono hamburguer por una x si el check esta marcado
+    */
+    #chk-hamburguer:checked~.hamburger i:before {
+        content: "\f00d";
+    }
+}
