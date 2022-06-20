@@ -11,7 +11,7 @@ body {
     overflow: hidden;
 }
 
-.nav {
+.nav-grid {
     background: deepskyblue;
     display: grid;
     grid-template-columns: repeat(2, 6fr);
@@ -21,31 +21,31 @@ body {
     align-items: center;
 }
 
-nav label {
+.nav-grid label {
     font-size: 2rem;
     color: #fff;
     text-align: center;
     font-weight: bold;
 }
 
-.nav ul {
+.nav-grid ul {
     display: flex;
 }
 
-.nav ul li {
+.nav-grid ul li {
     list-style: none;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.nav ul li a {
+.nav-grid ul li a {
     text-decoration: none;
     padding: 1.5rem;
     color: #fff;
     transition: .5s all ease;
 }
 
-.nav ul li a:hover {
+.nav-grid ul li a:hover {
     color: black;
     background: #fff;
     cursor:pointer;
@@ -65,7 +65,7 @@ nav label {
         z-index: 2;
     }
 
-    .nav ul {
+    .nav-grid ul {
         display: grid;
         position: fixed;
         top: 4rem;
@@ -82,11 +82,11 @@ nav label {
         padding-top: 30px;
     }
 
-    .nav ul li a {
+    .nav-grid ul li a {
         color: white;
     }
 
-    .nav ul li a:hover{
+    .nav-grid ul li a:hover{
         color: deepskyblue;
         background-color: black;
     }
