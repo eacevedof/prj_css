@@ -20,13 +20,10 @@ body {
     align-items: center;
 }
 
-.nav-grid label {
-    font-size: 2rem;
-    color: #fff;
-    text-align: center;
-    font-weight: bold;
-    justify-self: start;
+.nav-grid img {
     padding-left: 1rem;
+    height: 4rem;
+    width: auto;
 }
 
 .nav-grid ul {
@@ -59,6 +56,7 @@ body {
     display: none;
     font-size: 1.8rem;
     padding-right: 1rem;
+    color: white;
 }
 
 @media(max-width: 960px) {
