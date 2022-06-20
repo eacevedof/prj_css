@@ -18,14 +18,16 @@ body {
     width: 100%;
     height: 4rem;
     align-items: center;
+    padding: 0.31rem;
 }
 
 .nav-grid img {
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     height: 4rem;
     width: auto;
     /*340 px*/
-    max-width: 21.25rem;
+    max-width: 23rem;
+
 }
 
 .nav-grid ul {
@@ -67,10 +69,14 @@ body {
         z-index: 2;
     }
 
+    .nav-grid img {
+        max-width: 30rem;
+    }
+
     .nav-grid ul {
         display: grid;
         position: fixed;
-        top: 4rem;
+        top: 4.62rem;
         height: 100vh;
         background-color: black;
         width: 100%;
