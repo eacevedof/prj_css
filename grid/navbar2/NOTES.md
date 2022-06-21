@@ -3,3 +3,4 @@
 - [Figma - exportacion estilos landify](https://youtu.be/Mx8h0SRu-Iw?t=871)
 - [Figma - crear estilos propios](https://youtu.be/Mx8h0SRu-Iw?t=1274)
 - [Figma + css - Yonatan Alexander](https://www.youtube.com/watch?v=cFV2F_XWZ_o)
+    - [manypixels.co](https://www.manypixels.co/gallery)
