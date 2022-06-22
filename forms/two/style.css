@@ -15,9 +15,9 @@ body {
           rgba(255,255,255, 0.33) 0 100%
   ),
   url("/champions.png");
-  background-size:     cover;
-  background-repeat:   no-repeat;
-  background-position: center center;
+  background-size:     contain;
+  //background-repeat:   no-repeat;
+  //background-position: center center;
 }
 
 .main-flex {
