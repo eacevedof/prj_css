@@ -4,7 +4,7 @@
 }
 
 body {
-  font-size: 1rem;
+  font-size: 16px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -79,6 +79,9 @@ input[type=checkbox] ~ label {
 }
 
 @media screen and (max-width: 430px) {
+  body {
+    font-size: 15px;
+  }
   .form-grid .cell-flex {
     display: flex;
     flex-direction: column;
@@ -89,6 +92,6 @@ input[type=checkbox] ~ label {
     max-width: 300px;
     align-self: flex-start;
     padding-left: 1.1rem;
-    padding-bottom: 0.25rem;
+    padding-bottom: 0.2rem;
   }
 }
