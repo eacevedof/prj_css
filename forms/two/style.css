@@ -103,13 +103,10 @@ input[type=checkbox] ~ label {
     justify-content: space-around;
   }
 
-  input[type=checkbox] {
-    height: 1.2rem;
-  }
-
   input[type=checkbox] ~ label {
     padding: 0;
-    max-width: 22.5rem;
+    margin: 0;
+    max-width: 22.9rem;
   }
 
 }
