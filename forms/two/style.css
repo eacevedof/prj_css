@@ -31,12 +31,14 @@ body {
   min-width: 4.8rem;
   padding-top: 0.2rem;
   padding-right: 1rem;
+  font-weight: bold;
 }
 
 input, textarea, select {
   width: 20rem;
   padding: 0.5rem;
-  border-radius: 0.5rem
+  border-radius: 0.5rem;
+  border: 1px solid deepskyblue;
 }
 input[type=date] {
   width: 8rem;
@@ -56,6 +58,8 @@ input[type=checkbox] {
   margin-right: 0.5rem;
   margin-top: 0.5rem;
 }
+
 input[type=checkbox] ~ label {
   max-width: 25rem;
+  font-weight: normal;
 }
