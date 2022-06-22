@@ -5,4 +5,5 @@
 - [Figma + css - Jordan Alexander](https://www.youtube.com/watch?v=cFV2F_XWZ_o)
     - crear un frame (boton michi) 1200w x 600h
     - [manypixels.co](https://www.manypixels.co/gallery)
-    
+- [Figma - bienes raices](https://www.youtube.com/watch?v=8Zb1dFtQEXU&t=3661s)
+  - Plugins recomendados
