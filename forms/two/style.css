@@ -10,7 +10,6 @@ body {
 
 .main-flex {
   min-height: 92vh;
-  background-image: url("/futbol-vs-australia.png");
   background-image: linear-gradient(
           to right,
           rgba(255,255,255, 0.2) 0 100%
