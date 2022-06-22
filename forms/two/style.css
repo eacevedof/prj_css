@@ -96,9 +96,20 @@ input[type=checkbox] ~ label {
   }
 
   input, textarea, select {
-    width: 20rem;
     padding: 0.3rem;
     border-radius: 0.4rem;
-    border: 1px solid deepskyblue;
   }
+
+  .cell10, .cell11 {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .cell10 label {
+    border: 1px solid yellow;
+    max-width: 50px;
+    align-self: flex-start;
+  }
+
 }
