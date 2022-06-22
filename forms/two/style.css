@@ -51,9 +51,10 @@ textarea {
 }
 
 input[type=checkbox] {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
   margin-right: 0.5rem;
+  margin-top: 0.5rem;
 }
 input[type=checkbox] ~ label {
   max-width: 25rem;
