@@ -22,6 +22,10 @@ body {
 .form-grid {
   display: grid;
   row-gap: .7rem;
+  background-color:rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 10px 8px 45px -7px rgba(122,122,122,1);
 }
 
 .form-grid .cell-flex {
@@ -47,6 +51,7 @@ body {
   color: white;
   font-size: 1.2rem;
   border: 1px solid #1766DC;
+  border-radius: 0.5rem;
 }
 
 input, textarea, select {
