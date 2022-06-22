@@ -15,8 +15,9 @@ body {
           rgba(255,255,255, 0.33) 0 100%
   ),
   url("/futbol-fondo-verde.png");
-  background-size:     contain;
-  //background-repeat:   no-repeat;
+  background-size:     cover;
+  background-position: top center;
+  background-repeat:   no-repeat;
   //background-position: center center;
 }
 
