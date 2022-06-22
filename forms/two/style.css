@@ -20,7 +20,7 @@ body {
 
 .form-grid {
   display: grid;
-  row-gap: 1rem;
+  row-gap: .5rem;
 }
 
 .form-grid .cell-flex {
@@ -32,13 +32,27 @@ body {
   padding-top: 0.2rem;
   padding-right: 1rem;
 }
-input {
-  height: 1.5rem;
+
+input, textarea, select {
   width: 20rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem
+}
+input[type=date] {
+  width: 8rem;
+}
+
+select {
+  width: 21rem;
+}
+
+textarea {
+  height: 3rem;
 }
 
 input[type=checkbox] {
-  width: 1.2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   margin-right: 0.5rem;
 }
 input[type=checkbox] ~ label {
