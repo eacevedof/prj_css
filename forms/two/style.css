@@ -26,3 +26,11 @@ body {
 .form-grid .cell-flex {
   display: flex;
 }
+
+.cell-flex label {
+  padding-right: 0.5rem;
+  padding-top: 0.2rem;
+}
+input {
+  height: 1.5rem;
+}
