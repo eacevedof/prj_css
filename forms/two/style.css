@@ -28,10 +28,10 @@ body {
 }
 
 .cell-flex label {
-  min-width: 4.8rem;
-  padding-top: 0.7rem;
-  padding-right: 1rem;
+  display: flex;
+  min-width: 6rem;
   font-weight: bold;
+  align-items: center;
 }
 
 input, textarea, select {
