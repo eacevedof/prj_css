@@ -20,7 +20,7 @@ body {
 
 .form-grid {
   display: grid;
-  row-gap: .5rem;
+  row-gap: .7rem;
 }
 
 .form-grid .cell-flex {
@@ -76,4 +76,11 @@ input[type=checkbox] {
 input[type=checkbox] ~ label {
   max-width: 25rem;
   font-weight: normal;
+}
+
+@media screen and (max-width: 430px) {
+  .form-grid .cell-flex {
+    display: flex;
+    flex-direction: column;
+  }
 }
