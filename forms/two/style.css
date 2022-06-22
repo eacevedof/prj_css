@@ -3,8 +3,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.main {
-
+.main-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .form-grid {
