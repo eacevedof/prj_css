@@ -129,6 +129,17 @@ input[type=checkbox] ~ label {
   max-width: 25rem;
   font-weight: normal;
 }
+a {
+  text-decoration: none;
+  color: #3a4f71;
+  font-weight: bold;
+}
+a:link, a:visited {
+  color: black;
+}
+a:hover {
+  color: deepskyblue;
+}
 
 @media screen and (max-width: 430px) {
   body {
