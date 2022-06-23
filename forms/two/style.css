@@ -67,6 +67,8 @@ body {
   background-color: whitesmoke;
   color: red;
   padding: 3px;
+  max-width: 420px;
+  justify-self: center;
 }
 
 .form-grid .cell-flex {
