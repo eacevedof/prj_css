@@ -9,31 +9,37 @@ body {
 }
 
 .main-flex {
-  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   background-image: linear-gradient(
           to right,
-          rgba(255,255,255, 0.33) 0 100%
+          rgba(255,255,255, 0) 0 100%
   ),
   url("/futbol-fondo-verde.png");
   background-size:     cover;
   background-position: top center;
   background-repeat:   no-repeat;
-  //background-position: center center;
 }
 
-.main-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.main-flex h1 {
+  font-size: 2rem;
+  color: white;
+  padding: 0;
+  margin: 0;
 }
 
 .form-grid {
   display: grid;
   row-gap: .7rem;
-  background-color:rgba(255, 255, 255, 0.9);
+  background-color:rgba(255, 255, 255, 0.95);
   padding: 1rem;
   border-radius: 0.5rem;
+  border: 1px solid black;
   box-shadow: 10px 8px 45px -7px rgba(122,122,122,1);
+  margin: 1rem;
 }
 
 .form-grid .cell-flex {
@@ -97,9 +103,10 @@ input[type=checkbox] ~ label {
     font-size: 15px;
   }
   .form-grid {
-    padding: 0.25rem;
     row-gap: .4rem;
     background-color:rgba(255, 255, 255, 0.85);
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .form-grid .cell-flex {
     flex-direction: column;
