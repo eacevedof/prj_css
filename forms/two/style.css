@@ -78,7 +78,7 @@ body {
 
 .cell-flex label {
   display: flex;
-  min-width: 6rem;
+  min-width: 5.5rem;
   font-weight: bold;
   align-items: center;
 }
