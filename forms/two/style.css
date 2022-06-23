@@ -18,7 +18,7 @@ body {
           to right,
           rgba(255,255,255, 0) 0 100%
   ),
-  url("/champions.png");
+  url("./futbol-vs-australia.png");
   background-size:     cover;
   background-position: top center;
   background-repeat:   no-repeat;
