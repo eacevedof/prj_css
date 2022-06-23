@@ -104,6 +104,7 @@ input, textarea, select {
   border-radius: 0.5rem;
   border: 1.5px solid deepskyblue;
   font-size: 1rem;
+  background-color: white;
 }
 input[type=date] {
   width: 8rem;
