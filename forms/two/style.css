@@ -205,7 +205,7 @@ a:hover {
   }
 
 }
-
+/*desde aqui se deforma el nav*/
 @media screen and (max-width: 420px) {
   .nav-flex {
     width: auto;
