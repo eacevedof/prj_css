@@ -86,7 +86,7 @@ a:hover {
 .form-grid .message {
   border-radius: 4px;
   border: 1px solid tomato;
-  background-color: whitesmoke;
+  background-color: #fdf0f0;
   color: red;
   padding: 3px;
   justify-self: center;
@@ -173,7 +173,7 @@ a:hover {
     border: 3px solid greenyellow;
     row-gap: .4rem;
     background-color:rgba(255, 255, 255, 0.970);
-    margin-top: 0;
+    margin-top: 1rem;
     margin-bottom: 0;
   }
 
@@ -208,8 +208,21 @@ a:hover {
 }
 /*desde aqui se deforma el nav*/
 @media screen and (max-width: 420px) {
-
+  .main-flex {
+    width: 90%;
+  }
   .form-grid {
-    max-width: 400px;
+
+  }
+  .form-grid .message {
+    width: 10%;
+  }
+  .cell-flex input, textarea, select {
+    width: 50% !important;
+    border-radius: 0.4rem;
+  }
+  .cell-chk div[approle=field-error] ul {
+    padding-left: 0;
+    width: 30%;
   }
 }
