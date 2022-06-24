@@ -170,7 +170,7 @@ input[type=checkbox] {
   .form-grid {
     border: 3px solid greenyellow;
     row-gap: .4rem;
-    background-color:rgba(255, 255, 255, 0.85);
+    background-color:rgba(255, 255, 255, 0.970);
     margin-top: 0;
     margin-bottom: 0;
   }
