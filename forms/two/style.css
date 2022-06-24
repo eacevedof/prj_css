@@ -175,28 +175,26 @@ input[type=checkbox] {
     margin-bottom: 0;
   }
   .form-grid .cell-flex {
-    flex-direction: column;
-    align-items: center;
+
   }
 
   .cell-flex label {
-    max-width: 300px;
-    align-self: flex-start;
-    padding-bottom: 0.2rem;
+    width: 100%;
+    padding-bottom: 2px;
   }
 
   .cell-flex input, textarea, select {
-    width: 98%;
+    width: 100%;
     border-radius: 0.4rem;
   }
 
   .cell-flex div[approle="field-error"] ul {
+    width: 100%;
     padding-left: 1.0rem;
   }
   
   .cell-chk {
-    flex-direction: row !important;
-    justify-content: space-around;
+
   }
 
   .cell-flex input[type=checkbox] ~ label {
