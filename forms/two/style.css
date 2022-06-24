@@ -36,6 +36,7 @@ a:hover {
   background-position: top center;
   background-repeat:   no-repeat;
 }
+
 .nav-flex {
   display: flex;
   flex-direction: row;
@@ -50,7 +51,6 @@ a:hover {
   -webkit-box-shadow: 0px 14px 5px -10px rgba(0,0,0,0.36);
   box-shadow: 0px 14px 5px -10px rgba(0,0,0,0.36);
 }
-
 .nav-flex img {
   max-width: 115px;
   object-fit: cover;
@@ -78,7 +78,7 @@ a:hover {
   -webkit-box-shadow: 5px 3px 6px 0px rgba(0,0,0,0.38);
   box-shadow: 5px 3px 6px 0px rgba(0,0,0,0.38);
   margin: 1rem;
-  max-width: 430px;
+  max-width: 500px;
 }
 
 .form-grid .message {
@@ -87,7 +87,6 @@ a:hover {
   background-color: whitesmoke;
   color: red;
   padding: 3px;
-  max-width: 420px;
   justify-self: center;
 }
 
