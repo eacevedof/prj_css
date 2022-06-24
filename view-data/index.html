@@ -18,7 +18,9 @@
 </div>
 <script type="module">
 const $div = document.getElementById("div-result")
+document.addEventListener("DOMContentLoaded", reportWindowSize);
 window.addEventListener("resize", reportWindowSize)
+
 function reportWindowSize() {
   const tpl = `
   <ul>
