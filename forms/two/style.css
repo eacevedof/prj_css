@@ -154,8 +154,6 @@ a:hover {
 
 .cell-chk label {
   font-weight: normal;
-  display: flex;
-  justify-content: space-between;
 }
 
 .cell-chk input[type=checkbox] {
