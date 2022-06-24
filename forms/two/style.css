@@ -209,5 +209,6 @@ a:hover {
 @media screen and (max-width: 420px) {
   .cell-flex input, textarea, select {
     width: 100% !important;
+    border: 1px solid purple;
   }
 }
