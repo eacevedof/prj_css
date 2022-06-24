@@ -22,19 +22,31 @@
       <div class="cell1 cell-flex">
         <label for="email">Email</label>
         <input type="text" id="email" name="email" autofocus>
+        <div approle="field-error" class="">
+          <ul><li>Empty value is not allowed</li></ul>
+        </div>
       </div>
       <div class="cell2 cell-flex">
         <label for="first-name">First name</label>
         <input type="text" id="first-name" name="first-name">
+        <div approle="field-error" class="">
+          <ul><li>Empty value is not allowed</li></ul>
+        </div>
       </div>
 <!-- opcional -->
       <div class="cell3 cell-flex">
         <label for="phone">Phone</label>
         <input type="text" id="phone" name="phone">
+        <div approle="field-error" class="">
+          <ul><li>Empty value is not allowed</li></ul>
+        </div>
       </div>
       <div class="cell4 cell-flex">
         <label for="last-name">Last name</label>
         <input type="text" id="last-name" name="last-name">
+        <div approle="field-error" class="">
+          <ul><li>Empty value is not allowed</li></ul>
+        </div>
       </div>
       <div class="cell5 cell-flex">
         <label for="language">Language</label>
@@ -43,6 +55,9 @@
           <option value="en">English</option>
           <option value="es">Spanish</option>
         </select>
+        <div approle="field-error" class="">
+          <ul><li>Empty value is not allowed</li></ul>
+        </div>
       </div>
       <div class="cell6 cell-flex">
         <label for="country">Country</label>
@@ -51,6 +66,9 @@
           <option value="aua">Aruba</option>
           <option value="es">Spain</option>
         </select>
+        <div approle="field-error" class="">
+          <ul><li>Empty value is not allowed</li></ul>
+        </div>
       </div>
       <div class="cell7 cell-flex">
         <label for="birthdate">Birthdate</label>
@@ -63,21 +81,33 @@
           <option value="male">Male</option>
           <option value="female">Female</option>
         </select>
+        <div approle="field-error" class="">
+          <ul><li>Empty value is not allowed</li></ul>
+        </div>
       </div>
       <div class="cell9 cell-flex">
         <label for="address">Address</label>
         <textarea id="address" name="address"></textarea>
+        <div approle="field-error" class="">
+          <ul><li>Empty value is not allowed</li></ul>
+        </div>
       </div>
 <!--/opcional -->
       <div class="cell10 cell-flex">
         <input type="checkbox" id="chk-mailing" name="chk-mailing">
         <label for="chk-mailing">Me gustaria recibir mensajes de promociones y sorteos especiales en mi correo</label>
+        <div approle="field-error" class="">
+          <ul><li>Empty value is not allowed</li></ul>
+        </div>
       </div>
       <div class="cell11 cell-flex">
         <input type="checkbox" id="chk-terms" name="chk-terms">
         <label for="chk-terms">
           <span>He leido y acepto los terminos y condiciones <a href="#" target="_blank">generales y relacionadas</a> con esta promoción</span>
         </label>
+        <div approle="field-error" class="">
+          <ul><li>In order to finish your subscription you have to read and accept terms and conditions</li></ul>
+        </div>
       </div>
       <div class="cell12 cell-flex">
         <button type="submit">Subscribirme</button>
