@@ -66,7 +66,8 @@ a:hover {
 }
 
 .section {
-  /*height: 94vh;*/
+  margin:0;
+  padding: 0;
 }
 
 .form-grid {
@@ -207,11 +208,8 @@ a:hover {
 }
 /*desde aqui se deforma el nav*/
 @media screen and (max-width: 420px) {
-  .nav-flex {
-    width: auto;
-  }
+
   .form-grid {
-    margin:0;
-    width: auto;
+    max-width: 400px;
   }
 }
