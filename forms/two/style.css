@@ -209,20 +209,18 @@ a:hover {
 /*desde aqui se deforma el nav*/
 @media screen and (max-width: 420px) {
   .main-flex {
-    width: 90%;
+    width: 100%;
   }
-  .form-grid {
 
-  }
   .form-grid .message {
-    width: 10%;
+    width: 100%;
   }
   .cell-flex input, textarea, select {
-    width: 50% !important;
+    width: 100% !important;
     border-radius: 0.4rem;
   }
   .cell-chk div[approle=field-error] ul {
     padding-left: 0;
-    width: 30%;
+    width: 100%;
   }
 }
