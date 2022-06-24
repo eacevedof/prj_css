@@ -171,7 +171,6 @@ a:hover {
 @media screen and (max-width: 481px) {
   .form-grid {
     border: 3px solid greenyellow;
-    row-gap: .4rem;
     background-color:rgba(255, 255, 255, 0.970);
     margin-top: 1rem;
     margin-bottom: 0;
@@ -179,7 +178,7 @@ a:hover {
 
   .cell-flex label {
     width: 100%;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
   }
 
   .cell-flex input, textarea, select {
@@ -208,19 +207,7 @@ a:hover {
 }
 /*desde aqui se deforma el nav*/
 @media screen and (max-width: 420px) {
-  .main-flex {
-    width: 100%;
-  }
-
-  .form-grid .message {
-    width: 100%;
-  }
   .cell-flex input, textarea, select {
     width: 100% !important;
-    border-radius: 0.4rem;
-  }
-  .cell-chk div[approle=field-error] ul {
-    padding-left: 0;
-    width: 100%;
   }
 }
