@@ -176,13 +176,16 @@ a:hover {
     margin-bottom: 0;
   }
 
+  .cell-flex {
+    border: 1px solid purple;
+  }
   .cell-flex label {
     width: 100%;
     padding-bottom: 5px;
   }
 
   .cell-flex input, textarea, select {
-    width: 100%;
+    width: 100% !important;
     border-radius: 0.4rem;
   }
 
@@ -204,11 +207,4 @@ a:hover {
     padding-left: 45px;
   }
 
-}
-/*desde aqui se deforma el nav*/
-@media screen and (max-width: 420px) {
-  .cell-flex input, textarea, select {
-    width: 100% !important;
-    border: 1px solid purple;
-  }
 }
