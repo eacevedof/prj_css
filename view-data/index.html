@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data</title>
+</head>
+<body>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+</style>
+<div id="div-result">
+
+</div>
+<script type="module">
+const $div = document.getElementById("div-result")
+window.addEventListener("resize", reportWindowSize)
+function reportWindowSize() {
+  const tpl = `
+  <ul>
+    <li>window height: ${window.innerHeight}</li>
+    <li>window width: ${window.innerWidth}</li>
+    <li>window height: ${window.innerHeight}</li>
+  </ul>
+  `
+
+}
+</script>
+</body>
+</html>
