@@ -17,24 +17,27 @@
 
 </div>
 <script type="module">
+const rem = 16
 const $div = document.getElementById("div-result")
 document.addEventListener("DOMContentLoaded", reportWindowSize);
 window.addEventListener("resize", reportWindowSize)
 
+
 function reportWindowSize() {
   const tpl = `
   <ul>
-    <li>screen.height: ${screen.height}</li>
-    <li>screen.availHeight: ${screen.availHeight}</li>
+    <li>screen.height: ${screen.height} - ${screen.height/rem}rem</li>
+    <li>screen.availHeight: ${screen.availHeight} - ${screen.availHeight/rem}rem</li>
 
-    <li>window.outerHeight: ${window.outerHeight}</li>
-    <li>window.innerHeight: ${window.innerHeight}</li>
-    <li>window.innerHeight: ${window.innerWidth}</li>
+    <li>window.outerHeight: ${window.outerHeight} - ${window.outerHeight/rem}rem</li>
+    <li>window.innerHeight: ${window.innerHeight} - ${window.innerHeight/rem}rem</li>
+    <li>window.innerHeight: ${window.innerWidth} - ${window.innerWidth/rem}rem</li>
 
-    <li>document.body.scrollHeight: ${document.body.scrollHeight}</li>
-    <li>document.body.clientHeight: ${document.body.clientHeight}</li>
-    <li>document.body.offsetHeight: ${document.body.offsetHeight}</li>
-    <li>document.documentElement.scrollTop: ${document.documentElement.scrollTop}</li>
+    <li>document.body.scrollHeight: ${document.body.scrollHeight} - ${document.body.scrollHeight/rem}rem</li>
+    <li>document.body.clientHeight: ${document.body.clientHeight} - ${document.body.clientHeight/rem}rem</li>
+    <li>document.body.offsetHeight: ${document.body.offsetHeight} - ${document.body.offsetHeight/rem}rem</li>
+    
+    <li>document.documentElement.scrollTop: ${document.documentElement.scrollTop} - ${document.documentElement.scrollTop/rem}rem</li>
   </ul>
   `
   $div.innerHTML = tpl
