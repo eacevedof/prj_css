@@ -166,6 +166,11 @@ a:hover {
   padding-left: 50px;
 }
 
+.fix-chk-size {
+  width: 32px;
+  height: 32px;
+}
+
 @media screen and (max-width: 481px) {
   .form-grid {
     background-color:rgba(255, 255, 255, 0.970);
@@ -184,6 +189,16 @@ a:hover {
   .cell-flex input, textarea, select {
     width: 100%;
     border-radius: 0.4rem;
+  }
+
+  .cell-chk input[type=checkbox] {
+    width: 40px;
+    height: 40px;
+  }
+
+  .fix-chk-size {
+    width: 50px;
+    height: 50px;
   }
 
   .cell-flex div[approle=field-error] ul {
