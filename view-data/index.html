@@ -22,12 +22,19 @@ window.addEventListener("resize", reportWindowSize)
 function reportWindowSize() {
   const tpl = `
   <ul>
-    <li>window height: ${window.innerHeight}</li>
-    <li>window width: ${window.innerWidth}</li>
-    <li>window height: ${window.innerHeight}</li>
+    <li>screen.height: ${screen.height}</li>
+    <li>window.outerHeight: ${window.outerHeight}</li>
+    <li>window.availHeight: ${window.availHeight}</li>
+    <li>window.innerHeight: ${window.innerHeight}</li>
+    <li>window.innerHeight: ${window.innerWidth}</li>
+
+    <li>document.body.scrollHeight: ${document.body.scrollHeight}</li>
+    <li>document.body.clientHeight: ${document.body.clientHeight}</li>
+    <li>document.body.offsetHeight: ${document.body.offsetHeight}</li>
+    <li>document.documentElement.scrollTop: ${document.documentElement.scrollTop}</li>
   </ul>
   `
-
+  $div.innerHTML = tpl
 }
 </script>
 </body>
