@@ -154,10 +154,11 @@ a:hover {
 
 .cell-chk label {
   font-weight: normal;
+  display: flex;
 }
 
 .cell-chk input[type=checkbox] {
-
+  width: auto;
 }
 
 .cell-chk div[approle=field-error] ul {
