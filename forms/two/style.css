@@ -174,9 +174,6 @@ input[type=checkbox] {
     margin-top: 0;
     margin-bottom: 0;
   }
-  .form-grid .cell-flex {
-
-  }
 
   .cell-flex label {
     width: 100%;
@@ -191,10 +188,6 @@ input[type=checkbox] {
   .cell-flex div[approle="field-error"] ul {
     width: 100%;
     padding-left: 1.0rem;
-  }
-  
-  .cell-chk {
-
   }
 
   .cell-flex input[type=checkbox] ~ label {
