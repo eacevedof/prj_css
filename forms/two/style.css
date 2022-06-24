@@ -141,27 +141,23 @@ a:hover {
   background-color: white;
 }
 .cell-flex input[type=date] {
-  width: 8rem;
+  width: 10rem;
 }
 
 .cell-flex select {
-  width: 21rem;
+  width: 20rem;
 }
 
 .cell-flex textarea {
-  height: 2.25rem;
-}
-
-.cell-chk input[type=checkbox] {
-  width: 1.2rem;
-  height: 1.2rem;
-  margin-right: 0.5rem;
-  margin-top: 0.5rem;
+  height: 2.50rem;
 }
 
 .cell-chk label {
-  max-width: 25rem;
   font-weight: normal;
+}
+
+.cell-chk input[type=checkbox] {
+
 }
 
 .cell-chk div[approle=field-error] ul {
@@ -188,22 +184,8 @@ a:hover {
     border-radius: 0.4rem;
   }
 
-  .cell-flex div[approle="field-error"] ul {
+  .cell-flex div[approle=field-error] ul {
     width: 100%;
     padding-left: 1.0rem;
   }
-
-  .cell-chk input[type=checkbox] {
-    width: 20px;
-  }
-  .cell-chk label {
-    border: 1px solid darkslategray;
-    padding: 0;
-    margin: 0;
-    width: 92%;
-  }
-  .cell-chk div[approle=field-error] ul {
-    padding-left: 45px;
-  }
-
 }
