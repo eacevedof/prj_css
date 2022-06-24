@@ -151,22 +151,23 @@ a:hover {
   height: 2.25rem;
 }
 
-input[type=checkbox] {
+.cell-chk input[type=checkbox] {
   width: 1.2rem;
   height: 1.2rem;
   margin-right: 0.5rem;
   margin-top: 0.5rem;
 }
 
-.cell-flex input[type=checkbox] ~ label {
+.cell-chk label {
   max-width: 25rem;
   font-weight: normal;
 }
 
-@media screen and (max-width: 690px) {
-  body {
-    font-size: 15px;
-  }
+.cell-chk div[approle=field-error] ul {
+  padding-left: 45px;
+}
+
+@media screen and (max-width: 481px) {
   .form-grid {
     border: 3px solid greenyellow;
     row-gap: .4rem;
@@ -190,16 +191,27 @@ input[type=checkbox] {
     padding-left: 1.0rem;
   }
 
-  .cell-flex input[type=checkbox] ~ label {
+  .cell-chk input[type=checkbox] {
+    width: 20px;
+  }
+  .cell-chk label {
+    border: 1px solid darkslategray;
     padding: 0;
     margin: 0;
-    max-width: 22.9rem;
+    width: 92%;
+  }
+  .cell-chk div[approle=field-error] ul {
+    padding-left: 45px;
   }
 
 }
 
-@media screen and (max-width: 408px) {
+@media screen and (max-width: 420px) {
+  .nav-flex {
+    width: auto;
+  }
   .form-grid {
-    max-width: 98%;
+    margin:0;
+    width: auto;
   }
 }
