@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -161,11 +162,12 @@ a:hover {
   color: deepskyblue;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 690px) {
   body {
     font-size: 15px;
   }
   .form-grid {
+    border: 3px solid greenyellow;
     row-gap: .4rem;
     background-color:rgba(255, 255, 255, 0.85);
     margin-top: 0;
@@ -177,18 +179,17 @@ a:hover {
   }
 
   .cell-flex div[approle="field-error"] ul {
-    padding-left: 1.5rem;
+    padding-left: 1.0rem;
   }
   
   .cell-flex label {
     max-width: 300px;
     align-self: flex-start;
-    padding-left: 1.1rem;
     padding-bottom: 0.2rem;
   }
 
   input, textarea, select {
-    padding: 0.3rem;
+    width: 98%;
     border-radius: 0.4rem;
   }
   
