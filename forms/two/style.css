@@ -28,11 +28,7 @@ a:hover {
 
   min-height: 100vh;
   max-width: 100vw;
-  background-image: linear-gradient(
-          to right,
-          rgba(255,255,255, 0) 0 100%
-  ),
-  url("./champions.png");
+  background-image: url("./champions.png");
   background-size:     cover;
   background-position: top center;
   background-repeat:   no-repeat;
