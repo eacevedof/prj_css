@@ -57,9 +57,10 @@ function centerY() {
   $section.style.top = null
 
   if (has_scrollbar()) return
-  $section.style.position = "relative"
-  const bgZone = window.innerHeight
+  const $nav = document.querySelector(".nav-flex")
+  const bgZone = window.innerHeight - $nav.offsetHeight
   const fromTop = (bgZone - $section.offsetHeight)/2
+  $section.style.position = "relative"
   $section.style.top = fromTop.toString().concat("px")
 }
 
