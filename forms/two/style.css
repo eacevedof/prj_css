@@ -132,7 +132,7 @@ a:hover {
   border-radius: 0.5rem;
 }
 
-.cell-flex input, textarea, select {
+.cell-flex input:not([type=checkbox]), textarea, select{
   width: 20rem;
   padding: 0.4rem;
   border-radius: 0.5rem;
@@ -140,6 +140,7 @@ a:hover {
   font-size: 1rem;
   background-color: white;
 }
+
 .cell-flex input[type=date] {
   width: 10rem;
 }
@@ -157,19 +158,49 @@ a:hover {
 }
 
 .cell-chk input[type=checkbox] {
-  margin-right: 15px;
-  width: 26px;
-  height: 26px;
+  font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+  margin-top: 1em;
+
+}
+
+.cell-chk input[type=checkbox]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em rebeccapurple;
+}
+
+.cell-chk input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
+.cell-chk input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
+.cell-chk input[type=checkbox]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
+
+.cell-chk input[type=checkbox]:disabled {
+  --form-control-color: blue;
+  color: yellow;
+  cursor: not-allowed;
 }
 
 .cell-chk div[approle=field-error] ul {
   padding-left: 50px;
 }
 
-.fix-chk-size {
-  width: 32px;
-  height: 32px;
-}
 
 @media screen and (max-width: 481px) {
   .form-grid {
@@ -178,27 +209,14 @@ a:hover {
     margin-bottom: 0;
   }
 
-  .cell-flex {
-    border: 1px solid purple;
-  }
   .cell-flex label {
     width: 100%;
     padding-bottom: 5px;
   }
 
-  .cell-flex input, textarea, select {
+  .cell-flex input:not([type=checkbox]), textarea, select{
     width: 100%;
     border-radius: 0.4rem;
-  }
-
-  .cell-chk input[type=checkbox] {
-    width: 40px;
-    height: 40px;
-  }
-
-  .fix-chk-size {
-    width: 50px;
-    height: 50px;
   }
 
   .cell-flex div[approle=field-error] ul {
