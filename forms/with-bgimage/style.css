@@ -47,6 +47,10 @@ a:hover {
   flex-wrap: wrap;
   -webkit-box-shadow: 0px 14px 5px -10px rgba(0,0,0,0.36);
   box-shadow: 0px 14px 5px -10px rgba(0,0,0,0.36);
+
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 0;
 }
 .nav-flex img {
   max-width: 115px;
