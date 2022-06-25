@@ -71,7 +71,9 @@ body {
   padding: 10px;
   background-color: white;
   border: 2px solid deepskyblue;
+}
 
+.animation-h-shake {
   animation: horizontal-shaking;
   animation-duration: 0.25s;
   animation-fill-mode: both;
