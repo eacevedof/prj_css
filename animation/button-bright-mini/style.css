@@ -39,7 +39,6 @@ y como no tiene fondo parece que no hay nada sobre este
 */
 .button::after {
   content: "";
-  background: yellow;
   position: absolute;
   display: block;
   width: 100%;
@@ -53,10 +52,20 @@ el brillo es un trapecio blanco con opacidad escondido
   overflow: hidden;
 }
 
+/*
+el trapecio del brillo se oculta a la izquierda
+*/
 .button-glow:after {
   left: -100%;
   clip-path: polygon(10% 0, 70% 0, 90% 100%, 30% 100%);
   background-color: rgba(255, 255, 255, 0.6);
+  /*
+  all: todas las propiedades que puedan tener una transición animada la tendran
+
+  ease
+  Equal to cubic-bezier(0.25, 0.1, 0.25, 1.0), the default value, increases in velocity
+  towards the middle of the transition, slowing back down at the end.
+  */
   transition: all 300ms ease;
 }
 /*
