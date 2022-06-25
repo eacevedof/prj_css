@@ -21,6 +21,21 @@ a:hover {
   color: deepskyblue;
 }
 
+.animation-h-shaking {
+  animation: frames-h-shaking;
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  animation-iteration-count: 2;
+}
+
+@keyframes frames-h-shaking {
+  0% { transform: translateX(0) }
+  25% { transform: translateX(5px) }
+  50% { transform: translateX(-5px) }
+  75% { transform: translateX(5px) }
+  100% { transform: translateX(0) }
+}
+
 .main-flex {
   display: flex;
   flex-direction: column;
@@ -54,16 +69,15 @@ a:hover {
 }
 
 .nav-flex img {
-  max-width: 115px;
+  max-width: 175px;
+  max-height: 70px;
   object-fit: cover;
-  padding: 0.5rem;
-  padding-left: 1rem;
 }
 .nav-flex h1 {
   font-size: 1rem;
   color: white;
   padding: 0.5rem;
-  padding-right: 1rem;
+  text-align: center;
 }
 
 .section {
