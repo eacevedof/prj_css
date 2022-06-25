@@ -114,13 +114,24 @@
         </div>
       </div>
       <div class="cell-flex cell-btn">
-        <button type="submit">Subscribirme</button>
+        <button type="button">Subscribirme</button>
       </div>
 
     </form>
   </section>
 </main>
 <script type="module">
+const $btn = document.querySelector(".cell-btn button[type=button]")
+$btn.addEventListener("click", () => {
+  const $section = document.querySelector(".section")
+  $btn.setAttribute("disabled","")
+  $section.classList.add("animation-h-shaking")
+  setTimeout(() => {
+    $section.classList.remove("animation-h-shaking")
+    $btn.removeAttribute("disabled")
+  }, 600)
+})
+
 function has_scrollbar() {
   let elem = document.querySelector("body")
   const r = window.innerHeight < elem.scrollHeight

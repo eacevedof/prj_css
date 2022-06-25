@@ -24,7 +24,6 @@ a:hover {
 .animation-h-shaking {
   animation: frames-h-shaking;
   animation-duration: 0.25s;
-  animation-fill-mode: both;
   animation-iteration-count: 2;
 }
 
