@@ -123,13 +123,20 @@
 <script type="module">
 function checkScrollBar() {
   let elem = document.querySelector("body")
-
   const r = window.innerHeight < elem.scrollHeight
-  alert(r)
   return r
 }
-window.addEventListener("load", checkScrollBar)
-window.addEventListener("resize", checkScrollBar)
+
+function centerY() {
+  if (checkScrollBar()) return
+  const $section = document.querySelector(".section")
+  $section.style.position = "relative"
+  const fromTop = (650 - $section.offsetHeight)/2
+  $section.style.top = fromTop.toString().concat("px")
+}
+
+window.addEventListener("load", centerY)
+window.addEventListener("resize", centerY)
 </script>
 </body>
 </html>
