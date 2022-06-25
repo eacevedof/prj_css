@@ -31,8 +31,6 @@ html {
   align-items: center;
 
   position: relative;
-
-  margin: 0 40px;
 }
 
 .button::before,
