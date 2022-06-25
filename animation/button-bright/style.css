@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
 }
 
 body {
@@ -66,7 +71,6 @@ body {
   background: tomato;
   color: #fff;
   cursor: pointer;
-// display: block;
   font-size: 16px;
   font-weight: 400;
   line-height: 45px;
@@ -77,11 +81,14 @@ body {
   text-transform: uppercase;
   width: 100%;
 
-  //btn-4
   border: 1px solid;
   overflow: hidden;
   position: relative;
 }
+button:hover {
+  text-decoration: none;
+}
+
 .section button span {
   z-index: 20;
 }
@@ -100,6 +107,10 @@ body {
   z-index: -10;
 }
 
-.section button:hover:after {
+.section button:hover{
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.section button:hover button{
 
 }
