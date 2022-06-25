@@ -55,7 +55,8 @@
     if (checkScrollBar()) return
     const $section = document.querySelector(".section")
     $section.style.position = "relative"
-    const fromTop = (650 - $section.offsetHeight)/2
+    const bgZone = window.innerHeight
+    const fromTop = (bgZone - $section.offsetHeight)/2
     $section.style.top = fromTop.toString().concat("px")
   }
 
