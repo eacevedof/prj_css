@@ -26,6 +26,9 @@ html {
   font-weight: bold;
   font-size: 1.25rem;
 
+/*
+sin esto la animación se hace por fuera,concretamente por debajo del boton
+*/
   display: flex;
   justify-content: center;
   align-items: center;
