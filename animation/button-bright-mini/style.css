@@ -69,7 +69,8 @@ el trapecio del brillo se oculta a la izquierda
   transition: all 300ms ease;
 }
 /*
-sin esto no hay movimiento
+despues de acabar el evento over le indicamos que el cli-path (el trapecio) se desplaze
+al 100% de la izquierda es decir que desaparezca por la derecha
 */
 .button-glow:hover::after {
   left: 100%;
