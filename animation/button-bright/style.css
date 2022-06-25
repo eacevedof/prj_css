@@ -59,7 +59,6 @@ body {
   padding-right: 1rem;
 }
 
-
 .main-flex .section {
   margin: 10px;
   padding: 10px;
@@ -69,30 +68,22 @@ body {
 }
 
 .button {
-  background: tomato;
+  background-color: deepskyblue;
   color: white;
-  border: 2px solid red;
-  height: 75px;
-  width: 200px;
-  font-weight: bold;
-  font-size: 1.25rem;
-  cursor: pointer;
+  border: 2px solid #3a4f71;
+  font-size: 1.2rem;
 
-  /*
-  sin esto la animación se hace por fuera,concretamente por debajo del boton.
-  ordena el button:after en el centro
-  */
   display: flex;
   justify-content: center;
   align-items: center;
-
   position: relative;
+
+  margin-top: 0.5rem;
+  min-width: 6rem;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
 }
 
-/*
-esto monta una capa sobre el botón que lo cubre por completo
-y como no tiene fondo parece que no hay nada sobre este
-*/
 .button::after {
   content: "";
   position: absolute;
@@ -101,33 +92,17 @@ y como no tiene fondo parece que no hay nada sobre este
   height: 100%;
 }
 
-/*
-el brillo es un trapecio blanco con opacidad escondido
-*/
 .button-glow {
   overflow: hidden;
 }
 
-/*
-el trapecio del brillo se oculta a la izquierda
-*/
 .button-glow:after {
   left: -100%;
   clip-path: polygon(10% 0, 70% 0, 90% 100%, 30% 100%);
   background-color: rgba(255, 255, 255, 0.6);
-  /*
-  all: todas las propiedades que puedan tener una transición animada la tendran
-
-  ease
-  Equal to cubic-bezier(0.25, 0.1, 0.25, 1.0), the default value, increases in velocity
-  towards the middle of the transition, slowing back down at the end.
-  */
   transition: all 300ms ease;
 }
-/*
-despues de acabar el evento over le indicamos que el cli-path (el trapecio) se desplaze
-al 100% de la izquierda es decir que desaparezca por la derecha
-*/
+
 .button-glow:hover::after {
   left: 100%;
 }
