@@ -127,20 +127,21 @@ function has_scrollbar() {
   return r
 }
 
-function centerY() {
+function center_vertically() {
   const $section = document.querySelector(".section")
   $section.style.position = null
   $section.style.top = null
 
   if (has_scrollbar()) return
-  $section.style.position = "relative"
-  const bgZone = window.innerHeight
+  const $nav = document.querySelector(".nav-flex")
+  const bgZone = window.innerHeight - $nav.offsetHeight
   const fromTop = (bgZone - $section.offsetHeight)/2
+  $section.style.position = "relative"
   $section.style.top = fromTop.toString().concat("px")
 }
 
-window.addEventListener("load", centerY)
-window.addEventListener("resize", centerY)
+window.addEventListener("load", center_vertically)
+window.addEventListener("resize", center_vertically)
 </script>
 </body>
 </html>
