@@ -76,6 +76,14 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
+
+  //btn-4
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+}
+.section button span {
+  z-index: 20;
 }
 
 .section button:after {
