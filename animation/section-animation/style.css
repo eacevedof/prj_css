@@ -73,15 +73,14 @@ body {
   border: 2px solid deepskyblue;
 }
 
-.animation-h-shake {
-  animation: horizontal-shaking;
+.animation-h-shaking {
+  animation: frames-h-shaking;
   animation-duration: 0.25s;
   animation-fill-mode: both;
-  display: inline-block;
   animation-iteration-count: 2;
 }
 
-@keyframes horizontal-shaking {
+@keyframes frames-h-shaking {
   0% { transform: translateX(0) }
   25% { transform: translateX(5px) }
   50% { transform: translateX(-5px) }
