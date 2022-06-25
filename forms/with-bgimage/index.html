@@ -122,10 +122,9 @@
 </main>
 <script type="module">
 function checkScrollBar() {
-  let elem = document.querySelector(".main-flex")
-  elem = document.querySelector("body")
-  elem = document.querySelector(".section")
-  const r = elem.clientHeight < elem.scrollHeight
+  let elem = document.querySelector("body")
+
+  const r = window.innerHeight < elem.scrollHeight
   alert(r)
   return r
 }

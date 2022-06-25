@@ -45,8 +45,10 @@
   </section>
 </main>
 <script type="module">
-function checkScrollBar(elem) {
-  const r = elem.clientHeight < elem.scrollHeight
+function checkScrollBar() {
+  let elem = document.querySelector("body")
+
+  const r = window.innerHeight < elem.scrollHeight
   alert(r)
   return r
 }
