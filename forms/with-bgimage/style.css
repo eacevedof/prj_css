@@ -136,15 +136,45 @@ a:hover {
   justify-content: center;
 }
 
-.cell-flex button {
+.cell-btn .button {
+  background-color: deepskyblue;
+  color: white;
+  border: 2px solid #3a4f71;
+  font-size: 1.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
   margin-top: 0.5rem;
   min-width: 6rem;
   padding: 0.6rem;
-  background-color: deepskyblue;
-  color: white;
-  font-size: 1.2rem;
-  border: 2px solid #3a4f71;
   border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.cell-btn .button::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.button-glow {
+  overflow: hidden;
+}
+
+.button-glow:after {
+  left: -100%;
+  clip-path: polygon(10% 0, 70% 0, 90% 100%, 30% 100%);
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 300ms ease;
+}
+
+.button-glow:hover::after {
+  left: 100%;
 }
 
 .cell-flex input:not([type=checkbox]), textarea, select{
