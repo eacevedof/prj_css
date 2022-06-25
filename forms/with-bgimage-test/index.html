@@ -52,8 +52,11 @@
   }
 
   function centerY() {
-    if (checkScrollBar()) return
     const $section = document.querySelector(".section")
+    $section.style.position = null
+    $section.style.top = null
+
+    if (checkScrollBar()) return
     $section.style.position = "relative"
     const bgZone = window.innerHeight
     const fromTop = (bgZone - $section.offsetHeight)/2
