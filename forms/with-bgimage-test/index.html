@@ -45,22 +45,13 @@
   </section>
 </main>
 <script type="module">
-function checkScrollBar() {
-  const element = document
-  let dir = "vertical"
-  dir = (dir === "vertical") ? "scrollTop" : "scrollLeft"
-  let res = !! element[dir];
-  if (!res) {
-    element[dir] = 1;
-    res = !!element[dir];
-    element[dir] = 0;
-  }
-  alert(res)
-  return res;
+function checkScrollBar(elem) {
+  const r = elem.clientHeight < elem.scrollHeight
+  alert(r)
+  return r
 }
 window.addEventListener("load", checkScrollBar)
 window.addEventListener("resize", checkScrollBar)
-
 </script>
 </body>
 </html>

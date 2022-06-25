@@ -120,5 +120,17 @@
     </form>
   </section>
 </main>
+<script type="module">
+function checkScrollBar() {
+  let elem = document.querySelector(".main-flex")
+  elem = document.querySelector("body")
+  elem = document.querySelector(".section")
+  const r = elem.clientHeight < elem.scrollHeight
+  alert(r)
+  return r
+}
+window.addEventListener("load", checkScrollBar)
+window.addEventListener("resize", checkScrollBar)
+</script>
 </body>
 </html>
