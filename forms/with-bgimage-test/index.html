@@ -45,26 +45,26 @@
   </section>
 </main>
 <script type="module">
-  function checkScrollBar() {
-    let elem = document.querySelector("body")
-    const r = window.innerHeight < elem.scrollHeight
-    return r
-  }
+function has_scrollbar() {
+  let elem = document.querySelector("body")
+  const r = window.innerHeight < elem.scrollHeight
+  return r
+}
 
-  function centerY() {
-    const $section = document.querySelector(".section")
-    $section.style.position = null
-    $section.style.top = null
+function centerY() {
+  const $section = document.querySelector(".section")
+  $section.style.position = null
+  $section.style.top = null
 
-    if (checkScrollBar()) return
-    $section.style.position = "relative"
-    const bgZone = window.innerHeight
-    const fromTop = (bgZone - $section.offsetHeight)/2
-    $section.style.top = fromTop.toString().concat("px")
-  }
+  if (has_scrollbar()) return
+  $section.style.position = "relative"
+  const bgZone = window.innerHeight
+  const fromTop = (bgZone - $section.offsetHeight)/2
+  $section.style.top = fromTop.toString().concat("px")
+}
 
-  window.addEventListener("load", centerY)
-  window.addEventListener("resize", centerY)
+window.addEventListener("load", centerY)
+window.addEventListener("resize", centerY)
 </script>
 </body>
 </html>
