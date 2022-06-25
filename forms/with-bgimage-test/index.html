@@ -51,7 +51,7 @@ function has_scrollbar() {
   return r
 }
 
-function centerY() {
+function center_vertically() {
   const $section = document.querySelector(".section")
   $section.style.position = null
   $section.style.top = null
@@ -64,8 +64,8 @@ function centerY() {
   $section.style.top = fromTop.toString().concat("px")
 }
 
-window.addEventListener("load", centerY)
-window.addEventListener("resize", centerY)
+window.addEventListener("load", center_vertically)
+window.addEventListener("resize", center_vertically)
 </script>
 </body>
 </html>
