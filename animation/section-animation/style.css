@@ -71,23 +71,20 @@ body {
   padding: 10px;
   background-color: white;
   border: 2px solid deepskyblue;
-  animation-name: change-color;
-  animation-duration: 5s;
-}
 
-/* animation duration and fill mode */
-.cssanimation {
-  animation-duration: 1s;
+  animation: horizontal-shaking;
+  animation-duration: 0.25s;
   animation-fill-mode: both;
   display: inline-block;
+  animation-iteration-count: 2;
 }
 
-/* horizontalShake animation declaration & iteration counting */
-.horizontalShake { animation-name: horizontalShake; animation-iteration-count: infinite }
 
 /* horizontalShake animation keyframes */
-@keyframes horizontalShake {
-  3%, 12%, 21%, 30%, 39%, 48%, 57%, 65%, 74%, 83%, 92% { transform: translateX(5px) }
-  6%, 15%, 24%, 33%, 42%, 51%, 60%, 68%, 77%, 86%, 95% { transform: translateX(3px) }
-  9%, 18%, 27%, 36%, 45%, 54%, 63%, 71%, 80%, 89%, 98% { transform: translateX(-5px) }
+@keyframes horizontal-shaking {
+  0% { transform: translateX(0) }
+  25% { transform: translateX(5px) }
+  50% { transform: translateX(-5px) }
+  75% { transform: translateX(5px) }
+  100% { transform: translateX(0) }
 }
