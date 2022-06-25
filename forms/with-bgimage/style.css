@@ -105,6 +105,7 @@ a:hover {
   color: red;
   padding: 3px;
   justify-self: center;
+  text-align: center;
 }
 
 .form-grid .cell-flex {
@@ -196,6 +197,9 @@ a:hover {
 
 .cell-flex textarea {
   height: 2.50rem;
+  min-height: 2.50rem;
+  max-height: 2.50rem;
+  max-width: 100%;
 }
 
 .cell-chk label {
