@@ -12,7 +12,7 @@ h4 {
   font-weight: 400;
   text-transform: uppercase;
   font-size: 20px;
-  color: #111;
+  color: white;
 }
 
 .container {
@@ -20,21 +20,11 @@ h4 {
   height: auto;
   width: 100vw;
   overflow: hidden;
-  background: #000428;
   background: linear-gradient(to right, #bdfff3, #4ac29a);
   position: relative;
 }
 
-.block {
-  height: 150px;
-  width: 100%;
-  display: flex;
-  padding: 10px;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 30px;
-}
+
 
 .btn {
   height: 60px;
@@ -59,7 +49,9 @@ h4 {
   height: 100%;
 }
 
-/*el brillo es un trapecio escondido*/
+/*
+el brillo es un trapecio blanco con opacidad escondido
+*/
 .btn4 {
   overflow: hidden;
 }
