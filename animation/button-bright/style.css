@@ -68,48 +68,66 @@ body {
   text-align: center;
 }
 
-button {
+.button {
   background: tomato;
-  color: #fff;
+  color: white;
+  border: 2px solid red;
+  height: 75px;
+  width: 200px;
+  font-weight: bold;
+  font-size: 1.25rem;
   cursor: pointer;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 45px;
-  margin: 0 0 2em;
-  margin-top: 10px;
-  max-width: 160px;
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 100%;
 
-  border: 1px solid;
-  overflow: hidden;
+  /*
+  sin esto la animación se hace por fuera,concretamente por debajo del boton.
+  ordena el button:after en el centro
+  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   position: relative;
 }
-button:hover {
-  text-decoration: none;
-}
 
-button span {
-  z-index: 20;
-}
-
-button:after {
-  background: #fff;
+/*
+esto monta una capa sobre el botón que lo cubre por completo
+y como no tiene fondo parece que no hay nada sobre este
+*/
+.button::after {
   content: "";
-  height: 155px;
-  left: -75px;
-  opacity: 0.2;
   position: absolute;
-  top: -50px;
-  transform: rotate(35deg);
-  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-  width: 50px;
-  z-index: -10;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
-.btn-4:hover:after {
-  left: 120%;
-  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+/*
+el brillo es un trapecio blanco con opacidad escondido
+*/
+.button-glow {
+  overflow: hidden;
+}
+
+/*
+el trapecio del brillo se oculta a la izquierda
+*/
+.button-glow:after {
+  left: -100%;
+  clip-path: polygon(10% 0, 70% 0, 90% 100%, 30% 100%);
+  background-color: rgba(255, 255, 255, 0.6);
+  /*
+  all: todas las propiedades que puedan tener una transición animada la tendran
+
+  ease
+  Equal to cubic-bezier(0.25, 0.1, 0.25, 1.0), the default value, increases in velocity
+  towards the middle of the transition, slowing back down at the end.
+  */
+  transition: all 300ms ease;
+}
+/*
+despues de acabar el evento over le indicamos que el cli-path (el trapecio) se desplaze
+al 100% de la izquierda es decir que desaparezca por la derecha
+*/
+.button-glow:hover::after {
+  left: 100%;
 }
