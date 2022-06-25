@@ -69,16 +69,14 @@ a:hover {
 }
 
 .nav-flex img {
-  max-width: 115px;
+  max-width: 175px;
+  max-height: 65px;
   object-fit: cover;
-  padding: 0.5rem;
-  padding-left: 1rem;
 }
 .nav-flex h1 {
   font-size: 1rem;
   color: white;
   padding: 0.5rem;
-  padding-right: 1rem;
   text-align: center;
 }
 
