@@ -33,8 +33,13 @@ html {
 }
 
 .button::before,
+/*
+esto monta una capa sobre el botón que lo cubre por completo
+y como no tiene fondo parece que no hay nada sobre este
+*/
 .button::after {
   content: "";
+  background: yellow;
   position: absolute;
   display: block;
   width: 100%;
