@@ -25,9 +25,11 @@ html {
   width: 200px;
   font-weight: bold;
   font-size: 1.25rem;
+  cursor: pointer;
 
 /*
-sin esto la animación se hace por fuera,concretamente por debajo del boton
+sin esto la animación se hace por fuera,concretamente por debajo del boton.
+ordena el button:after en el centro
 */
   display: flex;
   justify-content: center;
@@ -36,11 +38,11 @@ sin esto la animación se hace por fuera,concretamente por debajo del boton
   position: relative;
 }
 
-.button::before,
 /*
 esto monta una capa sobre el botón que lo cubre por completo
 y como no tiene fondo parece que no hay nada sobre este
 */
+
 .button::after {
   content: "";
   position: absolute;
