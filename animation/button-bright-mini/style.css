@@ -18,7 +18,9 @@ html {
 }
 
 .button {
-  background: #bdfff3;
+  background: tomato;
+  color: white;
+  border: 2px solid red;
   height: 60px;
   width: 150px;
   display: flex;
@@ -26,7 +28,7 @@ html {
   align-items: center;
   transition: all 0.8s ease;
   position: relative;
-  border: 2px solid #111;
+
   margin: 0 40px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
   rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
