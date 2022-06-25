@@ -79,8 +79,6 @@ body {
   animation-iteration-count: 2;
 }
 
-
-/* horizontalShake animation keyframes */
 @keyframes horizontal-shaking {
   0% { transform: translateX(0) }
   25% { transform: translateX(5px) }
