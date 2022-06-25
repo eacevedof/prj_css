@@ -121,17 +121,21 @@
   </section>
 </main>
 <script type="module">
-function checkScrollBar() {
+function has_scrollbar() {
   let elem = document.querySelector("body")
   const r = window.innerHeight < elem.scrollHeight
   return r
 }
 
 function centerY() {
-  if (checkScrollBar()) return
   const $section = document.querySelector(".section")
+  $section.style.position = null
+  $section.style.top = null
+
+  if (has_scrollbar()) return
   $section.style.position = "relative"
-  const fromTop = (650 - $section.offsetHeight)/2
+  const bgZone = window.innerHeight
+  const fromTop = (bgZone - $section.offsetHeight)/2
   $section.style.top = fromTop.toString().concat("px")
 }
 
