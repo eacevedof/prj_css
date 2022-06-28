@@ -13,10 +13,11 @@
   <p>Este es el mensaje</p>
   <button id="btn-salir">Salir</button>
 </dialog>
+<button id="btn-show">Show</button>
 <script type="module">
 const dialog = document.querySelector("dialog")
-const cancel = document.querySelector("#cancel")
-const show = document.querySelector("#show")
+const cancel = document.querySelector("#btn-salir")
+const show = document.querySelector("#btn-show")
 
 show.addEventListener("click", () => dialog.showModal())
 cancel.addEventListener("click", () => dialog.close())
