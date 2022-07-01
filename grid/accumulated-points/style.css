@@ -77,11 +77,13 @@ a:hover {
 .main-flex .footer-flex {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
   background-color: #303030;
   align-items: center;
   font-size: 14px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 .footer-flex .item-logo {
