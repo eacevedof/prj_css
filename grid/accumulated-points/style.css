@@ -58,9 +58,33 @@ body {
 .main-flex .section {
   border: 1px solid red;
   background-color: deepskyblue;
-  height: calc(100vh - 72px);
+  height: calc(100vh - 72px - 51px);
 }
 
 .main-flex .footer-flex {
+  height: 50px;
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: deepskyblue;
+  align-items: center;
+}
+.footer-flex .item-logo {
+  padding-left: 1rem;
+}
+
+.footer-flex .ul-links-flex {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-flex .ul-social-flex {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.ul-social-flex li {
+  padding-right: 1rem;
 }
