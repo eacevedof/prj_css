@@ -57,8 +57,10 @@ body {
 
 .main-flex .section {
   border: 1px solid red;
-  background-color: deepskyblue;
+  background-color: yellow;
   height: calc(100vh - 72px - 51px);
+  max-width: 90vw;
+  padding: 10px;
 }
 
 .main-flex .footer-flex {
