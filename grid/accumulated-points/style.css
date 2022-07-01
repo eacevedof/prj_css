@@ -69,20 +69,22 @@ a:hover {
 .main-flex .section {
   border: 1px solid red;
   background-color: yellow;
-  height: calc(100vh - 72px - 51px);
+  //height: calc(100vh - 72px - 51px);
   max-width: 90vw;
   padding: 10px;
 }
 
 .main-flex .footer-flex {
-  height: 50px;
+  height: 30px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   background-color: #303030;
   align-items: center;
+  font-size: 14px;
 }
+
 .footer-flex .item-logo {
   padding-left: 1rem;
 }
