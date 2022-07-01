@@ -82,11 +82,16 @@ body {
   justify-content: space-between;
 }
 
+.ul-links-flex li {
+  padding-right: 1rem;
+}
+
 .footer-flex .ul-social-flex {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
 }
+
 .ul-social-flex li {
   padding-right: 1rem;
 }
