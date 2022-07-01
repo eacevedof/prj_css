@@ -67,15 +67,21 @@ a:hover {
   text-align: center;
 }
 
-.main-flex .section {
+.main-flex .no-nav-grid {
+  border: 1px solid greenyellow;
+  display: grid;
+  height: calc(100vh - 49px);
+  grid-template-rows: 1fr 50px;
+}
+
+.no-nav-grid .section {
   border: 1px solid red;
   background-color: yellow;
-  //height: calc(100vh - 72px - 51px);
   max-width: 90vw;
   padding: 10px;
 }
 
-.main-flex .footer-flex {
+.no-nav-grid .footer-flex {
   width: 100%;
   display: flex;
   justify-content: space-around;
