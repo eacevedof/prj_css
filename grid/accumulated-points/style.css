@@ -75,7 +75,6 @@ a:hover {
 }
 
 .main-flex .footer-flex {
-  height: 30px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -86,25 +85,26 @@ a:hover {
 }
 
 .footer-flex .item-logo {
-  padding-left: 1rem;
 }
 
 .footer-flex .ul-links-flex {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  column-gap: 1rem;
 }
 
 .ul-links-flex li {
-  padding-right: 1rem;
+  text-align: center;
 }
 
 .footer-flex .ul-social-flex {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  column-gap: 1rem;
 }
 
 .ul-social-flex li {
-  padding-right: 1rem;
+  text-align: center;
 }
