@@ -10,6 +10,17 @@ body {
   font-family: "Urbanist", sans-serif;
 }
 
+a {
+  text-decoration: underline;
+  color: #fff;
+}
+a:link, a:visited {
+  color: #fff;
+}
+a:hover {
+  color: #00c6fb;
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -121,6 +132,49 @@ body {
   overflow: hidden;
   grid-area: content;
   align-self: end;
+}
+
+.footer-flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #303030;
+  align-items: center;
+  font-size: 14px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.footer-flex .item-logo {
+  padding-left: 1rem;
+}
+
+.footer-flex .item {
+  padding: 5px;
+}
+
+.footer-flex .ul-links-flex {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 1rem;
+}
+
+.ul-links-flex li {
+  text-align: center;
+}
+
+.footer-flex .ul-social-flex {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1rem;
+  padding-right: 1rem;
+}
+
+.ul-social-flex li {
+  text-align: center;
 }
 
 @media (max-width: 800px) {
