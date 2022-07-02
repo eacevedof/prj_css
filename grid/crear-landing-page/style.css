@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400&display=swap');
 body {
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
