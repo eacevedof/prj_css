@@ -66,6 +66,17 @@ body {
   width: 30px;
 }
 
+#chk-hamburguer {
+  display: none;
+}
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  padding-right: 1rem;
+  color: white;
+}
+
+
 .main-section-grid {
   grid-area: content;
   display: grid;
@@ -119,6 +130,24 @@ body {
 
   .nav-menu {
     display: block;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 2;
+  }
+
+  /*
+  ~ todos los elementos ul precedidos por chk-hamburger:checked
+  */
+  .nav-list #chk-hamburguer:checked{
+    left: 0;
+  }
+  /*
+  cambia el contenido del icono hamburguer por una x si el check esta marcado
+  */
+  #chk-hamburguer:checked~.hamburger i:before {
+    content: "\f00d";
   }
 
   .main-section-grid {
