@@ -13,6 +13,7 @@ body {
 a {
   text-decoration: underline;
   color: #fff;
+  text-underline-offset: 2px;
 }
 a:link, a:visited {
   color: #fff;
