@@ -87,7 +87,7 @@ body {
   font-weight: 300;
 }
 
-.main-cta {
+.main-link-cta {
   text-decoration: none;
   color: #ffffff;
   padding: 15px 60px;
@@ -98,7 +98,7 @@ body {
   font-weight: 500;
   transition: background-color .3s;
 }
-.main-cta:hover {
+.main-link-cta:hover {
   background-color: #fff;
   color: #1766DC;
 }
