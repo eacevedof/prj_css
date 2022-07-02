@@ -241,12 +241,34 @@ dialog::backdrop {
   padding: 10px;
   border: 1px solid #303030;
   border-radius: 6px;
+  resize: none;
 }
 
-.form-buttons {
+.form-flex .form-buttons {
   justify-content: space-around !important;
+  padding-top: 10px;
 }
 
+.form-buttons button {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 60px;
+  border: 1px solid #303030;
+  border-radius: 6px;
+  font-weight: bold;
+  background-color: #E65C00;
+  transition: background-color .3s;
+}
+
+.button-salir {
+  background-color: yellow !important;
+  color: #303030 !important;
+}
+
+button:hover {
+  background-color: #005EEA !important;
+  color: #fff !important;
+}
 
 @media (max-width: 800px) {
   .nav-list-ul {
