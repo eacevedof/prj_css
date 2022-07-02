@@ -168,11 +168,12 @@ a:hover {
   vertical-align: middle;
   display: inline-block;
   padding-right: 3px;
+  max-height: 35px;
 }
+
 .item-logo a {
   text-decoration: none;
 }
-
 
 .footer-flex .ul-links-flex {
   list-style-type: none;
