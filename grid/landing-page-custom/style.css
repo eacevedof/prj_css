@@ -107,7 +107,7 @@ body {
   width: 100%;
 }
 
-.main-wave {
+.main-div-wave {
   grid-area: content;
   align-self: end;
 }
