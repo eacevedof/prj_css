@@ -28,9 +28,11 @@ body {
   grid-template-areas:
    "nav"
   "content";
+  min-height: 100vh;
 }
 
 .nav {
+  grid-area: nav;
   display: grid;
   justify-content: space-between;
   grid-auto-flow: column;
@@ -58,4 +60,23 @@ body {
 
 .nav-menu {
   display: none;
+}
+
+.nav-icon {
+  width: 30px;
+}
+
+.hero-main {
+  grid-area: content;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.hero-img {
+  width: 100%;
+}
+
+.hero-wave {
+  grid-area: content;
+  align-self: end;
 }
