@@ -70,8 +70,23 @@ body {
   grid-area: content;
   display: grid;
   gap: 2em;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  //grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 180px;
+  align-items: center;
 }
+.hero-title {
+  font-size: 2.6rem;
+  letter-spacing: 2px;
+}
+
+.hero-subtitle {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
 .hero-img {
   width: 100%;
 }
