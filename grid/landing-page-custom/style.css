@@ -194,10 +194,11 @@ a:hover {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 4.62rem;
+    top: 0;
     height: 100vh;
     background-color: #1c385e;
-    width: 95%;
+    min-width: 70%;
+    max-width: 75%;
     left:-100%;
     font-size: 1rem;
     transition: .5s all ease;
@@ -271,5 +272,8 @@ a:hover {
     centre la imagen horizontalmente
     */
     margin: 0 auto;
+  }
+  .footer-flex {
+    flex-direction: column-reverse;
   }
 }
