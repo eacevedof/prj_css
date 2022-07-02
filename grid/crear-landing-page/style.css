@@ -34,4 +34,23 @@ body {
   display: grid;
   justify-content: space-between;
   grid-auto-flow: column;
+  gap: 1rem;
+  align-items: center;
+  height: 90px;
+}
+
+.nav-list {
+  list-style: none;
+  display:grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: none;
 }
