@@ -79,8 +79,8 @@
     </div>
   </footer>
 </main>
-<dialog id="dialog-contact">
-  <form id="form-contact" class="form-grid">
+<dialog class="dialog">
+  <form id="form-contact" class="form-flex">
     <div>
       <label for="name">Nombre *</label>
       <input type="text" id="name" placeholder="Nicolas Cage" required="required">
@@ -94,14 +94,14 @@
       <input type="text" id="subject" placeholder="I would like to join" class="form-control">
     </div>
     <div >
-      <label for="message" class="form-label">Mensaje *</label>
+      <label for="message" class="form-label">Mensaje *</label><br/>
       <textarea id="message" placeholder="My phone is: 777 888 999. My business exports apples" required="required" rows="5" class="form-control"></textarea>
     </div>
-    <div>
+    <div class="form-buttons">
       <button id="btn-contact" class="btn btn-dark">Enviar</button>
+      <button id="btn-salir">Salir</button>
     </div>
   </form>
-  <button id="btn-salir">Salir</button>
 </dialog>
 <script type="module">
 const dialog = document.querySelector("dialog")
