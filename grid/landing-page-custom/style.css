@@ -125,12 +125,13 @@ body {
 
 @media (max-width: 800px) {
   .nav-list-ul {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 4.62rem;
     height: 100vh;
     background-color: black;
-    width: 100%;
+    width: 95%;
     left:-100%;
     font-size: 1rem;
     transition: .5s all ease;
@@ -171,7 +172,6 @@ body {
   el label inmediato al checkbox
   */
   #chk-hamburguer:checked~.label-hamburger figure img {
-    //content: "\f00d"; /*muestra una X de cierre*/
     content: url("./images/close-icon.svg");
   }
 
