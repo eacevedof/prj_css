@@ -275,4 +275,12 @@ a:hover {
   .footer-flex {
     flex-direction: column-reverse;
   }
+  .footer-flex .item {
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .footer-flex .item-social {
+    padding-top: 10px;
+  }
 }
