@@ -162,7 +162,7 @@ body {
   /*
   ~ el ul siguiente inmediato al checkbox:checked
   */
-  #chk-hamburguer:checked~ul{
+  #chk-hamburguer:checked~.nav-list-ul{
     left: 0;
     display: flex;
     flex-direction: column;
@@ -183,7 +183,7 @@ body {
     */
     text-align: center;
   }
-  .main-picture {
+  .figure-jumbo {
     grid-row: 1/2;
   }
   .main-img {
