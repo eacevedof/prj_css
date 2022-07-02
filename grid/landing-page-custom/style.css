@@ -146,13 +146,25 @@ a:hover {
   padding-bottom: 3px;
 }
 
-.footer-flex .item-logo {
-  padding-left: 1rem;
-}
-
 .footer-flex .item {
   padding: 5px;
 }
+
+.footer-flex .item-logo {
+  padding-left: 1rem;
+
+}
+
+.item-logo img {
+  margin: auto;
+  vertical-align: middle;
+  display: inline-block;
+  padding-right: 3px;
+}
+.item-logo a {
+  text-decoration: none;
+}
+
 
 .footer-flex .ul-links-flex {
   list-style-type: none;
