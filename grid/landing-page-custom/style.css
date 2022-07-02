@@ -212,7 +212,7 @@ a:hover {
 }
 
 dialog::backdrop {
-  background: #303030;
+  background: #000;
   opacity: 0.95;
   -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 95); /* // for IE8 */
   filter: alpha(opacity= 95); /* //for IE5-7 */
