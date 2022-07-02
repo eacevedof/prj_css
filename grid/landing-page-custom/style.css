@@ -118,7 +118,7 @@ a:hover {
   text-decoration: none;
   color: #ffffff;
   padding: 15px 60px;
-  border: 1px solid black;
+  border: 1px solid #303030;
   border-radius: 6px;
   /*si no hago esto el link que esta debajo del p, se superpone sobre p*/
   display: inline-block;
@@ -128,7 +128,7 @@ a:hover {
 }
 .main-link-cta:hover {
   background-color: #fff;
-  color: #1766DC;
+  color: #303030;
 }
 
 .main-img {
