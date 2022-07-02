@@ -156,7 +156,6 @@ body {
   }
 
   .label-hamburger {
-    border: 1px solid red;
     display: block;
   }
 
@@ -171,8 +170,9 @@ body {
   /*
   el label inmediato al checkbox
   */
-  #chk-hamburguer:checked~label i:before {
-    content: "\f00d"; /*muestra una X de cierre*/
+  #chk-hamburguer:checked~.label-hamburger figure img {
+    //content: "\f00d"; /*muestra una X de cierre*/
+    content: url("./images/close-icon.svg");
   }
 
   .main-section-grid {
