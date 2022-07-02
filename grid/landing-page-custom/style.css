@@ -76,7 +76,7 @@ body {
   color: white;
 }
 
-.main-section-grid {
+.section-grid {
   grid-area: content;
   display: grid;
   gap: 2em;
@@ -116,7 +116,9 @@ body {
   width: 100%;
 }
 
-.main-div-wave {
+.div-wave {
+  height: 150px;
+  overflow: hidden;
   grid-area: content;
   align-self: end;
 }
@@ -185,7 +187,7 @@ body {
     content: url("./images/close-icon.svg");
   }
 
-  .main-section-grid {
+  .section-grid {
     grid-template-columns: 1fr;
     grid-template-rows: max-content max-content;
     /*
