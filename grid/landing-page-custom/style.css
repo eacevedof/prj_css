@@ -156,8 +156,8 @@ body {
   }
 
   .label-hamburger {
+    border: 1px solid red;
     display: block;
-    z-index: 2;
   }
 
   /*
@@ -171,7 +171,7 @@ body {
   /*
   el label inmediato al checkbox
   */
-  #chk-hamburguer:checked~.label-hamburger i:before {
+  #chk-hamburguer:checked~label i:before {
     content: "\f00d"; /*muestra una X de cierre*/
   }
 
