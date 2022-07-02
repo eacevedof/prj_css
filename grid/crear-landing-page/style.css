@@ -29,3 +29,9 @@ body {
    "nav"
   "content";
 }
+
+.nav {
+  display: grid;
+  justify-content: space-between;
+  grid-auto-flow: column;
+}
