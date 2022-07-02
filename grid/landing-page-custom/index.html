@@ -104,12 +104,21 @@
   </form>
 </dialog>
 <script type="module">
+const main = document.querySelector("main")
 const dialog = document.querySelector("dialog")
 const cancel = document.querySelector("#btn-salir")
 const show = document.querySelector("#btn-cta")
 
-show.addEventListener("click", () => dialog.showModal())
-cancel.addEventListener("click", () => dialog.close())
+show.addEventListener("click", () => {
+  main.style.overflow = "hidden"
+  dialog.showModal()
+})
+cancel.addEventListener("click", () => {
+  //dialog.removeAttribute("open")
+  main.style.overflow = "auto"
+  dialog.close()
+})
+
 
 show.click()
 </script>
