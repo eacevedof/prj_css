@@ -209,6 +209,7 @@ a:hover {
   -webkit-box-shadow: 0px 14px 5px -10px rgba(0,0,0,0.36);
   box-shadow: 0px 14px 5px -10px rgba(0,255,0,0.36);
   border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 dialog::backdrop {
@@ -262,8 +263,16 @@ dialog::backdrop {
 }
 
 .button-salir {
+  position: absolute;
+  top:2px;
+  right: 4px;
   background-color: yellow !important;
   color: #303030 !important;
+  font-weight: bold;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 30px;
 }
 
 button:hover {
@@ -364,5 +373,8 @@ button:hover {
   }
   .footer-flex .item-social {
     padding-top: 10px;
+  }
+  .dialog {
+    height: 2500px;
   }
 }
