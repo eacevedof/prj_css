@@ -111,3 +111,33 @@ body {
   grid-area: content;
   align-self: end;
 }
+
+@media (max-width: 800px) {
+  .nav-list {
+    display: none;
+  }
+
+  .nav-menu {
+    display: block;
+  }
+
+  .hero-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    /*
+    alinear todo el contenido al centro
+    */
+    text-align: center;
+  }
+  .hero-picture {
+    grid-row: 1/2;
+  }
+  .hero-img {
+    max-width: 500px;
+    display: block;
+    /*
+    centre la imagen horizontalmente
+    */
+    margin: 0 auto;
+  }
+}
