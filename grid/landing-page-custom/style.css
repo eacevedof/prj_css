@@ -95,16 +95,23 @@ a:hover {
   padding-bottom: 180px;
   align-items: center;
 }
-.main-title {
-  font-size: 2.6rem;
+.text-h1 {
+  font-size: 3rem;
   letter-spacing: 2px;
+  color: yellow;
 }
 
-.main-subtitle {
+.div-texts p{
+  font-size: 1.25rem;
+}
+
+.text-p-subtitle {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 2.5rem !important;
+  font-style: italic;
   font-weight: 300;
+  color: black;
 }
 
 .main-link-cta {
