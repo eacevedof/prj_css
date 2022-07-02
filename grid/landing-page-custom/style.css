@@ -224,6 +224,18 @@ dialog::backdrop {
   gap: 1rem;
 }
 
+.form-flex div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-flex textarea, input {
+  font-size: 1rem;
+  width: 400px;
+  padding: 5px;
+
+}
+
 
 @media (max-width: 800px) {
   .nav-list-ul {
