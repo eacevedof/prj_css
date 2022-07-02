@@ -128,26 +128,38 @@ body {
     position: fixed;
     top: 4.62rem;
     height: 100vh;
-    background-color: black;
+    background-color: #1c385e;
     width: 95%;
     left:-100%;
     font-size: 1rem;
     transition: .5s all ease;
     text-align: center;
+    align-items: center;
     grid-auto-rows: 75px;
     /*
     corrige que home se superponga con la cabecera
     */
     padding-top: 30px;
   }
+  .nav-list-ul li{
+    width: 90%;
+  }
 
   .nav-list-ul li a {
-    color: white;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px 60px;
+    border: 1px solid;
+    border-radius: 6px;
+    /*si no hago esto el link que esta debajo del p, se superpone sobre p*/
+    font-weight: 500;
+    transition: background-color .3s;
+    display: block;
   }
 
   .nav-list-ul li a:hover{
-    color: deepskyblue;
-    background-color: black;
+    background-color: #fff;
+    color: #1766DC;
   }
 
   .nav-menu-figure {
