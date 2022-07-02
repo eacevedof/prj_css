@@ -41,7 +41,7 @@
           All your confirmed subscribers will accumulate points and you can handle these in order to increase customer loyalty.  For example by remarketing strategy.
         </p>
         <br/>
-        <a href="#" class="main-link-cta">Join us</a>
+        <a href="javascript: void(0)" id="btn-cta" class="main-link-cta">Join us</a>
       </div>
 
       <figure class="figure-jumbo">
@@ -79,5 +79,37 @@
       </div>
     </footer>
   </main>
+<dialog>
+  <form id="form-contact" class="form-grid">
+    <div>
+      <label for="name">Nombre *</label>
+      <input type="text" id="name" placeholder="ex Nicolas Cage" required="required">
+    </div>
+    <div>
+      <label for="email">Email *</label>
+      <input id="email" type="email" placeholder="nicocage@domain.com" required="required">
+    </div>
+    <div>
+      <label for="subject" class="form-label">Asunto *</label>
+      <input type="text" id="subject" placeholder="I would like to join" class="form-control">
+    </div>
+    <div >
+      <label for="message" class="form-label">Mensaje *</label>
+      <textarea id="message" placeholder="My phone is: 777 888 999" required="required" rows="5" class="form-control"></textarea>
+    </div>
+    <div>
+      <button id="btn-contact" class="btn btn-dark">Enviar</button>
+    </div>
+  </form>
+  <button id="btn-salir">Salir</button>
+</dialog>
+<script type="module">
+const dialog = document.querySelector("dialog")
+const cancel = document.querySelector("#btn-salir")
+const show = document.querySelector("#btn-cta")
+
+show.addEventListener("click", () => dialog.showModal())
+cancel.addEventListener("click", () => dialog.close())
+</script>
 </body>
 </html>
