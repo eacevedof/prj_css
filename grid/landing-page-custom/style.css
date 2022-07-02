@@ -17,7 +17,7 @@ body {
   overflow: hidden;
 }
 
-.hero {
+.main {
   background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
   color: white;
   display: grid;
@@ -66,7 +66,7 @@ body {
   width: 30px;
 }
 
-.hero-main {
+.main-main {
   grid-area: content;
   display: grid;
   gap: 2em;
@@ -75,19 +75,19 @@ body {
   padding-bottom: 180px;
   align-items: center;
 }
-.hero-title {
+.main-title {
   font-size: 2.6rem;
   letter-spacing: 2px;
 }
 
-.hero-subtitle {
+.main-subtitle {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
   font-weight: 300;
 }
 
-.hero-cta {
+.main-cta {
   text-decoration: none;
   color: #ffffff;
   padding: 15px 60px;
@@ -98,16 +98,16 @@ body {
   font-weight: 500;
   transition: background-color .3s;
 }
-.hero-cta:hover {
+.main-cta:hover {
   background-color: #fff;
   color: #1766DC;
 }
 
-.hero-img {
+.main-img {
   width: 100%;
 }
 
-.hero-wave {
+.main-wave {
   grid-area: content;
   align-self: end;
 }
@@ -121,7 +121,7 @@ body {
     display: block;
   }
 
-  .hero-main {
+  .main-main {
     grid-template-columns: 1fr;
     grid-template-rows: max-content max-content;
     /*
@@ -129,10 +129,10 @@ body {
     */
     text-align: center;
   }
-  .hero-picture {
+  .main-picture {
     grid-row: 1/2;
   }
-  .hero-img {
+  .main-img {
     max-width: 500px;
     display: block;
     /*
