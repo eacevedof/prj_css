@@ -202,7 +202,7 @@ a:hover {
 .dialog {
   padding: 30px;
   position: absolute;
-  border: 1px solid red;
+  border: 2px dashed #fff;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
