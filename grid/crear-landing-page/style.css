@@ -21,6 +21,9 @@ body {
   background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
   color: white;
   display: grid;
+  /*
+  max-content indica que la altura maxima sera la que indique su contenido
+  */
   grid-template-rows: max-content 1fr;
   grid-template-areas:
    "nav"
