@@ -12,11 +12,11 @@ body {
 
 a {
   text-decoration: underline;
-  color: #fff;
+  color: #FFF;
   text-underline-offset: 2px;
 }
 a:link, a:visited {
-  color: #fff;
+  color: #FFF;
 }
 a:hover {
   color: #00c6fb;
@@ -31,7 +31,7 @@ a:hover {
 
 .main-grid {
   background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
-  color: white;
+  color: #FFF;
   display: grid;
   /*
   max-content indica que la altura maxima sera la que indique su contenido
@@ -61,7 +61,7 @@ a:hover {
 }
 
 .nav-link {
-  color: #fff;
+  color: #FFF;
   text-decoration: none;
 }
 
@@ -85,7 +85,7 @@ a:hover {
   display: none;
   font-size: 1.8rem;
   padding-right: 1rem;
-  color: white;
+  color: #FFF;
 }
 
 .section-grid {
@@ -111,13 +111,13 @@ a:hover {
   margin-bottom: 1rem;
   font-size: 2rem !important;
   font-style: italic;
-  color: black;
+  color: #000;
 
 }
 
 .main-link-cta {
   text-decoration: none;
-  color: #ffffff;
+  color: #FFFfff;
   padding: 15px 60px;
   border: 1px solid #303030;
   border-radius: 6px;
@@ -128,7 +128,7 @@ a:hover {
   transition: background-color .3s;
 }
 .main-link-cta:hover {
-  background-color: #fff;
+  background-color: #FFFF00FF;
   color: #303030;
 }
 
@@ -168,7 +168,6 @@ a:hover {
 
 .footer-flex .item-logo {
   padding-left: 1rem;
-
 }
 
 .item-logo img {
@@ -176,7 +175,7 @@ a:hover {
   vertical-align: middle;
   display: inline-block;
   padding-right: 3px;
-  max-height: 35px;
+  max-height: 25px;
 }
 
 .item-logo a {
@@ -209,14 +208,14 @@ a:hover {
 .dialog {
   padding: 30px;
   position: absolute;
-  border: 2px dashed #fff;
+  border: 2px dashed #FFF;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-box-shadow: 0px 14px 5px -10px rgba(0,0,0,0.36);
   box-shadow: 0px 14px 5px -10px rgba(0,255,0,0.36);
   border-radius: 0.5rem;
-  background-color: yellowgreen;
+  background-color: #9ACD32FF;
 }
 
 dialog::backdrop {
@@ -260,7 +259,7 @@ dialog::backdrop {
 
 .form-buttons button {
   text-decoration: none;
-  color: #ffffff;
+  color: #FFF;
   padding: 10px 60px;
   border: 1px solid #303030;
   border-radius: 6px;
@@ -283,7 +282,7 @@ dialog::backdrop {
 
 button:hover {
   background-color: #005EEA !important;
-  color: #fff !important;
+  color: #FFF !important;
 }
 
 @media (max-width: 800px) {
@@ -312,7 +311,7 @@ button:hover {
 
   .nav-list-ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #FFFfff;
     padding: 15px 60px;
     border: 1px solid;
     border-radius: 6px;
@@ -323,7 +322,7 @@ button:hover {
   }
 
   .nav-list-ul li a:hover{
-    background-color: #fff;
+    background-color: #FFF;
     color: #1766DC;
   }
 
