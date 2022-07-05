@@ -60,6 +60,15 @@ a:hover {
   gap: 1rem;
 }
 
+.nav-li-item {
+  padding: 5px;
+}
+
+.nav-li-item-active {
+  ackground: black;
+  border-radius: 5px;
+}
+
 .nav-link {
   color: #FFF;
   text-decoration: none;

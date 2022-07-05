@@ -23,8 +23,8 @@
     </figure>
     <input type="checkbox" id="chk-hamburguer" autocomplete="off" />
     <ul class="nav-list-ul">
-      <li class="nav-item"><a href="javascript: void(0)" class="nav-link" spp="lang-EN">EN</a></li>
-      <li class="nav-item"><a href="javascript: void(0)" class="nav-link" app="lang-ES">ES</a></li>
+      <li class="nav-li-item"><a href="javascript: void(0)" class="nav-link" lang="EN">EN</a></li>
+      <li class="nav-li-item"><a href="javascript: void(0)" class="nav-link" lang="ES">ES</a></li>
     </ul>
     <label for="chk-hamburguer" class="label-hamburger">
       <figure class="nav-menu-figure">
@@ -110,6 +110,28 @@
   </form>
 </dialog>
 <script type="module">
+const get_cookie = name => {
+  const parts = document.cookie.split("; ")
+  const obj = parts
+      .map(str => str.split("="))
+      .filter(ar => ar[0] === name)
+      .map(ar => ar[1])
+  return obj.length ? obj[0] : null
+}
+const set_cookie = (name, value, days) => {
+  const pieces = [
+    `${name}=${value?.toString() || ""}`
+  ]
+
+  if (days) {
+    const date = new Date()
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000))
+    pieces.push(`expires=${date.toUTCString()}`)
+  }
+
+  pieces.push("path=/")
+  document.cookie = pieces.join("; ")
+}
 const body = document.querySelector("body")
 const dialog = document.querySelector("dialog")
 const cancel = document.querySelector("#btn-salir")
@@ -124,12 +146,17 @@ cancel.addEventListener("click", () => {
   dialog.close()
 })
 
-const langs = document.querySelectorAll("a[app]")
+const langs = document.querySelectorAll("a[lang]")
 Array.from(langs).forEach(anchor => anchor.addEventListener("click", ()=>{
-
+  set_cookie("lang", anchor.lang)
+  location.reload()
 }))
 
 //show.click()
+window.addEventListener("DOMContentLoaded", ()=>{
+  const lang = get_cookie("lang")
+  set_cookie("lang", anchor.lang)
+})
 </script>
 </body>
 </html>
