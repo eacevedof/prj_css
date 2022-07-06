@@ -23,8 +23,8 @@
     </figure>
     <input type="checkbox" id="chk-hamburguer" autocomplete="off" />
     <ul class="nav-list-ul">
-      <li class="nav-li-item"><a href="javascript: void(0)" class="nav-link" lang="EN">EN</a></li>
-      <li class="nav-li-item"><a href="javascript: void(0)" class="nav-link" lang="ES">ES</a></li>
+      <li class="nav-li-item"><a href="javascript: void(0)" class="nav-li-item-a" lang="EN">EN</a></li>
+      <li class="nav-li-item"><a href="javascript: void(0)" class="nav-li-item-a" lang="ES">ES</a></li>
     </ul>
     <label for="chk-hamburguer" class="label-hamburger">
       <figure class="nav-menu-figure">
@@ -157,10 +157,14 @@ window.addEventListener("DOMContentLoaded", ()=>{
   let lang = get_cookie("lang")
   if (!lang) lang = "es"
   set_cookie("lang", lang)
+
+  const active = "nav-li-item-active"
+  console.log(active, "active")
   langs.forEach(anchor => {
-    anchor.classList.remove(anchor)
+    const li = anchor.parentNode
+    li.classList.remove("nav-li-item-active")
     if (anchor.lang === lang)
-      anchor.classList.add(lang)
+      li.classList.add(active)
   })
 })
 </script>

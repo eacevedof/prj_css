@@ -65,11 +65,11 @@ a:hover {
 }
 
 .nav-li-item-active {
-  ackground: black;
+  background: black;
   border-radius: 5px;
 }
 
-.nav-link {
+.nav-li-item-a {
   color: #FFF;
   text-decoration: none;
 }
