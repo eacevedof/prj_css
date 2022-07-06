@@ -65,7 +65,7 @@ a:hover {
 }
 
 .nav-li-item-active {
-  background: black;
+  background:  #303030;
   border-radius: 5px;
 }
 
@@ -125,7 +125,7 @@ a:hover {
 
 .main-link-cta {
   text-decoration: none;
-  color: #FFFfff;
+  color: #fff;
   padding: 15px 60px;
   border: 1px solid #303030;
   border-radius: 6px;
@@ -319,7 +319,7 @@ button:hover {
 
   .nav-list-ul li a {
     text-decoration: none;
-    color: #FFFfff;
+    color: #fff;
     padding: 15px 60px;
     border: 1px solid;
     border-radius: 6px;
