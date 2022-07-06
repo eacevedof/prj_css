@@ -12,11 +12,11 @@ body {
 
 a {
   text-decoration: underline;
-  color: #FFF;
+  color: #fff;
   text-underline-offset: 2px;
 }
 a:link, a:visited {
-  color: #FFF;
+  color: #fff;
 }
 a:hover {
   color: #00c6fb;
@@ -30,8 +30,8 @@ a:hover {
 }
 
 .main-grid {
-  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
-  color: #FFF;
+  background-image: linear-gradient(to top, #ccc 0%, #fff 100%);
+  color: black;
   display: grid;
   /*
   max-content indica que la altura maxima sera la que indique su contenido
@@ -70,7 +70,7 @@ a:hover {
 }
 
 .nav-li-item-a {
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -94,7 +94,7 @@ a:hover {
   display: none;
   font-size: 1.8rem;
   padding-right: 1rem;
-  color: #FFF;
+  color: #fff;
 }
 
 .section-grid {
@@ -136,7 +136,7 @@ a:hover {
   transition: background-color .3s;
 }
 .main-link-cta:hover {
-  background-color: #FFFF00FF;
+  background-color: #fffF00FF;
   color: #303030;
 }
 
@@ -216,7 +216,7 @@ a:hover {
 .dialog {
   padding: 30px;
   position: absolute;
-  border: 2px dashed #FFF;
+  border: 2px dashed #fff;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -267,7 +267,7 @@ dialog::backdrop {
 
 .form-buttons button {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   padding: 10px 60px;
   border: 1px solid #303030;
   border-radius: 6px;
@@ -290,7 +290,7 @@ dialog::backdrop {
 
 button:hover {
   background-color: #005EEA !important;
-  color: #FFF !important;
+  color: #fff !important;
 }
 
 @media (max-width: 800px) {
@@ -330,7 +330,7 @@ button:hover {
   }
 
   .nav-list-ul li a:hover{
-    background-color: #FFF;
+    background-color: #fff;
     color: #1766DC;
   }
 
