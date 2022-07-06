@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;700&display=swap');
+body {
+  font-size: 16px;
+  font-family: "Urbanist", sans-serif;
+}
+
+a {
+  text-decoration: underline;
+  color: #FFF;
+  text-underline-offset: 2px;
+}
+a:link, a:visited {
+  color: #FFF;
+}
+a:hover {
+  color: #00c6fb;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.main-grid {
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  color: #FFF;
+  display: grid;
+  /*
+  max-content indica que la altura maxima sera la que indique su contenido
+  */
+  grid-template-rows: max-content 1fr;
+  grid-template-areas:
+   "nav"
+  "content";
+  min-height: 100vh;
+}
+
+.nav-grid {
+  grid-area: nav;
+  display: grid;
+  justify-content: space-between;
+  grid-auto-flow: column;
+  gap: 1rem;
+  align-items: center;
+  height: 90px;
+}
+
+.nav-list-ul {
+  list-style: none;
+  display:grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+}
+
+.nav-li-item {
+  padding: 5px;
+}
+
+.nav-li-item-active {
+  background:  #303030;
+  border-radius: 5px;
+}
+
+.nav-li-item-a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.nav-logo {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.nav-menu-figure {
+  display: none;
+}
+
+.nav-icon {
+  width: 30px;
+}
+
+#chk-hamburguer {
+  display: none;
+}
+.label-hamburger {
+  display: none;
+  font-size: 1.8rem;
+  padding-right: 1rem;
+  color: #FFF;
+}
+
+.section-grid {
+  grid-area: content;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 180px;
+  align-items: center;
+}
+.text-h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: yellow;
+}
+
+.div-texts p{
+  font-size: 1.25rem;
+  padding-top: 1em;
+}
+
+.text-p-subtitle {
+  margin-bottom: 1rem;
+  font-size: 2rem !important;
+  font-style: italic;
+  color: #000;
+}
+
+.main-link-cta {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 60px;
+  border: 1px solid #303030;
+  border-radius: 6px;
+  /*si no hago esto el link que esta debajo del p, se superpone sobre p*/
+  display: inline-block;
+  font-weight: bold;
+  background-color: #E65C00;
+  transition: background-color .3s;
+}
+.main-link-cta:hover {
+  background-color: #FFFF00FF;
+  color: #303030;
+}
+
+.main-img {
+  width: 100%;
+}
+
+.div-wave {
+  height: 150px;
+  overflow: hidden;
+  grid-area: content;
+  align-self: end;
+}
+
+.div-wave-top {
+  overflow: hidden;
+  grid-area: nav;
+  align-self: start;
+  height: 90px;
+}
+
+.footer-flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #303030;
+  align-items: center;
+  font-size: 14px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.footer-flex .item {
+  padding: 5px;
+}
+
+.footer-flex .item-logo {
+  padding-left: 1rem;
+}
+
+.item-logo img {
+  margin: auto;
+  vertical-align: middle;
+  display: inline-block;
+  padding-right: 3px;
+  max-height: 25px;
+}
+
+.item-logo a {
+  text-decoration: none;
+}
+
+.footer-flex .ul-links-flex {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 1rem;
+}
+
+.ul-links-flex li {
+  text-align: center;
+}
+
+.footer-flex .ul-social-flex {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1rem;
+  padding-right: 1rem;
+}
+
+.ul-social-flex li {
+  text-align: center;
+}
+
+.dialog {
+  padding: 30px;
+  position: absolute;
+  border: 2px dashed #FFF;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 14px 5px -10px rgba(0,0,0,0.36);
+  box-shadow: 0px 14px 5px -10px rgba(0,255,0,0.36);
+  border-radius: 0.5rem;
+  background-color: #9ACD32FF;
+}
+
+dialog::backdrop {
+  background: #000;
+  opacity: 0.95;
+  -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 95); /* // for IE8 */
+  filter: alpha(opacity= 95); /* //for IE5-7 */
+}
+
+.dialog .form-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-flex div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-flex label {
+  font-weight: bold;
+}
+
+.form-flex textarea, input {
+  font-size: 1rem;
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #303030;
+  border-radius: 6px;
+  resize: none;
+}
+
+.form-flex .form-buttons {
+  justify-content: space-around !important;
+  padding-top: 10px;
+}
+
+.form-buttons button {
+  text-decoration: none;
+  color: #FFF;
+  padding: 10px 60px;
+  border: 1px solid #303030;
+  border-radius: 6px;
+  font-weight: bold;
+  background-color: #E65C00;
+  transition: background-color .3s;
+}
+
+.btn-exit {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  background-color: #303030 !important;
+  color: #303030 !important;
+  font-weight: bold;
+  padding-right: 1px;
+  padding-left: 2px;
+  border-radius: 30px;
+}
+
+button:hover {
+  background-color: #005EEA !important;
+  color: #FFF !important;
+}
+
+@media (max-width: 800px) {
+  .nav-list-ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background-color: #303030;
+    width: 80%;
+    left:-100%;
+    font-size: 1rem;
+    transition: .5s all ease;
+    text-align: center;
+    align-items: center;
+    grid-auto-rows: 75px;
+    /*
+    corrige que home se superponga con la cabecera
+    */
+    padding-top: 30px;
+  }
+  .nav-list-ul li{
+    width: 90%;
+  }
+
+  .nav-list-ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 60px;
+    border: 1px solid;
+    border-radius: 6px;
+    /*si no hago esto el link que esta debajo del p, se superpone sobre p*/
+    font-weight: 500;
+    transition: background-color .3s;
+    display: block;
+  }
+
+  .nav-list-ul li a:hover{
+    background-color: #FFF;
+    color: #1766DC;
+  }
+
+  .nav-menu-figure {
+    display: block;
+  }
+
+  .label-hamburger {
+    display: block;
+  }
+
+  /*
+  ~ el ul siguiente inmediato al checkbox:checked
+  */
+  #chk-hamburguer:checked~.nav-list-ul{
+    left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  /*
+  el label inmediato al checkbox
+  */
+  #chk-hamburguer:checked~.label-hamburger figure img {
+    content: url("./images/close-icon.svg");
+  }
+
+  .section-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    /*
+    alinear todo el contenido al centro
+    */
+    text-align: center;
+  }
+  .figure-jumbo {
+    grid-row: 1/2;
+  }
+  .main-img {
+    max-width: 500px;
+    display: block;
+    /*
+    centre la imagen horizontalmente
+    */
+    margin: 0 auto;
+  }
+  .footer-flex {
+    flex-direction: column-reverse;
+  }
+  .footer-flex .item {
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .footer-flex .item-social {
+    padding-top: 10px;
+  }
+  .dialog {
+    height: 2500px;
+  }
+}
