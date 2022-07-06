@@ -106,7 +106,7 @@
     <div class="form-buttons">
       <button id="btn-contact" class="btn btn-dark">Enviar</button>
     </div>
-    <button id="btn-salir" class="button-salir"><img src="./images/close-icon.svg"></button>
+    <button id="btn-exit" class="btn-exit"><img src="./images/close-icon.svg"></button>
   </form>
 </dialog>
 <script type="module">
@@ -134,7 +134,7 @@ const set_cookie = (name, value, days) => {
 }
 const body = document.querySelector("body")
 const dialog = document.querySelector("dialog")
-const cancel = document.querySelector("#btn-salir")
+const cancel = document.querySelector("#btn-exit")
 const show = document.querySelector("#btn-cta")
 
 show.addEventListener("click", () => {
