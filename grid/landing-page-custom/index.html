@@ -146,16 +146,22 @@ cancel.addEventListener("click", () => {
   dialog.close()
 })
 
-const langs = document.querySelectorAll("a[lang]")
-Array.from(langs).forEach(anchor => anchor.addEventListener("click", ()=>{
+const langs = Array.from(document.querySelectorAll("a[lang]"))
+langs.forEach(anchor => anchor.addEventListener("click", ()=>{
   set_cookie("lang", anchor.lang)
   location.reload()
 }))
 
 //show.click()
 window.addEventListener("DOMContentLoaded", ()=>{
-  const lang = get_cookie("lang")
-  set_cookie("lang", anchor.lang)
+  let lang = get_cookie("lang")
+  if (!lang) lang = "es"
+  set_cookie("lang", lang)
+  langs.forEach(anchor => {
+    anchor.classList.remove(anchor)
+    if (anchor.lang === lang)
+      anchor.classList.add(lang)
+  })
 })
 </script>
 </body>
