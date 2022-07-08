@@ -68,6 +68,7 @@
 #chk-hamburguer {
   display: none;
 }
+
 .label-hamburger {
   display: none;
   font-size: 1.8rem;
@@ -114,6 +115,7 @@
   background-color: #E65C00;
   transition: background-color .3s;
 }
+
 .main-link-cta:hover {
   background-color: #FFFF00FF;
   color: #303030;

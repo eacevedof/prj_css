@@ -1,0 +1,33 @@
+.nav-list-ul {
+    list-style: none;
+    display:grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+}
+
+.nav-li-item {
+    padding: 5px;
+}
+
+.nav-li-item-active {
+    background:  #303030;
+    border-radius: 5px;
+}
+
+.nav-li-item-a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.nav-logo {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.nav-menu-figure {
+    display: none;
+}
+
+.nav-icon {
+    width: 30px;
+}
