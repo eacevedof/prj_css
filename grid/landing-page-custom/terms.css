@@ -1,26 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;700&display=swap');
-body {
-  font-size: 16px;
-  font-family: "Urbanist", sans-serif;
-}
-
-a {
-  text-decoration: underline;
-  color: #fff;
-  text-underline-offset: 2px;
-}
-a:link, a:visited {
-  color: #fff;
-}
-a:hover {
-  color: #00c6fb;
-}
 
 .container {
   width: 90%;
@@ -42,8 +20,6 @@ a:hover {
   "content";
   min-height: 100vh;
 }
-
-
 
 .section-grid {
   grid-area: content;
