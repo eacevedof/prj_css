@@ -38,64 +38,12 @@ a:hover {
   */
   grid-template-rows: max-content 1fr;
   grid-template-areas:
-   "nav"
+  "nav"
   "content";
   min-height: 100vh;
 }
 
-.nav-grid {
-  grid-area: nav;
-  display: grid;
-  justify-content: space-between;
-  grid-auto-flow: column;
-  gap: 1rem;
-  align-items: center;
-  height: 90px;
-}
 
-.nav-list-ul {
-  list-style: none;
-  display:grid;
-  grid-auto-flow: column;
-  gap: 1rem;
-}
-
-.nav-li-item {
-  padding: 5px;
-}
-
-.nav-li-item-active {
-  background:  #303030;
-  border-radius: 5px;
-}
-
-.nav-li-item-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.nav-logo {
-  font-size: 1.8rem;
-  font-weight: 300;
-}
-
-.nav-menu-figure {
-  display: none;
-}
-
-.nav-icon {
-  width: 30px;
-}
-
-#chk-hamburguer {
-  display: none;
-}
-.label-hamburger {
-  display: none;
-  font-size: 1.8rem;
-  padding-right: 1rem;
-  color: #fff;
-}
 
 .section-grid {
   grid-area: content;
