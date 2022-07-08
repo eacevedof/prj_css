@@ -121,7 +121,7 @@
   color: #303030;
 }
 
-.main-img {
+.figure-img-jumbo {
   width: 100%;
 }
 
@@ -349,7 +349,7 @@ button:hover {
   .figure-jumbo {
     grid-row: 1/2;
   }
-  .main-img {
+  .figure-img-jumbo {
     max-width: 500px;
     display: block;
     /*
