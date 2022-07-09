@@ -17,3 +17,16 @@ body {
   justify-content: center; /*eje X*/
   background-image: url("bg-image.svg");
 }
+
+.section {
+  width: 90%;
+  height: auto;
+  background-color: deepskyblue;
+  border: 2px solid orange;
+  justify-self: center;
+  padding: 10px;
+}
+
+.section h1 {
+  padding-bottom: 10px;
+}
