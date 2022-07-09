@@ -10,9 +10,10 @@ body {
 }
 
 .main-flex {
+  border: 1px solid darkorchid;
   display: grid;
   height: 100vh;
   align-content: center; /*eje Y*/
   justify-content: center; /*eje X*/
-  background-image: url("");
+  background-image: url("bg-image.svg");
 }
