@@ -15,10 +15,16 @@
 }
 
 .center-x {
-  width: 90%;
-  max-width: 1200px;
+  width: 80%;
   margin: 0 auto;
   overflow: hidden;
+}
+
+.div-wave-top {
+  overflow: hidden;
+  grid-area: nav;
+  align-self: start;
+  height: 90px;
 }
 
 .nav-grid {
@@ -125,18 +131,11 @@
   width: 100%;
 }
 
-.div-wave {
+.div-wave-bottom {
   height: 150px;
   overflow: hidden;
   grid-area: content;
   align-self: end;
-}
-
-.div-wave-top {
-  overflow: hidden;
-  grid-area: nav;
-  align-self: start;
-  height: 90px;
 }
 
 .footer-flex {
