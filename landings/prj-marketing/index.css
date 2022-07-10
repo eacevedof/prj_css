@@ -109,20 +109,18 @@
   color: #000;
 }
 
-.main-link-cta {
-  text-decoration: none;
+.div-texts .button-cta {
   color: #fff;
   padding: 15px 60px;
   border: 1px solid #303030;
   border-radius: 6px;
-  /*si no hago esto el link que esta debajo del p, se superpone sobre p*/
-  display: inline-block;
+
   font-weight: bold;
   background-color: #E65C00;
   transition: background-color .3s;
 }
 
-.main-link-cta:hover {
+.div-texts button.button-cta:hover {
   background-color: #FFFF00FF;
   color: #303030;
 }
@@ -219,7 +217,7 @@ dialog::backdrop {
   gap: 1rem;
 }
 
-.form-flex div {
+.dialog .form-flex div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -227,11 +225,11 @@ dialog::backdrop {
   flex-wrap: wrap;
 }
 
-.form-flex label {
+.dialog .form-flex label {
   font-weight: bold;
 }
 
-.form-flex textarea, input {
+.dialog .form-flex textarea, input {
   font-size: 1rem;
   width: 400px;
   padding: 10px;
@@ -240,12 +238,12 @@ dialog::backdrop {
   resize: none;
 }
 
-.form-flex .form-buttons {
+.dialog .form-flex .form-buttons {
   justify-content: space-around !important;
   padding-top: 10px;
 }
 
-.form-buttons button {
+.dialog .form-buttons button {
   text-decoration: none;
   color: #FFF;
   padding: 10px 60px;
@@ -256,21 +254,21 @@ dialog::backdrop {
   transition: background-color .3s;
 }
 
-.btn-exit {
+.dialog .button-exit {
   position: absolute;
   top: 1px;
   right: 1px;
-  background-color: #303030 !important;
-  color: #303030 !important;
+  background-color: #303030;
+  color: #303030;
   font-weight: bold;
   padding-right: 1px;
   padding-left: 2px;
   border-radius: 30px;
 }
 
-button:hover {
-  background-color: #005EEA !important;
-  color: #FFF !important;
+.dialog button:hover {
+  background-color: #005EEA;
+  color: #FFF;
 }
 
 @media (max-width: 800px) {
@@ -345,10 +343,8 @@ button:hover {
     */
     text-align: center;
   }
-  .figure-jumbo {
-    grid-row: 1/2;
-  }
   .figure-home-hero {
+    grid-row: 1/2;
     max-width: 500px;
     display: block;
     /*
