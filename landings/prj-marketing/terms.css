@@ -7,7 +7,6 @@
 }
 
 .main-grid {
-  color: #FFF;
   display: grid;
   grid-template-rows: max-content 1fr;
   grid-template-areas:
@@ -17,7 +16,7 @@
   min-height: auto;
   background-image: url("./images/terms-background.png");
   background-size:     cover;
-  background-position: top center;
+  background-position: top right;
   background-repeat:   no-repeat;
 }
 
@@ -319,9 +318,13 @@
 */
 
 @media (max-width: 800px) {
+  .main-grid {
+    background-position: top left;
+  }
+
   .section-grid {
     grid-template-columns: 1fr;
-    grid-template-rows: max-content max-content;
+    grid-template-rows: max-content;
     padding-bottom: 5px;
   }
 
