@@ -8,7 +8,7 @@
   "area-nav"
   "area-textbox";
   min-height: auto;
-  background-image: url("./images/bg-image-girl.png");
+  background-image: url("./images/terms-conditions-bg.png");
   background-size:     cover;
   background-position: top center;
   background-repeat:   no-repeat;
@@ -97,7 +97,7 @@
   display: grid;
   gap: 2em;
   grid-template-columns: 1fr;
-  padding-bottom: 180px;
+  padding-bottom: 30px;
   align-items: center;
   z-index: 2;
   -webkit-box-shadow: 0px 14px 5px -10px rgba(0,0,0,0.36);
@@ -198,14 +198,14 @@
 <div>
 */
 /*
-<div class="div-animated-bg">
+<section class="section-animated-bg">
 */
-.div-animated-bg{
+.section-animated-bg{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height:100vh;
+  min-height: 100%;
   overflow: hidden;
 }
 
@@ -324,7 +324,7 @@
   }
 }
 /*
-</div>
+</section>
 */
 
 @media (max-width: 800px) {
