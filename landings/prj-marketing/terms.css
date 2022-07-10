@@ -1,14 +1,12 @@
 @import "global.css";
 
-
-
 .main-grid {
   color: #FFF;
   display: grid;
   grid-template-rows: max-content 1fr;
   grid-template-areas:
-  "nav"
-  "content";
+  "area-nav"
+  "area-textbox";
   min-height: 100vh;
   background-image: url("./images/img-jumbo-bg.svg");
   background-size:     cover;
@@ -24,7 +22,8 @@
 }
 
 .nav-grid {
-  grid-area: nav;
+  border: 1px solid purple;
+  grid-area: area-nav;
   display: grid;
   justify-content: space-between;
   grid-auto-flow: column;
@@ -79,7 +78,8 @@
 }
 
 .section-grid {
-  grid-area: content;
+  border: 1px solid red;
+  grid-area: area-textbox;
   display: grid;
   gap: 2em;
   grid-template-columns: 1fr;
@@ -131,7 +131,7 @@
 
 .div-wave-top {
   overflow: hidden;
-  grid-area: nav;
+  grid-area: area-nav;
   align-self: start;
   height: 60px;
 }
