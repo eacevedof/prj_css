@@ -232,7 +232,7 @@
   width: 20px;
   height: 20px;
   background: rgba(159, 252, 6, 1);
-  animation: keyframe-bg-circles 25s linear infinite;
+  animation: keyframe-bg-circles 60s linear infinite;
   bottom: -150px;
 }
 
