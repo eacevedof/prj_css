@@ -95,7 +95,29 @@
 */
 .section-scrumbs {
   grid-area: area-scrumbs;
+  z-index: 1;
 }
+
+.section-scrumbs ul {
+  display: flex;
+  align-items: start;
+  list-style: none;
+}
+.section-scrumbs ul li+li:before {
+  padding: 8px;
+  color: yellow;
+  content: "/\00a0";
+}
+
+.section-scrumbs ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.section-scrumbs ul li a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
 /*
 </section>
 <section text-container>
@@ -404,22 +426,9 @@
   .section-grid {
     grid-template-columns: 1fr;
     grid-template-rows: max-content max-content;
-    /*
-    alinear todo el contenido al centro
-    */
     text-align: center;
   }
-  .figure-jumbo {
-    grid-row: 1/2;
-  }
-  .figure-img-jumbo {
-    max-width: 500px;
-    display: block;
-    /*
-    centre la imagen horizontalmente
-    */
-    margin: 0 auto;
-  }
+
   .footer-flex {
     flex-direction: column-reverse;
   }
