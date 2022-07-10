@@ -7,7 +7,7 @@
   grid-template-areas:
   "area-nav"
   "area-textbox";
-  min-height: 100vh;
+  min-height: auto;
   background-image: url("./images/bg-image-girl.png");
   background-size:     cover;
   background-position: top center;
@@ -32,7 +32,7 @@
 <nav>
 */
 .nav-grid {
-  border: 5px solid purple;
+  //border: 5px solid purple;
   grid-area: area-nav;
   display: grid;
   justify-content: space-between;
@@ -93,8 +93,6 @@
 <section>
 */
 .section-grid {
-  background: transparent;
-  border: 1px solid red;
   grid-area: area-textbox;
   display: grid;
   gap: 2em;
@@ -102,7 +100,6 @@
   padding-bottom: 180px;
   align-items: center;
   z-index: 2;
-  border: 3px solid darkslategrey;
   -webkit-box-shadow: 0px 14px 5px -10px rgba(0,0,0,0.36);
   box-shadow: 0px 14px 5px -10px rgba(0,0,0,0.36);
   opacity: 0.9;
@@ -111,6 +108,7 @@
 .div-texts {
   background-color: #FFF;
   border: 1px solid blue;
+  color: #303030;
   border-radius: 5px;
   -webkit-box-shadow: 0px 14px 5px -10px rgba(0,0,0,0.36);
   box-shadow: 0px 14px 5px -10px rgba(0,0,0,0.36);
