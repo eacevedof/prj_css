@@ -22,7 +22,7 @@
 }
 
 .nav-grid {
-  border: 1px solid purple;
+  border: 5px solid purple;
   grid-area: area-nav;
   display: grid;
   justify-content: space-between;
