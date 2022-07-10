@@ -232,7 +232,7 @@
   width: 20px;
   height: 20px;
   background: rgba(159, 252, 6, 1);
-  animation: keyframe-bg-circles 60s linear infinite;
+  animation: keyframe-bg-circles 25s normal infinite;
   bottom: -150px;
 }
 
@@ -328,7 +328,7 @@
   }
 
   100%{
-    transform: translateY(-1000px) rotate(720deg);
+    transform: translateY(-5000px) rotate(720deg);
     opacity: 0.5;
     border-radius: 100%;
   }
