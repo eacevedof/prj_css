@@ -311,7 +311,7 @@
   .section-grid {
     grid-template-columns: 1fr;
     grid-template-rows: max-content max-content;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
 
   .footer-flex {
