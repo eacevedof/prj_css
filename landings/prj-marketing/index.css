@@ -136,6 +136,9 @@
   align-self: end;
 }
 
+/*
+<footer>
+*/
 .footer-flex {
   width: 100%;
   display: flex;
@@ -156,7 +159,7 @@
   padding-left: 1rem;
 }
 
-.item-logo img {
+.footer-flex .item-logo img {
   margin: auto;
   vertical-align: middle;
   display: inline-block;
@@ -164,7 +167,7 @@
   max-height: 25px;
 }
 
-.item-logo a {
+.footer-flex .item-logo a {
   text-decoration: none;
 }
 
@@ -175,7 +178,7 @@
   column-gap: 1rem;
 }
 
-.ul-links-flex li {
+.footer-flex .ul-links-flex li {
   text-align: center;
 }
 
@@ -187,10 +190,13 @@
   padding-right: 1rem;
 }
 
-.ul-social-flex li {
+.footer-flex .ul-social-flex li {
   text-align: center;
 }
 
+/*
+<dialog>
+*/
 .dialog {
   padding: 30px;
   position: absolute;
