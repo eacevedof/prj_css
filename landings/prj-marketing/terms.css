@@ -8,7 +8,7 @@
   "area-nav"
   "area-textbox";
   min-height: 100vh;
-  background-image: url("./images/img-jumbo-bg.svg");
+  background-image: url("./images/bg-image-girl.png");
   background-size:     cover;
   background-position: top center;
   background-repeat:   no-repeat;
@@ -21,6 +21,16 @@
   overflow: hidden;
 }
 
+.div-wave-top {
+  overflow: hidden;
+  grid-area: area-nav;
+  align-self: start;
+  height: 60px;
+  z-index: 1;
+}
+/*
+<nav>
+*/
 .nav-grid {
   border: 5px solid purple;
   grid-area: area-nav;
@@ -30,6 +40,7 @@
   gap: 1rem;
   align-items: center;
   height: 90px;
+  z-index: 1;
 }
 
 .nav-list-ul {
@@ -76,8 +87,13 @@
   padding-right: 1rem;
   color: #FFF;
 }
+/*
+</nav>
 
+<section>
+*/
 .section-grid {
+  background: transparent;
   border: 1px solid red;
   grid-area: area-textbox;
   display: grid;
@@ -85,11 +101,16 @@
   grid-template-columns: 1fr;
   padding-bottom: 180px;
   align-items: center;
+  z-index: 2;
+  border: 3px solid darkslategrey;
+  -webkit-box-shadow: 0px 14px 5px -10px rgba(0,0,0,0.36);
+  box-shadow: 0px 14px 5px -10px rgba(0,0,0,0.36);
+  opacity: 0.9;
 }
 
 .div-texts {
   background-color: #FFF;
-  border: 1px solid orange;
+  border: 1px solid blue;
   border-radius: 5px;
   -webkit-box-shadow: 0px 14px 5px -10px rgba(0,0,0,0.36);
   box-shadow: 0px 14px 5px -10px rgba(0,0,0,0.36);
@@ -112,30 +133,13 @@
   font-style: italic;
   color: #000;
 }
+/*
+</section>
+*/
 
-.main-link-cta {
-  text-decoration: none;
-  color: #fff;
-  padding: 15px 60px;
-  border: 1px solid #303030;
-  border-radius: 6px;
-  display: inline-block;
-  font-weight: bold;
-  background-color: #E65C00;
-  transition: background-color .3s;
-}
-
-.figure-img-jumbo {
-  width: 100%;
-}
-
-.div-wave-top {
-  overflow: hidden;
-  grid-area: area-nav;
-  align-self: start;
-  height: 60px;
-}
-
+/*
+<footer>
+*/
 .footer-flex {
   width: 100%;
   display: flex;
@@ -146,6 +150,7 @@
   font-size: 14px;
   padding-top: 3px;
   padding-bottom: 3px;
+  z-index: 1;
 }
 
 .footer-flex .item {
@@ -190,6 +195,139 @@
 .ul-social-flex li {
   text-align: center;
 }
+
+/*
+<div>
+*/
+/*
+<div class="div-animated-bg">
+*/
+.div-animated-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100vh;
+  overflow: hidden;
+}
+
+.ul-circles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ul-circles li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(159, 252, 6, 1);
+  animation: keyframe-bg-circles 25s linear infinite;
+  bottom: -150px;
+}
+
+.ul-circles li:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+  background: orange;
+}
+
+.ul-circles li:nth-child(2){
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+  background: yellow;
+}
+
+.ul-circles li:nth-child(3){
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+  background: orange;
+}
+
+.ul-circles li:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+  background: #00c6fb;
+}
+
+.ul-circles li:nth-child(5){
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+  background: #005bea;
+}
+
+.ul-circles li:nth-child(6){
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+  background: black;
+}
+
+.ul-circles li:nth-child(7){
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.ul-circles li:nth-child(8){
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+  background: #E65C00;
+}
+
+.ul-circles li:nth-child(9){
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+  background: white;
+}
+
+.ul-circles li:nth-child(10){
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+  background: yellow;
+}
+
+@keyframes keyframe-bg-circles {
+  0%{
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100%{
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0.5;
+    border-radius: 100%;
+  }
+}
+/*
+</div>
+*/
 
 @media (max-width: 800px) {
   .nav-list-ul {
