@@ -1,5 +1,11 @@
 @import "global.css";
 
+.center-x {
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 .main-grid {
   color: #FFF;
   display: grid;
@@ -15,12 +21,6 @@
   background-repeat:   no-repeat;
 }
 
-.center-x {
-  width: 95%;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
 .div-wave-top {
   overflow: hidden;
   grid-area: area-nav;
@@ -31,66 +31,23 @@
 /*
 <nav>
 */
-.nav-grid {
-  //border: 5px solid purple;
+.nav-flex {
   grid-area: area-nav;
-  display: grid;
-  justify-content: space-between;
-  grid-auto-flow: column;
-  gap: 1rem;
-  align-items: center;
-  height: 90px;
+  display: flex;
+  justify-content: flex-end;
   z-index: 1;
 }
 
-.nav-list-ul {
-  list-style: none;
-  display:grid;
-  grid-auto-flow: column;
-  gap: 1rem;
-}
-
-.nav-li-item {
-  padding: 5px;
-}
-
-.nav-li-item-active {
-  background:  #303030;
+.nav-flex figure img {
+  padding: 3px;
+  max-width: 150px;
+  background-color: #303030;
   border-radius: 5px;
 }
 
-.nav-li-item-a {
-  color: #FFF;
-  text-decoration: none;
-}
-
-.nav-logo {
-  font-size: 1.8rem;
-  font-weight: 300;
-}
-
-.nav-menu-figure {
-  display: none;
-}
-
-.nav-icon {
-  width: 30px;
-}
-
-#chk-hamburguer {
-  display: none;
-}
-
-.label-hamburger {
-  display: none;
-  font-size: 1.8rem;
-  padding-right: 1rem;
-  color: #FFF;
-}
 /*
 </nav>
 <section scrumbs>
-</section>
 */
 .section-scrumbs {
   grid-area: area-scrumbs;
@@ -99,17 +56,17 @@
 
 .section-scrumbs ul {
   display: flex;
-  align-items: start;
   list-style: none;
 }
 .section-scrumbs ul li+li:before {
   padding: 8px;
-  color: yellow;
+  color: #303030;
   content: "/\00a0";
 }
 
 .section-scrumbs ul li a {
-  color: #fff;
+  color: #333333;
+  font-weight: bold;
   text-decoration: none;
 }
 .section-scrumbs ul li a:hover {
