@@ -33,7 +33,7 @@
 
   <section class="section-grid center-x">
     <div class="div-texts">
-      <h1>Terms and conditions</h1>
+      <h1 id="top-mark">Terms and conditions</h1>
       <h2>1. Titular del Portal</h2>
       <p>
       El presente Aviso Legal regula las condiciones de utilización del sitio web https://www.some.domain (en adelante, el "Sitio Web" o el "Portal") responsabilidad de:
@@ -174,6 +174,25 @@
     <li></li>
   </ul>
 </section>
+<div id="div-totop" class="div-totop">
+  <a href="#top-mark">
+    <svg width="60" height="60" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 8.5H20V21H8V8.5Z" fill="black"/>
+      <path d="M14.1417 4.99484C8.62572 4.99544 4.13776 9.4834 4.13644 15.0001C4.13725 20.516 8.62609 25.0049 14.1421 25.0057C19.658 25.0051 24.146 20.5171 24.1473 15.0005C24.1465 9.48307 19.6584 4.99494 14.1417 4.99484ZM19.1442 15.0004L15.1422 14.9996L15.143 20.0019L13.1423 20.0019L13.1415 14.9995L9.13951 14.9988L14.1411 9.9972L19.1442 15.0004Z" fill="#FFFF00FF"/>
+    </svg>
+  </a>
+</div>
+<script type="module">
+const ishow = 50
+const $divtop = document.getElementById("div-totop")
+window.addEventListener("scroll", function() {
+  if (!$divtop) return
+  $divtop.style.display = "none"
+  if(document.documentElement.scrollTop > ishow){
+    $divtop.style.display = "inherit"
+  }
+})
+</script>
 <script>
 const animation = document.querySelector(".ul-circles")
 animation.style.height = document.body.offsetHeight.toString().concat("px")
