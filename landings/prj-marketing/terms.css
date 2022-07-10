@@ -104,28 +104,19 @@
   padding: 10px;
 }
 
-.div-texts .text-h1 {
+.div-texts .h1 {
   font-size: 3rem;
   letter-spacing: 2px;
-  color: yellow;
+  color: #303030;
 }
 
 .div-texts p{
   font-size: 1.25rem;
   padding-top: 1em;
 }
-
-.text-p-subtitle {
-  margin-bottom: 1rem;
-  font-size: 2rem !important;
-  font-style: italic;
-  color: #000;
-}
 /*
 </section>
-*/
 
-/*
 <footer>
 */
 .footer-flex {
@@ -185,12 +176,11 @@
 }
 
 /*
-<div>
-*/
-/*
+</footer>
+
 <section class="section-animated-bg">
 */
-.section-animated-bg{
+.section-animated-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -199,13 +189,13 @@
   overflow: hidden;
 }
 
-.ul-circles {
+.section-animated-bg .ul-circles {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-.ul-circles li{
+.section-animated-bg .ul-circles li{
   position: absolute;
   display: block;
   list-style: none;
@@ -216,7 +206,7 @@
   bottom: -150px;
 }
 
-.ul-circles li:nth-child(1){
+.section-animated-bg .ul-circles li:nth-child(1){
   left: 25%;
   width: 80px;
   height: 80px;
@@ -224,7 +214,7 @@
   background: orange;
 }
 
-.ul-circles li:nth-child(2){
+.section-animated-bg .ul-circles li:nth-child(2){
   left: 10%;
   width: 110px;
   height: 110px;
@@ -233,7 +223,7 @@
   background: yellow;
 }
 
-.ul-circles li:nth-child(3){
+.section-animated-bg .ul-circles li:nth-child(3){
   left: 70%;
   width: 60px;
   height: 60px;
@@ -241,7 +231,7 @@
   background: orange;
 }
 
-.ul-circles li:nth-child(4){
+.section-animated-bg .ul-circles li:nth-child(4){
   left: 40%;
   width: 100px;
   height: 100px;
@@ -250,7 +240,7 @@
   background: #00c6fb;
 }
 
-.ul-circles li:nth-child(5){
+.section-animated-bg .ul-circles li:nth-child(5){
   left: 65%;
   width: 50px;
   height: 50px;
@@ -258,7 +248,7 @@
   background: #005bea;
 }
 
-.ul-circles li:nth-child(6){
+.section-animated-bg .ul-circles li:nth-child(6){
   left: 75%;
   width: 110px;
   height: 110px;
@@ -266,14 +256,14 @@
   background: black;
 }
 
-.ul-circles li:nth-child(7){
+.section-animated-bg .ul-circles li:nth-child(7){
   left: 35%;
   width: 150px;
   height: 150px;
   animation-delay: 15s;
 }
 
-.ul-circles li:nth-child(8){
+.section-animated-bg .ul-circles li:nth-child(8){
   left: 50%;
   width: 75px;
   height: 75px;
@@ -282,7 +272,7 @@
   background: #E65C00;
 }
 
-.ul-circles li:nth-child(9){
+.section-animated-bg .ul-circles li:nth-child(9){
   left: 20%;
   width: 45px;
   height: 45px;
@@ -291,7 +281,7 @@
   background: white;
 }
 
-.ul-circles li:nth-child(10){
+.section-animated-bg .ul-circles li:nth-child(10){
   left: 85%;
   width: 150px;
   height: 150px;
@@ -314,73 +304,10 @@
   }
 }
 /*
-</section>
+</section animated>
 */
 
 @media (max-width: 800px) {
-  .nav-list-ul {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    background-color: #303030;
-    width: 80%;
-    left:-100%;
-    font-size: 1rem;
-    transition: .5s all ease;
-    text-align: center;
-    align-items: center;
-    grid-auto-rows: 75px;
-    /*
-    corrige que home se superponga con la cabecera
-    */
-    padding-top: 30px;
-  }
-  .nav-list-ul li{
-    width: 90%;
-  }
-
-  .nav-list-ul li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 15px 60px;
-    border: 1px solid;
-    border-radius: 6px;
-    /*si no hago esto el link que esta debajo del p, se superpone sobre p*/
-    font-weight: 500;
-    transition: background-color .3s;
-    display: block;
-  }
-
-  .nav-list-ul li a:hover{
-    background-color: #FFF;
-    color: #1766DC;
-  }
-
-  .nav-menu-figure {
-    display: block;
-  }
-
-  .label-hamburger {
-    display: block;
-  }
-
-  /*
-  ~ el ul siguiente inmediato al checkbox:checked
-  */
-  #chk-hamburguer:checked~.nav-list-ul{
-    left: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  /*
-  el label inmediato al checkbox
-  */
-  #chk-hamburguer:checked~.label-hamburger figure img {
-    content: url("./images/icon-close-modal.svg");
-  }
-
   .section-grid {
     grid-template-columns: 1fr;
     grid-template-rows: max-content max-content;
