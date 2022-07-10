@@ -419,7 +419,7 @@
   el label inmediato al checkbox
   */
   #chk-hamburguer:checked~.label-hamburger figure img {
-    content: url("./images/close-icon.svg");
+    content: url("./images/icon-close-modal.svg");
   }
 
   .section-grid {
