@@ -104,15 +104,26 @@
   padding: 10px;
 }
 
-.section-grid .div-texts .h1 {
-  font-size: 3rem;
+.section-grid .div-texts h1 {
+  font-size: 2rem;
   letter-spacing: 2px;
   color: #303030;
+  padding: 3px 0 3px 0;
+  text-align: center;
+}
+
+.section-grid .div-texts h2 {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.section-grid .div-texts h3 {
+  padding-top: 1rem;
+  font-size: 1.05rem;
 }
 
 .section-grid .div-texts p{
-  font-size: 1.25rem;
-  padding-top: 1em;
+  padding-top: 1rem;
 }
 /*
 </section>
