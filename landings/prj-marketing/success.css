@@ -321,7 +321,7 @@
 
 @media (max-width: 800px) {
   .main-grid {
-    background-position: top left;
+    background-position: top center;
     background-image: url("./images/success-background-vertical-streched.png");
   }
 
