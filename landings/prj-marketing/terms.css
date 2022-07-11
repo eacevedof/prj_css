@@ -42,7 +42,7 @@
   padding: 3px;
   max-width: 150px;
   max-height: 90px;
-  background-color: #303030;
+  background-color: var(--color-clear-black);
   border-radius: 5px;
 }
 
@@ -61,7 +61,7 @@
 }
 .section-scrumbs ul li+li:before {
   padding: 8px;
-  color: #303030;
+  color: var(--color-clear-black);
   content: "/\00a0";
 }
 
@@ -96,7 +96,7 @@
 .section-grid .div-texts {
   background-color: #FFF;
   border: 2px solid #1bb4bf;
-  color: #303030;
+  color: var(--color-clear-black);
   border-radius: 5px;
   -webkit-box-shadow: 0px 14px 5px -10px rgba(0,0,0,0.36);
   box-shadow: 0px 14px 5px -10px rgba(0,0,0,0.36);
@@ -106,7 +106,7 @@
 .section-grid .div-texts h1 {
   font-size: 2rem;
   letter-spacing: 2px;
-  color: #303030;
+  color: var(--color-clear-black);
   padding: 3px 0 3px 0;
   text-align: center;
 }
@@ -134,7 +134,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color: #303030;
+  background-color: var(--color-clear-black);
   align-items: center;
   font-size: 14px;
   padding-top: 3px;

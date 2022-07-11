@@ -49,7 +49,7 @@
 }
 
 .nav-li-item-active {
-  background:  #303030;
+  background:  var(--color-clear-black);
   border-radius: 5px;
 }
 
@@ -106,13 +106,13 @@
   margin-bottom: 1rem;
   font-size: 2rem !important;
   font-style: italic;
-  color: #000;
+  color:var(--color-black);
 }
 
 .div-texts .button-cta {
   color: var(--color-white);
   padding: 15px 60px;
-  border: 1px solid #303030;
+  border: 1px solid var(--color-clear-black);
   border-radius: 6px;
 
   font-weight: bold;
@@ -122,7 +122,7 @@
 
 .div-texts button.button-cta:hover {
   background-color: var(--color-yellow);
-  color: #303030;
+  color: var(--color-clear-black);
 }
 
 .figure-home-hero {
@@ -144,7 +144,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color: #303030;
+  background-color: var(--color-clear-black);
   align-items: center;
   font-size: 14px;
   padding-top: 3px;
@@ -211,7 +211,7 @@
 }
 
 dialog::backdrop {
-  background: #000;
+  background:var(--color-black);
   opacity: 0.95;
   -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 95); /* // for IE8 */
   filter: alpha(opacity= 95); /* //for IE5-7 */
@@ -239,7 +239,7 @@ dialog::backdrop {
   font-size: 1rem;
   width: 400px;
   padding: 10px;
-  border: 1px solid #303030;
+  border: 1px solid var(--color-clear-black);
   border-radius: 6px;
   resize: none;
 }
@@ -253,7 +253,7 @@ dialog::backdrop {
   text-decoration: none;
   color: var(--color-white);
   padding: 10px 60px;
-  border: 1px solid #303030;
+  border: 1px solid var(--color-clear-black);
   border-radius: 6px;
   font-weight: bold;
   background-color: #E65C00;
@@ -264,8 +264,8 @@ dialog::backdrop {
   position: absolute;
   top: 1px;
   right: 1px;
-  background-color: #303030;
-  color: #303030;
+  background-color: var(--color-clear-black);
+  color: var(--color-clear-black);
   font-weight: bold;
   padding-right: 1px;
   padding-left: 2px;
@@ -284,7 +284,7 @@ dialog::backdrop {
     position: fixed;
     top: 0;
     height: 100vh;
-    background-color: #303030;
+    background-color: var(--color-clear-black);
     width: 80%;
     left:-100%;
     font-size: 1rem;
