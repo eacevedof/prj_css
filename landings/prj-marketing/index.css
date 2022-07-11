@@ -1,7 +1,7 @@
 @import "global.css";
 
 .main-grid {
-  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  background-image: linear-gradient(to top, var(--color-clear-blue) 0%, var(--color-dark-blue) 100%);
   color: var(--color-white);
   display: grid;
   /*
@@ -273,7 +273,7 @@ dialog::backdrop {
 }
 
 .dialog button:hover {
-  background-color: #005EEA;
+  background-color: var(--color-dark-blue);
   color: var(--color-white);
 }
 
@@ -315,7 +315,7 @@ dialog::backdrop {
 
   .nav-list-ul li a:hover{
     background-color: var(--color-white);
-    color: #1766DC;
+    color: var(--color-dark-blue);
   }
 
   .nav-menu-figure {
