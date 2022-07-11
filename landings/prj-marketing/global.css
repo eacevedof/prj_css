@@ -13,6 +13,10 @@
     --color-clear-orange: #FFA500FF;
 }
 
+::backdrop {
+    --color-black: #000000;
+}
+
 * {
     margin: 0;
     padding: 0;

@@ -115,8 +115,10 @@
   border: 1px solid var(--color-clear-black);
   border-radius: 6px;
 
+  font-size: 1rem;
+  letter-spacing: 1px;
   font-weight: bold;
-  background-color: #E65C00;
+  background-color: var(--color-orange);
   transition: background-color .3s;
 }
 
@@ -211,7 +213,7 @@
 }
 
 dialog::backdrop {
-  background:var(--color-black);
+  background: var(--color-black);
   opacity: 0.95;
   -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 95); /* // for IE8 */
   filter: alpha(opacity= 95); /* //for IE5-7 */
