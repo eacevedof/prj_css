@@ -1,5 +1,5 @@
-root {
-    --color-white: #fff;
+:root {
+    --color-white: #FFFFFF;
     --color-clear-blue: #00C6FB;
     --color-dark-blue: #005EEA;
     --color-dark-blue-2: #1766DC;
@@ -28,11 +28,11 @@ body {
 
 a {
     text-decoration: underline;
-    color: #fff;
+    color: var(--color-white);
     text-underline-offset: 2px;
 }
 a:link, a:visited {
-    color: #fff;
+    color: var(--color-white);
 }
 a:hover {
     color: #00c6fb;

@@ -288,7 +288,7 @@
   height: 45px;
   animation-delay: 2s;
   animation-duration: 35s;
-  background: white;
+  background: var(--color-white);
 }
 
 .section-animated-bg .ul-circles li:nth-child(10){

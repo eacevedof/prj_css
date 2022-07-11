@@ -2,7 +2,7 @@
 
 .main-grid {
   background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
-  color: #FFF;
+  color: var(--color-white);
   display: grid;
   /*
   max-content indica que la altura maxima sera la que indique su contenido
@@ -54,7 +54,7 @@
 }
 
 .nav-li-item-a {
-  color: #FFF;
+  color: var(--color-white);
   text-decoration: none;
 }
 
@@ -79,7 +79,7 @@
   display: none;
   font-size: 1.8rem;
   padding-right: 1rem;
-  color: #FFF;
+  color: var(--color-white);
 }
 
 .section-grid {
@@ -110,7 +110,8 @@
 }
 
 .div-texts .button-cta {
-  color: #fff;
+  color: var(--color-white);
+
   padding: 15px 60px;
   border: 1px solid #303030;
   border-radius: 6px;
@@ -200,7 +201,7 @@
 .dialog {
   padding: 30px;
   position: absolute;
-  border: 2px dashed #FFF;
+  border: 2px dashed var(--color-white);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -251,7 +252,7 @@ dialog::backdrop {
 
 .dialog .form-buttons button {
   text-decoration: none;
-  color: #FFF;
+  color: var(--color-white);
   padding: 10px 60px;
   border: 1px solid #303030;
   border-radius: 6px;
@@ -274,7 +275,7 @@ dialog::backdrop {
 
 .dialog button:hover {
   background-color: #005EEA;
-  color: #FFF;
+  color: var(--color-white);
 }
 
 @media (max-width: 800px) {
@@ -303,7 +304,7 @@ dialog::backdrop {
 
   .nav-list-ul li a {
     text-decoration: none;
-    color: #fff;
+    color: var(--color-white);
     padding: 15px 60px;
     border: 1px solid;
     border-radius: 6px;
@@ -314,7 +315,7 @@ dialog::backdrop {
   }
 
   .nav-list-ul li a:hover{
-    background-color: #FFF;
+    background-color: var(--color-white);
     color: #1766DC;
   }
 
