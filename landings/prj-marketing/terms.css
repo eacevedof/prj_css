@@ -247,7 +247,7 @@
   height: 100px;
   animation-delay: 0s;
   animation-duration: 25s;
-  background: #00c6fb;
+  background: var(--color-clear-blue);
 }
 
 .section-animated-bg .ul-circles li:nth-child(5){
