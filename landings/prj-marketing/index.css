@@ -1,4 +1,4 @@
-@import "global.css";
+@import "./global.css";
 
 .main-grid {
   background-image: linear-gradient(to top, var(--color-clear-blue) 0%, var(--color-dark-blue) 100%);
@@ -87,7 +87,6 @@
   display: grid;
   gap: 2em;
   grid-template-columns: 1fr 1fr;
-  padding-bottom: 180px;
   align-items: center;
 }
 
