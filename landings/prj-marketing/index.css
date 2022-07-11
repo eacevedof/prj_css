@@ -207,7 +207,7 @@
   -webkit-box-shadow: 0px 14px 5px -10px var(--color-black-alpha);
   box-shadow: 0px 14px 5px -10px var(--color-green-alpha);
   border-radius: 0.5rem;
-  background-color: #9ACD32FF;
+  background-color: var(--color-clear-green);
 }
 
 dialog::backdrop {
