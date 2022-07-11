@@ -66,12 +66,12 @@
 }
 
 .section-scrumbs ul li a {
-  color: #333333;
+  color: var(--color-clear-black);
   font-weight: bold;
   text-decoration: none;
 }
 .section-scrumbs ul li a:hover {
-  color: yellow;
+  color: var(--color-yellow);
   text-decoration: underline;
 }
 
@@ -94,8 +94,8 @@
 }
 
 .section-grid .div-texts {
-  background-color: #FFF;
-  border: 2px solid #1bb4bf;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-clear-blue);
   color: var(--color-clear-black);
   border-radius: 5px;
   -webkit-box-shadow: 0px 14px 5px -10px var(--color-black-alpha);
@@ -221,7 +221,7 @@
   width: 80px;
   height: 80px;
   animation-delay: 25s;
-  background: orange;
+  background: var(--color-orange);
 }
 
 .section-animated-bg .ul-circles li:nth-child(2){
@@ -230,7 +230,7 @@
   height: 110px;
   animation-delay: 50s;
   animation-duration: 50s;
-  background: yellow;
+  background: var(--color-yellow);
 }
 
 .section-animated-bg .ul-circles li:nth-child(3){
@@ -238,7 +238,7 @@
   width: 60px;
   height: 60px;
   animation-delay: 10s;
-  background: orange;
+  background: var(--color-clear-orange);
 }
 
 .section-animated-bg .ul-circles li:nth-child(4){
@@ -255,7 +255,7 @@
   width: 50px;
   height: 50px;
   animation-delay: 0s;
-  background: #005bea;
+  background: var(--color-dark-blue);
 }
 
 .section-animated-bg .ul-circles li:nth-child(6){
@@ -263,7 +263,7 @@
   width: 110px;
   height: 110px;
   animation-delay: 10s;
-  background: black;
+  background: var(--color-black);
 }
 
 .section-animated-bg .ul-circles li:nth-child(7){
@@ -279,7 +279,7 @@
   height: 75px;
   animation-delay: 15s;
   animation-duration: 45s;
-  background: #E65C00;
+  background: var(--color-orange);
 }
 
 .section-animated-bg .ul-circles li:nth-child(9){
@@ -297,7 +297,7 @@
   height: 150px;
   animation-delay: 0s;
   animation-duration: 60s;
-  background: yellow;
+  background: var(--color-yellow);
 }
 
 @keyframes keyframe-bg-circles {
