@@ -322,7 +322,7 @@
 @media (max-width: 800px) {
   .main-grid {
     background-position: top left;
-    background-image: url("./images/success-background-vertical.png");
+    background-image: url("./images/success-background-vertical-streched.png");
   }
 
   .section-grid {
