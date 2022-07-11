@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;700&display=swap");
+
 :root {
     --color-white: #FFFFFF;
     --color-clear-blue: #00C6FB;
@@ -24,7 +26,6 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;700&display=swap');
 body {
     font-size: 16px;
     font-family: "Urbanist", sans-serif;
