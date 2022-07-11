@@ -94,7 +94,7 @@
 .text-h1 {
   font-size: 3rem;
   letter-spacing: 2px;
-  color: #FFFF00FF;
+  color: var(--color-yellow);
 }
 
 .div-texts p{
@@ -121,7 +121,7 @@
 }
 
 .div-texts button.button-cta:hover {
-  background-color: #FFFF00FF;
+  background-color: var(--color-yellow);
   color: #303030;
 }
 
