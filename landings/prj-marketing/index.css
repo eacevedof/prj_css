@@ -94,39 +94,48 @@
   display: grid;
   gap: 2rem;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
-  padding-bottom: 3rem;
+  align-items: center; /*alYgn*/
   z-index: 2;
+  padding-bottom: 3rem;
 }
 
-.section-grid .text-h1 {
-  font-size: 3rem;
+section-grid .div-texts {
+  border-right: 0.001rem solid var(--color-white);
+  padding: 5px;
+}
+
+.section-grid .div-texts h1 {
+  font-size: 2rem;
   letter-spacing: 2px;
   color: var(--color-yellow);
 }
 
-.section-grid .div-texts p{
-  font-size: 1.25rem;
-  padding-top: 1em;
+.section-grid .div-texts h2 {
+  padding-top: 10px;
+  font-size: 1.75rem ;
+  font-style: italic;
+  font-weight: normal;
+  color:var(--color-black);
 }
 
-.section-grid .text-p-subtitle {
-  margin-bottom: 1rem;
-  font-size: 2rem !important;
-  font-style: italic;
-  color:var(--color-black);
+.section-grid .div-texts p{
+  font-size: 1.25rem;
+  padding-top: 1rem;
 }
 
 .section-grid .div-texts .button-cta {
   color: var(--color-white);
-  padding: 15px 60px;
+  padding: 10px 40px;
   border: 1px solid var(--color-clear-black);
   border-radius: 6px;
-  font-size: 1rem;
+  font-size: 1.3rem;
   letter-spacing: 1px;
   font-weight: bold;
-  background-color: var(--color-orange);
+  background-color: var(--color-clear-orange);
   transition: background-color .3s;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
 }
 
 .section-grid .div-texts button.button-cta:hover {
@@ -364,6 +373,7 @@ dialog::backdrop {
     alinear todo el contenido al centro
     */
     text-align: center;
+    padding-bottom: 5rem;
   }
   .section-grid .figure-home-hero {
     grid-row: 1/2;
