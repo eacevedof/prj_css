@@ -99,7 +99,7 @@
   padding-bottom: 3rem;
 }
 
-section-grid .div-texts {
+.section-grid .div-texts {
   border-right: 0.001rem solid var(--color-white);
   padding: 5px;
 }
@@ -375,6 +375,11 @@ dialog::backdrop {
     text-align: center;
     padding-bottom: 5rem;
   }
+
+  .section-grid .div-texts {
+    border-right: none;
+  }
+
   .section-grid .figure-home-hero {
     grid-row: 1/2;
     max-width: 500px;
