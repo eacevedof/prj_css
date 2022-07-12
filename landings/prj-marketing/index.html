@@ -167,7 +167,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
     const li = anchor.parentNode
     li.classList.remove("nav-li-item-active")
     console.log("anchor?.lang?.toLowerCase",anchor?.lang?.toLowerCase(), "li before",li,"anchor before",anchor)
-    if (anchor?.lang?.toLowerCase() === lang)
+    if (anchor?.lang?.toLowerCase() === lang.toString().toLowerCase())
       li.classList.add(active)
     console.log("li.after",li,"anchor.after",anchor)
   })
