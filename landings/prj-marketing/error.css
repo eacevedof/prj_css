@@ -14,7 +14,7 @@
   "area-scrumbs"
   "area-textbox";
   min-height: 100vh;
-  background-image: url("./images/fail-background.png");
+  background-image: url("./images/error-background.png");
   background-size:     cover;
   background-position: top right;
   background-repeat:   no-repeat;
@@ -95,7 +95,7 @@
 }
 
 .section-grid .div-texts {
-  background-color: var(--color-red-fail);
+  background-color: var(--color-red-error);
   border: 2px solid var(--color-white);
   color: var(--color-white);
   border-radius: 5px;
