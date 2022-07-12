@@ -92,10 +92,10 @@
 .section-grid {
   grid-area: area-content;
   display: grid;
-  gap: 2em;
+  gap: 2rem;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding-bottom: 75px;
+  padding-bottom: 3rem;
   z-index: 2;
 }
 
