@@ -1,4 +1,9 @@
 @import "./global.css";
+.center-x {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
 .main-grid {
   background-image: linear-gradient(to top, var(--color-clear-blue) 0%, var(--color-dark-blue) 100%);
@@ -9,27 +14,24 @@
   */
   grid-template-rows: max-content 1fr;
   grid-template-areas:
-  "nav"
-  "content";
+  "area-nav"
+  "area-content";
   min-height: 100vh;
-}
-
-.center-x {
-  width: 80%;
-  margin: 0 auto;
-  overflow: hidden;
 }
 
 .div-wave-top {
   overflow: hidden;
-  grid-area: nav;
+  grid-area: area-nav;
   align-self: start;
   height: 90px;
   z-index: 1;
 }
+/*
 
+<nav>
+*/
 .nav-grid {
-  grid-area: nav;
+  grid-area: area-nav;
   display: grid;
   justify-content: space-between;
   grid-auto-flow: column;
@@ -39,53 +41,56 @@
   z-index: 1;
 }
 
-.nav-list-ul {
+.nav-grid .nav-list-ul {
   list-style: none;
   display:grid;
   grid-auto-flow: column;
   gap: 1rem;
 }
 
-.nav-li-item {
+.nav-grid .nav-li-item {
   padding: 5px;
 }
 
-.nav-li-item-active {
+.nav-grid .nav-li-item-active {
   background:  var(--color-clear-black);
   border-radius: 5px;
 }
 
-.nav-li-item-a {
+.nav-grid .nav-li-item-a {
   color: var(--color-white);
   text-decoration: none;
 }
 
-.nav-logo {
+.nav-grid .nav-logo {
   font-size: 1.8rem;
   font-weight: 300;
 }
 
-.nav-menu-figure {
+.nav-grid .nav-menu-figure {
   display: none;
 }
 
-.nav-icon {
+.nav-grid .nav-icon {
   width: 30px;
 }
 
-#chk-hamburguer {
+.nav-grid #chk-hamburguer {
   display: none;
 }
 
-.label-hamburger {
+.nav-grid .label-hamburger {
   display: none;
   font-size: 1.8rem;
   padding-right: 1rem;
   color: var(--color-white);
 }
-
+/*
+</nav>
+<section>
+*/
 .section-grid {
-  grid-area: content;
+  grid-area: area-content;
   display: grid;
   gap: 2em;
   grid-template-columns: 1fr 1fr;
@@ -94,25 +99,25 @@
   z-index: 2;
 }
 
-.text-h1 {
+.section-grid .text-h1 {
   font-size: 3rem;
   letter-spacing: 2px;
   color: var(--color-yellow);
 }
 
-.div-texts p{
+.section-grid .div-texts p{
   font-size: 1.25rem;
   padding-top: 1em;
 }
 
-.text-p-subtitle {
+.section-grid .text-p-subtitle {
   margin-bottom: 1rem;
   font-size: 2rem !important;
   font-style: italic;
   color:var(--color-black);
 }
 
-.div-texts .button-cta {
+.section-grid .div-texts .button-cta {
   color: var(--color-white);
   padding: 15px 60px;
   border: 1px solid var(--color-clear-black);
@@ -124,14 +129,18 @@
   transition: background-color .3s;
 }
 
-.div-texts button.button-cta:hover {
+.section-grid .div-texts button.button-cta:hover {
   background-color: var(--color-yellow);
   color: var(--color-clear-black);
 }
 
-.figure-home-hero {
+.section-grid .figure-home-hero {
   width: 100%;
 }
+/*
+</section>
+<div>
+*/
 
 .div-wave-bottom {
   height: 150px;
@@ -142,6 +151,7 @@
 }
 
 /*
+</div>
 <footer>
 */
 .footer-flex {
@@ -200,6 +210,7 @@
 }
 
 /*
+</footer>
 <dialog>
 */
 .dialog {
@@ -283,7 +294,7 @@ dialog::backdrop {
 }
 
 @media (max-width: 800px) {
-  .nav-list-ul {
+  .nav-grid .nav-list-ul {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -302,11 +313,11 @@ dialog::backdrop {
     */
     padding-top: 30px;
   }
-  .nav-list-ul li{
+  .nav-grid .nav-list-ul li{
     width: 90%;
   }
 
-  .nav-list-ul li a {
+  .nav-grid .nav-list-ul li a {
     text-decoration: none;
     color: var(--color-white);
     padding: 15px 60px;
@@ -318,23 +329,23 @@ dialog::backdrop {
     display: block;
   }
 
-  .nav-list-ul li a:hover{
+  .nav-grid .nav-list-ul li a:hover{
     background-color: var(--color-white);
     color: var(--color-dark-blue);
   }
 
-  .nav-menu-figure {
+  .nav-grid .nav-menu-figure {
     display: block;
   }
 
-  .label-hamburger {
+  .nav-grid .label-hamburger {
     display: block;
   }
 
   /*
   ~ el ul siguiente inmediato al checkbox:checked
   */
-  #chk-hamburguer:checked~.nav-list-ul{
+  .nav-grid #chk-hamburguer:checked~.nav-list-ul{
     left: 0;
     display: flex;
     flex-direction: column;
@@ -342,7 +353,7 @@ dialog::backdrop {
   /*
   el label inmediato al checkbox
   */
-  #chk-hamburguer:checked~.label-hamburger figure img {
+  .nav-grid #chk-hamburguer:checked~.label-hamburger figure img {
     content: url("./images/icon-close-modal.svg");
   }
 
@@ -354,7 +365,7 @@ dialog::backdrop {
     */
     text-align: center;
   }
-  .figure-home-hero {
+  .section-grid .figure-home-hero {
     grid-row: 1/2;
     max-width: 500px;
     display: block;
