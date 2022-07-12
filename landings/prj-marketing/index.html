@@ -166,9 +166,10 @@ window.addEventListener("DOMContentLoaded", ()=>{
   langs.forEach(anchor => {
     const li = anchor.parentNode
     li.classList.remove("nav-li-item-active")
-    //console.log("anchor.lang",anchor.lang)
-    if (anchor.lang.toLowerCase() === lang)
+    console.log("anchor?.lang?.toLowerCase",anchor?.lang?.toLowerCase(), "li before",li)
+    if (anchor?.lang?.toLowerCase() === lang)
       li.classList.add(active)
+    console.log("li.after",li)
   })
 })
 
