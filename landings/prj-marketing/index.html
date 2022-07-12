@@ -160,14 +160,14 @@ window.addEventListener("DOMContentLoaded", ()=>{
   let lang = get_cookie("lang")
   if (!lang) lang = "es"
   set_cookie("lang", lang)
-  console.log("lang:", lang)
+  //console.log("lang:", lang)
 
   const active = "nav-li-item-active"
   langs.forEach(anchor => {
     const li = anchor.parentNode
     li.classList.remove("nav-li-item-active")
-    console.log("anchor.lang",anchor.lang)
-    if (anchor.lang === lang)
+    //console.log("anchor.lang",anchor.lang)
+    if (anchor.lang.toLowerCase() === lang)
       li.classList.add(active)
   })
 })
