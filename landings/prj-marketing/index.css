@@ -100,7 +100,7 @@
 }
 
 .section-grid .div-texts {
-  border-right: 0.001rem solid var(--color-white);
+  border-right: 0.01rem solid var(--color-white);
   padding: 5px;
 }
 
