@@ -145,7 +145,7 @@
 .div-wave-bottom {
   height: 150px;
   overflow: hidden;
-  grid-area: content;
+  grid-area: area-content;
   align-self: end;
   z-index: 1;
 }
