@@ -1,4 +1,5 @@
 import os
+import time
 import requests
 import pathlib
 PATH_ROOT = pathlib.Path().resolve()
@@ -24,6 +25,7 @@ def minify():
         if filename.is_dir():
             continue
         filename = filename.name
+        print(f"{filename}\n")
         file_data = os.path.splitext(filename)
         name = file_data[0]
         ext = file_data[1] #lleva el .
@@ -37,6 +39,7 @@ def minify():
             continue
 
         cssmini = get_file_minified(path_file)
+        time.sleep(3)
         save_as(cssmini, path_to)
 
 minify()
