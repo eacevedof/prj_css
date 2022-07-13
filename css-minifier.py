@@ -7,7 +7,7 @@ def get_file_minified(path_file):
     f = open(path_file, "r")
     csscode = f.read()
     f.close()
-    r = requests.post("http://cssminifier.com/raw", data={"input":csscode})
+    r = requests.post("https://www.toptal.com/developers/cssminifier/raw", data={"input":csscode})
     return r.text
 
 def save_as(content, path_file):
