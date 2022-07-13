@@ -1,9 +1,3 @@
-.center-x {
-  width: 95%;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
 .main-grid {
   display: grid;
   grid-template-rows: min-content min-content 1fr;

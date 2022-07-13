@@ -43,6 +43,13 @@ a:hover {
     color: var(--color-clear-blue);
 }
 
+.center-x {
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
 .div-totop {
     position: fixed !important;
     bottom: 45px;
@@ -50,6 +57,7 @@ a:hover {
     display: none;
     z-index: 2;
 }
+
 .div-totop a {
     width: 40px !important;
     height: 40px !important;
