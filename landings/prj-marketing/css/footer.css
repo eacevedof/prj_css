@@ -8,6 +8,7 @@
     font-size: 14px;
     padding-top: 3px;
     padding-bottom: 3px;
+    z-index: 2;
 }
 
 .footer-flex .item {
