@@ -1,5 +1,3 @@
-@import "./global.css";
-
 .center-x {
   width: 95%;
   margin: 0 auto;
@@ -8,13 +6,13 @@
 
 .main-grid {
   display: grid;
-  grid-template-rows: min-content min-content 1fr;
+  grid-template-rows: max-content 1fr;
   grid-template-areas:
   "area-nav"
   "area-scrumbs"
   "area-textbox";
-  min-height: 100vh;
-  background-image: url("./images/error-background.png");
+  min-height: auto;
+  background-image: url("../images/terms-background.png");
   background-size:     cover;
   background-position: top right;
   background-repeat:   no-repeat;
@@ -59,15 +57,14 @@
   display: flex;
   list-style: none;
 }
-
 .section-scrumbs ul li+li:before {
   padding: 8px;
-  color: var(--color-black);
+  color: var(--color-clear-black);
   content: "/\00a0";
 }
 
 .section-scrumbs ul li a {
-  color: var(--color-white);
+  color: var(--color-clear-black);
   font-weight: bold;
   text-decoration: none;
 }
@@ -95,36 +92,31 @@
 }
 
 .section-grid .div-texts {
-  background-color: var(--color-red-error);
-  border: 2px solid var(--color-white);
-  color: var(--color-white);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-clear-blue);
+  color: var(--color-clear-black);
   border-radius: 5px;
   -webkit-box-shadow: 0px 14px 5px -10px var(--color-black-alpha);
   box-shadow: 0px 14px 5px -10px var(--color-black-alpha);
   padding: 10px;
-  width: 80%;
-  justify-self: center;
-}
-
-.section-grid .div-texts .icon {
-  float: right;
-  margin-left: 10px;
 }
 
 .section-grid .div-texts h1 {
-  font-size: 1.7rem;
-  padding: 2px 0 2px 0;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: var(--color-clear-black);
+  padding: 3px 0 3px 0;
   text-align: center;
 }
 
 .section-grid .div-texts h2 {
-  font-size: 1.5rem;
   padding-top: 1rem;
+  font-size: 1.2rem;
 }
 
 .section-grid .div-texts h3 {
-  font-size: 1.25rem;
   padding-top: 1rem;
+  font-size: 1.05rem;
 }
 
 .section-grid .div-texts p{
@@ -264,7 +256,7 @@
 
 @media (max-width: 800px) {
   .main-grid {
-    background-position: top center;
+    background-position: top left;
   }
 
   .section-grid {
@@ -273,15 +265,10 @@
     padding-bottom: 10px;
   }
 
-  .section-grid .div-texts {
-    width: 95%;
-  }
-
   .section-grid .div-texts h1 {
     font-size: 2rem;
     letter-spacing: normal;
   }
-
   .dialog {
     height: 2500px;
   }
