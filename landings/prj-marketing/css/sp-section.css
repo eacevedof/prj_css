@@ -46,9 +46,7 @@
 .section-grid .div-texts p{
     padding-top: 1rem;
 }
-/*
-</section>
-*/
+
 @media (max-width: 800px) {
     .main-grid {
         background-position: top left;
