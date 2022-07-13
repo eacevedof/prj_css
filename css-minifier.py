@@ -31,6 +31,11 @@ def minify():
             continue
         path_file = f"{PATH_FOLDER_FROM}/{filename}"
         path_to =  f"{PATH_FOLDER_TO}/{name}.mini{ext}"
+
+        if filename.find(".mini.css") != -1:
+            os.remove(f"{PATH_FOLDER_TO}/{filename}")
+            continue
+
         cssmini = get_file_minified(path_file)
         save_as(cssmini, path_to)
 
