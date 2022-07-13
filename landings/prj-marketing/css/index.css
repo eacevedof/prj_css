@@ -300,7 +300,7 @@ dialog::backdrop {
   el label inmediato al checkbox
   */
   .nav-grid #chk-hamburguer:checked~.label-hamburger figure img {
-    content: url("./images/icon-close-modal.svg");
+    content: url("../images/icon-close-modal.svg");
   }
 
   .section-grid {
