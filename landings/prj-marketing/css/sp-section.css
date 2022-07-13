@@ -49,16 +49,15 @@
 /*
 </section>
 */
-
 @media (max-width: 800px) {
+    .main-grid {
+        background-position: top left;
+    }
+
     .section-grid {
         grid-template-columns: 1fr;
         grid-template-rows: max-content;
         padding-bottom: 10px;
-    }
-
-    .section-grid .div-texts {
-        width: 95%;
     }
 
     .section-grid .div-texts h1 {
