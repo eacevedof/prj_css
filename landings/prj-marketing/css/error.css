@@ -1,38 +1,17 @@
 .main-grid {
   background-image: url("../images/error-background.png");
 }
-
 /*
 <section scrumbs>
-*/
-.section-scrumbs {
-  grid-area: area-scrumbs;
-  z-index: 1;
-}
-
-.section-scrumbs ul {
-  display: flex;
-  list-style: none;
-}
-
-.section-scrumbs ul li+li:before {
-  padding: 8px;
-  color: var(--color-black);
-  content: "/\00a0";
-}
-
+ */
 .section-scrumbs ul li a {
   color: var(--color-white);
   font-weight: bold;
   text-decoration: none;
 }
-.section-scrumbs ul li a:hover {
-  color: var(--color-yellow);
-  text-decoration: underline;
-}
-
 /*
 </section>
+/*
 <section text-container>
 */
 .section-grid {
