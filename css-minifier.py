@@ -1,5 +1,7 @@
 import os
 import requests
+import pathlib
+PATH_ROOT = pathlib.Path().resolve()
 
 def get_file_minified(path_file):
     f = open(path_file, "r")
@@ -8,16 +10,31 @@ def get_file_minified(path_file):
     r = requests.post("http://cssminifier.com/raw", data={"input":csscode})
     return r.text
 
-def save_minified_as(path_file):
-    codeminified = r.text
+def save_as(content, path_file):
     f2 = open(path_file, "w")
-    f2.write(codeminified)
+    f2.write(content)
     f2.close()
 
-PATH_FOLDER_FROM = ""
-PATH_FOLDER_TO = ""
+PATH_FOLDER_FROM = f"{PATH_ROOT}/landings/prj-marketing/css"
+PATH_FOLDER_TO = f"{PATH_ROOT}/landings/prj-marketing/css"
 
 def minify():
+    files = os.scandir(PATH_FOLDER_FROM)
+    for filename in files:
+        if filename.is_dir():
+            continue
+        filename = filename.name
+        file_data = os.path.splitext(filename)
+        name = file_data[0]
+        ext = file_data[1] #lleva el .
+        if not ext==".css":
+            continue
+        path_file = f"{PATH_FOLDER_FROM}/{filename}"
+        path_to =  f"{PATH_FOLDER_TO}/{name}.mini{ext}"
+        cssmini = get_file_minified(path_file)
+        save_as(cssmini, path_to)
+
+minify()
 
 
 
