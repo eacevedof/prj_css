@@ -25,7 +25,7 @@ def minify():
         if filename.is_dir():
             continue
         filename = filename.name
-        print(f"{filename}\n")
+        print(f"{filename}")
         file_data = os.path.splitext(filename)
         name = file_data[0]
         ext = file_data[1] #lleva el .
@@ -38,6 +38,8 @@ def minify():
             os.remove(f"{PATH_FOLDER_TO}/{filename}")
             continue
 
+        print(f"from: {path_file}")
+        print(f"to: {path_to}")
         cssmini = get_file_minified(path_file)
         time.sleep(3)
         save_as(cssmini, path_to)
