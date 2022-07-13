@@ -1,15 +1,5 @@
 .main-grid {
-  display: grid;
-  grid-template-rows: min-content min-content 1fr;
-  grid-template-areas:
-  "area-nav"
-  "area-scrumbs"
-  "area-textbox";
-  min-height: 100vh;
   background-image: url("../images/success-background.png");
-  background-size:     cover;
-  background-position: top right;
-  background-repeat:   no-repeat;
 }
 
 .div-wave-top {
@@ -258,7 +248,6 @@
 
 @media (max-width: 800px) {
   .main-grid {
-    background-position: top center;
     background-image: url("../images/success-background-vertical-streched.png");
   }
 
