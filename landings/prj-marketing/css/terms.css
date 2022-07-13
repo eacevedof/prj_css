@@ -7,3 +7,7 @@
   font-weight: bold;
   text-decoration: none;
 }
+
+.section-grid .div-texts {
+  border: 2px solid var(--color-clear-blue);
+}
