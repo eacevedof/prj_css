@@ -21,7 +21,11 @@ PATH_FOLDER_TO = f"{PATH_ROOT}/landings/prj-marketing/css-mini"
 
 def minify():
     files = os.scandir(PATH_FOLDER_FROM)
-    os.makedirs(PATH_FOLDER_TO, exist_ok=False)
+
+    if not os.path.exists(PATH_FOLDER_TO):
+        os.makedirs(PATH_FOLDER_TO, exist_ok=False)
+        time.sleep(1)
+
     for filename in files:
         if filename.is_dir():
             continue
@@ -37,7 +41,7 @@ def minify():
         path_file = f"{PATH_FOLDER_FROM}/{filename}"
         path_to =  f"{PATH_FOLDER_TO}/{name}.mini{ext}"
 
-        if os.path.exists(path_to) != -1:
+        if os.path.exists(path_to):
             os.remove(path_to)
             time.sleep(1)
 
