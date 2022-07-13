@@ -2,13 +2,6 @@
   background-image: url("../images/error-background.png");
 }
 
-.div-wave-top {
-  overflow: hidden;
-  grid-area: area-nav;
-  align-self: start;
-  height: 60px;
-  z-index: 1;
-}
 /*
 <nav>
 */
