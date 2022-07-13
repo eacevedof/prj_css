@@ -1,6 +1,6 @@
 .main-grid {
     display: grid;
-    grid-template-rows: max-content 1fr;
+    grid-template-rows: min-content min-content 1fr;
     grid-template-areas:
     "area-nav"
     "area-scrumbs"
