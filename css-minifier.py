@@ -17,10 +17,11 @@ def save_as(content, path_file):
     f2.close()
 
 PATH_FOLDER_FROM = f"{PATH_ROOT}/landings/prj-marketing/css"
-PATH_FOLDER_TO = f"{PATH_ROOT}/landings/prj-marketing/css"
+PATH_FOLDER_TO = f"{PATH_ROOT}/landings/prj-marketing/css-mini"
 
 def minify():
     files = os.scandir(PATH_FOLDER_FROM)
+    os.makedirs(PATH_FOLDER_TO, exist_ok=False)
     for filename in files:
         if filename.is_dir():
             continue
@@ -29,14 +30,16 @@ def minify():
         file_data = os.path.splitext(filename)
         name = file_data[0]
         ext = file_data[1] #lleva el .
+
         if not ext==".css":
             continue
+
         path_file = f"{PATH_FOLDER_FROM}/{filename}"
         path_to =  f"{PATH_FOLDER_TO}/{name}.mini{ext}"
 
-        if filename.find(".mini.css") != -1:
-            os.remove(f"{PATH_FOLDER_TO}/{filename}")
-            continue
+        if os.path.exists(path_to) != -1:
+            os.remove(path_to)
+            time.sleep(1)
 
         print(f"from: {path_file}")
         print(f"to: {path_to}")
