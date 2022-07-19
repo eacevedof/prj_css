@@ -90,22 +90,31 @@
   </footer>
 </main>
 <dialog class="dialog">
-  <form id="form-contact" class="form-flex">
-    <div class="cellflex">
+  <form id="form-contact" class="form-grid">
+    <div class="cell-flex">
       <label for="name">Nombre *</label>
       <input type="text" id="name" placeholder="Nicolas Cage" required="required">
+      <div approle="field-error" class="">
+        <ul><li>Empty value is not allowed</li></ul>
+      </div>
     </div>
-    <div class="cellflex">
+    <div class="cell-flex">
       <label for="email">Email *</label>
       <input id="email" type="email" placeholder="nicocage@domain.com" required="required">
+      <div approle="field-error" class="">
+        <ul><li>Empty value is not allowed</li></ul>
+      </div>
     </div>
-    <div class="cellflex">
+    <div class="cell-flex">
       <label for="subject">Asunto *</label>
       <input type="text" id="subject" placeholder="I would like to join" class="form-control">
     </div>
-    <div class="cellflex">
+    <div class="cell-flex">
       <label for="message">Mensaje *</label>
-      <textarea id="message" placeholder="My phone is: 777 888 999. My business exports apples" required="required" rows="5" class="form-control"></textarea>
+      <textarea id="message" placeholder="My phone is: 777 888 999. My business exports apples"></textarea>
+      <div approle="field-error" class="">
+        <ul><li>Empty value is not allowed</li></ul>
+      </div>
     </div>
     <div class="cell-btn">
       <button id="btn-contact" class="button">Enviar</button>
