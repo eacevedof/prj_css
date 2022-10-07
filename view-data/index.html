@@ -20,9 +20,9 @@
 <script type="module">
 const rem = 16
 const $div = document.getElementById("div-result")
-document.addEventListener("DOMContentLoaded", reportWindowSize);
+document.addEventListener("DOMContentLoaded", reportWindowSize)
 window.addEventListener("resize", reportWindowSize)
-window.
+window.addEventListener("scroll", reportWindowSize)
 
 function reportWindowSize() {
   const tpl = `
@@ -45,25 +45,25 @@ function reportWindowSize() {
   </ul>
   `
   $div.innerHTML = tpl
-  debug()
+  eaf()
 }
-function debug() {
+function eaf() {
   console.log(
-  `screen.height: ${screen.height}\n`,
-  `screen.availHeight: ${screen.availHeight}\n`,
-  `screen.width: ${screen.width}\n`,
-  `screen.availWidth: ${screen.availWidth}\n`,
-  `\n`,
-  `window.innerHeight: ${window.innerHeight} \n`,
-  `window.innerWidth: ${window.innerWidth} \n`,
-  `window.outerHeight: ${window.outerHeight} \n`,
-  `window.outerWidth: ${window.outerWidth} \n`,
-  `\n`,
-  `document.body.scrollHeight: ${document.body.scrollHeight}\n`,
-  `document.body.clientHeight: ${document.body.clientHeight}\n`,
-  `document.body.offsetHeight: ${document.body.offsetHeight}\n`,
-  `\n`,
-  `document.documentElement.scrollTop: ${document.documentElement.scrollTop} \n`
+    `screen.height: ${screen.height}\n`,
+    `screen.availHeight: ${screen.availHeight}\n`,
+    `screen.width: ${screen.width}\n`,
+    `screen.availWidth: ${screen.availWidth}\n`,
+    `\n`,
+    `window.innerHeight: ${window.innerHeight} \n`,
+    `window.innerWidth: ${window.innerWidth} \n`,
+    `window.outerHeight: ${window.outerHeight} \n`,
+    `window.outerWidth: ${window.outerWidth} \n`,
+    `\n`,
+    `document.body.scrollHeight: ${document.body.scrollHeight}\n`,
+    `document.body.clientHeight: ${document.body.clientHeight}\n`,
+    `document.body.offsetHeight: ${document.body.offsetHeight}\n`,
+    `\n`,
+    `document.documentElement.scrollTop: ${document.documentElement.scrollTop} \n`
   )
 }
 </script>
