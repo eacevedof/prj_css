@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 </style>
-<section>
+<section style="border: 1px dashed deepskyblue">
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non turpis orci. Nullam aliquam, nibh at placerat fringilla, purus purus bibendum lectus, ac auctor quam nulla non justo. Etiam quis molestie nulla. Nulla sed neque nec lacus volutpat euismod. Fusce id rhoncus neque, in venenatis ligula. Cras nisl urna, molestie at nibh eu, aliquam ultrices massa. Nulla tortor ante, convallis at purus sit amet, accumsan venenatis ligula. Maecenas malesuada iaculis erat, vitae rhoncus eros. Pellentesque volutpat vel ante eu pulvinar.
   </p>
@@ -51,15 +51,6 @@
   <p>
     Suspendisse vitae suscipit lectus. Phasellus interdum ipsum eros, non sollicitudin sapien auctor at. Proin odio purus, ornare at arcu nec, fermentum porta dolor. Aenean id nisi ut nulla malesuada egestas et ut quam. Nulla est urna, euismod vel lorem ac, posuere volutpat nisi. Fusce consequat hendrerit luctus. Donec posuere suscipit nunc at malesuada. Phasellus vitae erat nunc. Vivamus ac efficitur ex, nec maximus tellus. Morbi mollis eget erat sed tincidunt. Aliquam nunc elit, lacinia vel elit vitae, laoreet facilisis tortor. Duis non tellus enim. Suspendisse tempor erat at augue pulvinar, in dignissim quam vulputate.
   </p>
-  <p>
-    Pellentesque nibh quam, faucibus nec neque vel, mattis consequat leo. Sed eu enim luctus, semper nunc nec, cursus dolor. Phasellus sodales orci eu arcu vehicula fermentum. Maecenas vitae mi nibh. Etiam est libero, condimentum et imperdiet a, hendrerit vel nunc. Quisque auctor, dolor eu fermentum imperdiet, diam turpis blandit leo, eu condimentum est ipsum id diam. Maecenas in lectus vel nulla tincidunt sodales. In porttitor ex a purus malesuada, nec tristique urna pulvinar. Mauris tempor in dui quis lobortis. Nam massa quam, porttitor non nulla quis, suscipit consequat odio. Curabitur commodo enim vitae turpis maximus fringilla. Morbi tempus, magna semper imperdiet sodales, dolor est consequat ipsum, consequat venenatis nibh odio at lacus. Mauris et suscipit sem. Quisque vitae nunc ac massa fringilla bibendum.
-  </p>
-  <p>
-    Nunc eleifend imperdiet iaculis. Suspendisse finibus massa eget augue gravida vehicula. Vivamus viverra dui erat, at auctor enim aliquam et. Proin ornare lectus quis dolor venenatis dapibus. Integer quis sem vitae nisl ultrices ornare. Duis dolor ex, porta ac magna vel, placerat venenatis ex. Nulla facilisi. Vivamus ut turpis non lectus scelerisque viverra. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-  </p>
-  <p>
-    Curabitur sapien mi, aliquam aliquet tellus in, placerat dapibus lorem. Nullam enim purus, efficitur eu enim eget, tempus eleifend nisi. Curabitur dignissim vitae neque ut rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin eget justo placerat, facilisis quam non, sodales urna. Duis maximus a nulla ac molestie. Nam eleifend, nulla ac finibus sodales, massa augue laoreet nibh, sit amet aliquet lectus turpis et est. Donec turpis diam, condimentum non magna convallis, luctus mattis lacus. Fusce convallis, tortor non imperdiet porttitor, velit ligula varius tellus, a ultrices neque quam at ipsum.
-  </p>
 </section>
 <div id="div-result"></div>
 <script type="module">
@@ -89,7 +80,7 @@ function reportWindowSize() {
     <li>document.documentElement.scrollTop: ${document.documentElement.scrollTop} - ${document.documentElement.scrollTop/rem}rem</li>
   </ul>
   `
-  $div.innerHTML = tpl
+  //$div.innerHTML = tpl
   eaf()
 }
 function eaf() {
