@@ -95,7 +95,11 @@ function eaf() {
     `document.body.offsetHeight: ${document.body.offsetHeight}\n`,
     `\n`,
     `document.documentElement.scrollTop: ${document.documentElement.scrollTop} \n`
+    `is_scroll: ${is_scroll()} \n`
   )
+}
+function is_scroll() {
+  return (window.innerHeight - document.body.clientHeight)<0
 }
 </script>
 </body>
