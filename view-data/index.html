@@ -61,7 +61,7 @@ function reportWindowSize() {
     <li>-</li>
     <li>document.documentElement.scrollTop: ${document.documentElement.scrollTop} - ${document.documentElement.scrollTop/rem}rem</li>
     <li>-</li>
-    <li>(si r.ceil = body.scrollHeight => fin de pag) window.innerHeight + window.scrollY: ${window.innerHeight + window.scrollY}</li>
+    <li>(si r.ceil = body.scrollHeight => fin de pag) window.innerHeight + window.scrollY: ${window.innerHeight + window.scrollY}  (${Math.ceil(window.innerHeight + window.scrollY)})</li>
     <li>(si r<0 => hay scroll) window.innerHeight - document.body.clientHeight: ${window.innerHeight - document.body.clientHeight}</li>
     <li>is_scroll: ${is_scroll()}</li>
     <li>is_bottom: ${is_bottom()}</li>
@@ -89,7 +89,7 @@ function eaf() {
     `\n`,
     `document.documentElement.scrollTop: ${document.documentElement.scrollTop} \n`,
     `\n`,
-    `window.innerHeight + window.scrollY: ${window.innerHeight + window.scrollY} \n`,
+    `(si r.ceil = body.scrollHeight => fin de pag) window.innerHeight + window.scrollY: ${window.innerHeight + window.scrollY} (${Math.ceil(window.innerHeight + window.scrollY)})\n`,
     `(si <0 => hay scroll) window.innerHeight - document.body.clientHeight: ${window.innerHeight - document.body.clientHeight} \n`,
     `\n`,
     `is_scroll: ${is_scroll()} \n`
@@ -101,7 +101,7 @@ function is_scroll() {
 }
 function is_bottom() {
   //tamaño visible de la ventana + el desplazamiento = el limite permitido por body
-  return ((window.innerHeight + window.scrollY) === document.body.scrollHeight)
+  return (Math.ceil(window.innerHeight + window.scrollY) === document.body.scrollHeight)
 }
 </script>
 </body>
