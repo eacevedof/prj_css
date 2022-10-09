@@ -14,6 +14,7 @@
   box-sizing: border-box;
 }
 </style>
+<div id="div-result"></div>
 <section style="border: 1px dashed deepskyblue">
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non turpis orci. Nullam aliquam, nibh at placerat fringilla, purus purus bibendum lectus, ac auctor quam nulla non justo. Etiam quis molestie nulla. Nulla sed neque nec lacus volutpat euismod. Fusce id rhoncus neque, in venenatis ligula. Cras nisl urna, molestie at nibh eu, aliquam ultrices massa. Nulla tortor ante, convallis at purus sit amet, accumsan venenatis ligula. Maecenas malesuada iaculis erat, vitae rhoncus eros. Pellentesque volutpat vel ante eu pulvinar.
@@ -31,10 +32,9 @@
     Vestibulum ut accumsan diam. Praesent in laoreet dolor, vel pretium leo. Maecenas nec molestie mauris, eu volutpat sapien. Pellentesque tempor, turpis sed venenatis feugiat, purus sem aliquet sem, non luctus urna ex eu sapien. Vivamus dignissim turpis id orci congue, vel consequat leo cursus. Donec nisl mauris, pulvinar vitae lacus ac, varius malesuada est. Donec lacinia risus quis faucibus pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
   </p>
   <p>
-    In interdum iaculis arcu eget pulvinar. Fusce vitae placerat orci, et aliquet augue. Aenean ullamcorper ante nibh, quis tincidunt sem porta id. Ut tristique eleifend urna quis blandit. Aliquam id massa euismod ipsum porttitor eleifend ac in erat. Nulla aliquet urna et quam imperdiet egestas. Phasellus ornare turpis ac molestie sollicitudin. Fusce urna sapien, bibendum sit amet congue consectetur, iaculis sed velit.
+    Vestibulum ut accumsan diam. Praesent in laoreet dolor, vel pretium leo. Maecenas nec molestie mauris, eu volutpat sapien.
   </p>
 </section>
-<div id="div-result"></div>
 <script type="module">
 const rem = 16
 const $div = document.getElementById("div-result")
@@ -61,8 +61,10 @@ function reportWindowSize() {
     <li>-</li>
     <li>document.documentElement.scrollTop: ${document.documentElement.scrollTop} - ${document.documentElement.scrollTop/rem}rem</li>
     <li>-</li>
-    <li>window.innerHeight + window.scrollY: ${window.innerHeight + window.scrollY}</li>
-    <li>window.innerHeight - document.body.clientHeight: ${window.innerHeight - document.body.clientHeight}</li>
+    <li>(si r.ceil = body.scrollHeight => fin de pag) window.innerHeight + window.scrollY: ${window.innerHeight + window.scrollY}</li>
+    <li>(si r<0 => hay scroll) window.innerHeight - document.body.clientHeight: ${window.innerHeight - document.body.clientHeight}</li>
+    <li>is_scroll: ${is_scroll()}</li>
+    <li>is_bottom: ${is_bottom()}</li>
   </ul>
   `
   $div.innerHTML = tpl
@@ -88,13 +90,18 @@ function eaf() {
     `document.documentElement.scrollTop: ${document.documentElement.scrollTop} \n`,
     `\n`,
     `window.innerHeight + window.scrollY: ${window.innerHeight + window.scrollY} \n`,
-    `window.innerHeight - document.body.clientHeight: ${window.innerHeight - document.body.clientHeight} \n`,
+    `(si <0 => hay scroll) window.innerHeight - document.body.clientHeight: ${window.innerHeight - document.body.clientHeight} \n`,
     `\n`,
     `is_scroll: ${is_scroll()} \n`
+    `is_bottom: ${is_bottom()} \n`
   )
 }
 function is_scroll() {
   return (window.innerHeight - document.body.clientHeight)<0
+}
+function is_bottom() {
+  //tamaño visible de la ventana + el desplazamiento = el limite permitido por body
+  return ((window.innerHeight + window.scrollY) === document.body.scrollHeight)
 }
 </script>
 </body>
