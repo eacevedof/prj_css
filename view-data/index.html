@@ -97,7 +97,7 @@ function eaf() {
   )
 }
 function is_scroll() {
-  return (window.innerHeight - document.body.clientHeight)<0
+  return (window.innerHeight - document.body.scrollHeight)<0
 }
 function is_bottom() {
   //tamaño visible de la ventana + el desplazamiento = el limite permitido por body
