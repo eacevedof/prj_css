@@ -96,21 +96,22 @@ function eaf() {
     `(si r.ceil >= body.scrollHeight => fin de pag) window.innerHeight + window.scrollY: ${window.innerHeight + window.scrollY} (${Math.ceil(window.innerHeight + window.scrollY)})\n`,
     `\n`,
     `is_scroll: ${is_scroll()} \n`,
-    `is_bodyscroll: ${is_bodyscroll()} \n`,
     `is_bottom: ${is_bottom()} \n`
   )
 }
-function is_scroll() {
-  return (window.innerHeight - document.body.scrollHeight)<0
+const y = {
+  top: isNaN(parseInt($body.style?.paddingTop?.replace("px",""))) ? 0 : parseInt($body.style?.paddingTop?.replace("px","")),
+  bottom: isNaN(parseInt($body.style?.paddingBottom?.replace("px",""))) ? 0 : parseInt($body.style?.paddingBottom?.replace("px","")),
 }
 
-function is_bodyscroll() {
-  return ((window.innerHeight + 1) < $body.scrollHeight)
+function is_scroll() {
+  console.log("y", y)
+  return ((window.innerHeight) - (document.body.scrollHeight + y.top + y.bottom)) < 0
 }
 
 function is_bottom() {
   //tamaño visible de la ventana + el desplazamiento = el limite permitido por body
-  return (Math.ceil(window.innerHeight + window.scrollY) >= document.body.scrollHeight)
+  return (Math.ceil(window.innerHeight + window.scrollY) >= (document.body.scrollHeight + y.top + y.bottom))
 }
 
 //en la app interna es el <body> quien tiene el scroll
