@@ -110,15 +110,15 @@ function is_scroll() {
   console.log("y", y)
   //return ((window.innerHeight) - (document.body.scrollHeight + y.top + y.bottom)) < 0
 
-  //return ((document.body.clientHeight) < (document.body.scrollHeight))
-  return ((document.body.clientHeight) < (document.body.scrollHeight + y.top + y.bottom))
+  return ((document.body.clientHeight) < (document.body.scrollHeight))
+  //return ((document.body.clientHeight) < (document.body.scrollHeight + y.top + y.bottom))
 }
 
 function is_bottom() {
   //tamaño visible de la ventana + el desplazamiento = el limite permitido por body
   //return (Math.ceil(window.innerHeight + window.scrollY) >= (document.body.scrollHeight + y.top + y.bottom))
   return (document.body.clientHeight + document.documentElement.scrollTop >= (document.body.scrollHeight))
-  return ((document.body.clientHeight) < (document.body.scrollHeight + y.top + y.bottom))
+  //return ((document.body.clientHeight) < (document.body.scrollHeight + y.top + y.bottom))
 }
 
 //en la app interna es el <body> quien tiene el scroll
