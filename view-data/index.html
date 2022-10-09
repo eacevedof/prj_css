@@ -67,7 +67,7 @@ function reportWindowSize() {
     <li>is_bottom: ${is_bottom()}</li>
   </ul>
   `
-  $div.innerHTML = tpl
+  if ($div) $div.innerHTML = tpl
   eaf()
 }
 function eaf() {
