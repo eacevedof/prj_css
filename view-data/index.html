@@ -63,6 +63,7 @@ function reportWindowSize() {
     <li>document.documentElement.scrollTop: ${document.documentElement.scrollTop} - ${document.documentElement.scrollTop/rem}rem</li>
     <li>-</li>
     <li>(si r<0 => hay scroll) window.innerHeight - document.body.scrollHeight: ${window.innerHeight - document.body.scrollHeight}</li>
+    <li>body scroll => (window.innerHeight + 1) < $body.scrollHeight: ${(window.innerHeight + 1) < $body.scrollHeight}</li>
     <li>(si r.ceil = body.scrollHeight => fin de pag) window.innerHeight + window.scrollY: ${window.innerHeight + window.scrollY}  (${Math.ceil(window.innerHeight + window.scrollY)})</li>
     <li>is_scroll: ${is_scroll()}</li>
     <li>is_bottom: ${is_bottom()}</li>
