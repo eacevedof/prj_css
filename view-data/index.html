@@ -37,6 +37,7 @@
 </section>
 <script type="module">
 const rem = 16
+const $body = document.querySelector("body")
 const $div = document.getElementById("div-result")
 document.addEventListener("DOMContentLoaded", reportWindowSize)
 window.addEventListener("resize", reportWindowSize)
@@ -89,20 +90,29 @@ function eaf() {
     `\n`,
     `document.documentElement.scrollTop: ${document.documentElement.scrollTop} \n`,
     `\n`,
-    `(si <0 => hay scroll) window.innerHeight - document.body.scrollHeight: ${window.innerHeight - document.body.scrollHeight} \n`,
+    `(si r<0 => hay scroll) window.innerHeight - document.body.scrollHeight: ${window.innerHeight - document.body.scrollHeight} \n`,
+    `body scroll => (window.innerHeight + 1) < $body.scrollHeight: ${(window.innerHeight + 1) < $body.scrollHeight} \n`,
     `(si r.ceil >= body.scrollHeight => fin de pag) window.innerHeight + window.scrollY: ${window.innerHeight + window.scrollY} (${Math.ceil(window.innerHeight + window.scrollY)})\n`,
     `\n`,
     `is_scroll: ${is_scroll()} \n`,
+    `is_bodyscroll: ${is_bodyscroll()} \n`,
     `is_bottom: ${is_bottom()} \n`
   )
 }
 function is_scroll() {
   return (window.innerHeight - document.body.scrollHeight)<0
 }
+
+function is_bodyscroll() {
+  return ((window.innerHeight + 1) < $body.scrollHeight)
+}
+
 function is_bottom() {
   //tamaño visible de la ventana + el desplazamiento = el limite permitido por body
   return (Math.ceil(window.innerHeight + window.scrollY) >= document.body.scrollHeight)
 }
+
+//en la app interna es el <body> quien tiene el scroll
 </script>
 </body>
 </html>
