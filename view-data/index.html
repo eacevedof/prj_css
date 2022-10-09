@@ -33,18 +33,6 @@
   <p>
     In interdum iaculis arcu eget pulvinar. Fusce vitae placerat orci, et aliquet augue. Aenean ullamcorper ante nibh, quis tincidunt sem porta id. Ut tristique eleifend urna quis blandit. Aliquam id massa euismod ipsum porttitor eleifend ac in erat. Nulla aliquet urna et quam imperdiet egestas. Phasellus ornare turpis ac molestie sollicitudin. Fusce urna sapien, bibendum sit amet congue consectetur, iaculis sed velit.
   </p>
-  <p>
-    Sed volutpat nisl dolor, molestie dignissim nulla mollis id. Donec tristique orci sit amet nisi maximus scelerisque. Aliquam tempus ligula ac est tempus, eu fermentum massa tempus. Nulla molestie magna id sem rhoncus, in dapibus erat maximus. Proin nec nisi ut dui fringilla mattis. Praesent porttitor, nisl ut suscipit vestibulum, justo ex mollis metus, vitae varius eros ante facilisis sem. Duis sollicitudin sapien quam, et imperdiet leo varius eu. Proin pretium est odio, vitae lacinia nulla luctus quis. Fusce volutpat mi urna, non cursus magna facilisis vitae. Aliquam pulvinar dolor nec orci pharetra, non tincidunt lectus cursus. Etiam ullamcorper fringilla maximus. Nulla tellus nunc, tempus vitae est vel, congue condimentum ipsum. Cras vitae vulputate erat. Fusce sollicitudin convallis metus, nec porta odio sodales ac. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-  </p>
-  <p>
-    Praesent nec tortor posuere, pharetra erat sit amet, sollicitudin nibh. Quisque ipsum dolor, tempor non massa quis, luctus tristique ipsum. Nunc metus neque, sollicitudin ut iaculis a, blandit ac magna. Nam commodo enim augue, et mattis lacus tincidunt ac. Curabitur tristique augue eget tortor auctor, vel hendrerit ante lacinia. In leo ligula, iaculis in tempor eget, mattis quis massa. Quisque viverra, nisl ornare aliquet fringilla, nisl odio blandit dolor, quis imperdiet ligula erat a eros. Fusce sollicitudin erat a mi ornare, vitae efficitur mi dapibus. Nam rutrum odio felis, vel tincidunt tellus fringilla a. Pellentesque congue semper tortor ut bibendum. Phasellus eget diam cursus leo auctor porttitor vitae nec nunc. Integer venenatis purus ac metus consequat, et commodo orci dignissim.
-  </p>
-  <p>
-    Quisque consectetur dolor ipsum, sit amet malesuada ante sodales at. Morbi in finibus dolor. Duis turpis elit, suscipit eget luctus at, pulvinar ac diam. Phasellus pellentesque egestas imperdiet. Aenean lorem ex, ullamcorper vitae rutrum ac, accumsan sit amet justo. Morbi tincidunt urna nec pharetra vulputate. Duis sit amet elementum nibh. Quisque varius viverra nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris pellentesque arcu ante, in volutpat augue molestie sit amet.
-  </p>
-  <p>
-    Etiam maximus ante nibh, non finibus orci rutrum quis. Donec elit nulla, vestibulum quis nibh sed, convallis lobortis elit. Proin viverra suscipit justo, in tempus massa lobortis ac. Integer non semper odio, in dignissim turpis. Duis pretium volutpat porttitor. Quisque vitae sollicitudin lorem, laoreet consequat nisl. Nam ac leo ut orci cursus mattis sed ut risus. Ut tincidunt felis vel enim sagittis eleifend. Sed tempus lacinia massa vitae maximus. Vivamus at ultricies libero.
-  </p>
 </section>
 <div id="div-result"></div>
 <script type="module">
@@ -72,9 +60,12 @@ function reportWindowSize() {
     <li>document.body.offsetHeight: ${document.body.offsetHeight} - ${document.body.offsetHeight/rem}rem</li>
     <li>-</li>
     <li>document.documentElement.scrollTop: ${document.documentElement.scrollTop} - ${document.documentElement.scrollTop/rem}rem</li>
+    <li>-</li>
+    <li>window.innerHeight + window.scrollY: ${window.innerHeight + window.scrollY}</li>
+    <li>window.innerHeight - document.body.clientHeight: ${window.innerHeight - document.body.clientHeight}</li>
   </ul>
   `
-  //$div.innerHTML = tpl
+  $div.innerHTML = tpl
   eaf()
 }
 function eaf() {
