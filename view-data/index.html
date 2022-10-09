@@ -85,11 +85,13 @@ function eaf() {
     `window.outerWidth: ${window.outerWidth} \n`,
     `window.scrollY: ${window.scrollY} \n`,
     `\n`,
+    `document.documentElement.scrollTop: ${document.documentElement.scrollTop} \n`,
+    `document.documentElement.scrollHeight: ${document.documentElement.scrollHeight} \n`,
+    `document.documentElement.clientHeight: ${document.documentElement.clientHeight} \n`,
+    `\n`,
     `document.body.scrollHeight: ${document.body.scrollHeight}\n`,
     `document.body.clientHeight: ${document.body.clientHeight}\n`,
     `document.body.offsetHeight: ${document.body.offsetHeight}\n`,
-    `\n`,
-    `document.documentElement.scrollTop: ${document.documentElement.scrollTop} \n`,
     //`\n`,
     //`(si r<0 => hay scroll) window.innerHeight - document.body.scrollHeight: ${window.innerHeight - document.body.scrollHeight} \n`,
     //`body scroll => (window.innerHeight + 1) < $body.scrollHeight: ${(window.innerHeight + 1) < $body.scrollHeight} \n`,
@@ -107,14 +109,16 @@ const y = {
 function is_scroll() {
   console.log("y", y)
   //return ((window.innerHeight) - (document.body.scrollHeight + y.top + y.bottom)) < 0
-  //return ((document.body.clientHeight) - (document.body.scrollHeight + y.top + y.bottom)) < 0
-  return ((document.body.clientHeight) < (document.body.scrollHeight))
+
+  //return ((document.body.clientHeight) < (document.body.scrollHeight))
+  return ((document.body.clientHeight) < (document.body.scrollHeight + y.top + y.bottom))
 }
 
 function is_bottom() {
   //tamaño visible de la ventana + el desplazamiento = el limite permitido por body
   //return (Math.ceil(window.innerHeight + window.scrollY) >= (document.body.scrollHeight + y.top + y.bottom))
   return (document.body.clientHeight + document.documentElement.scrollTop >= (document.body.scrollHeight))
+  return ((document.body.clientHeight) < (document.body.scrollHeight + y.top + y.bottom))
 }
 
 //en la app interna es el <body> quien tiene el scroll
